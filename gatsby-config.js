@@ -1,11 +1,32 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Litmed`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-postcss",
+      options: {
+        postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
+      },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: false, // Print do not removed selectors and processed file names
+        develop: false, // Disable while using `gatsby develop`
+        tailwind: true, // Enable tailwindcss support
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -18,7 +39,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `litmed`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
