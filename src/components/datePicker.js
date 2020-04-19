@@ -1,9 +1,9 @@
 import React from "react"
 import "react-dates/initialize"
 import { SingleDatePicker } from "react-dates"
-import moment from "moment"
-import styled from "styled-components"
 import "react-dates/lib/css/_datepicker.css"
+import styled from "styled-components"
+import moment from "moment"
 import "moment/locale/es"
 
 moment.locale("es")
