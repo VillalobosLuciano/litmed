@@ -16,8 +16,8 @@ const Staff = () => (
         </h3>
         <hr className="hidden w-10 m-auto my-6 border-b lg:block border-primary-500" />
         <p className="max-w-2xl mt-4 text-xl leading-7 text-gray-500 lg:mx-auto">
-          Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-          voluptatum cupiditate veritatis in accusamus quisquam.
+          Contamos con un completo equipo multidisciplinario para asegurar el
+          cuidado integrar de tu salud
         </p>
       </div>
       <div className="flex justify-center">
