@@ -2,7 +2,7 @@ import React from "react"
 import WorkerDetails from "../components/workerModal"
 
 const ProfileCard = () => (
-  <div className="rounded shadow-lg" style={{maxWidth: 350}}>
+  <div className="rounded shadow-lg" style={{ maxWidth: 350 }}>
     <img
       className="w-full h-56"
       src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
@@ -14,8 +14,8 @@ const ProfileCard = () => (
         Kinesiología
       </p>
       <p className="text-base font-light text-gray-600">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-        quia, nulla! Maiores et perferendis eaque.
+        Especialista en disfunsiones del Piso Pélvico, terapia kinesiológica en
+        embarazo y post-parto.
       </p>
     </div>
     <div className="flex items-center justify-between px-4 py-3 bg-gray-100 lg:px-6">

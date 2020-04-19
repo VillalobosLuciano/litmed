@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "react-dates/initialize"
 import { SingleDatePicker } from "react-dates"
 import "react-dates/lib/css/_datepicker.css"
@@ -7,10 +7,8 @@ import moment from "moment"
 import "moment/locale/es"
 
 moment.locale("es")
-const hoy = moment()
-console.log(hoy.format("dddd Do MMMM YYYY"))
 
-/* const StyledDatePickerWrapper = styled.div`
+const StyledDatePickerWrapper = styled.div`
   & .SingleDatePicker,
   .SingleDatePickerInput {
     .DateInput {
@@ -46,7 +44,7 @@ console.log(hoy.format("dddd Do MMMM YYYY"))
       }
     }
   }
-` */
+`
 
 export default class DatePicker extends React.Component {
   state = {
@@ -70,3 +68,22 @@ export default class DatePicker extends React.Component {
     )
   }
 }
+
+/* const DatePicker = ({}) => { 
+  return (
+    <StyledDatePickerWrapper>
+        <SingleDatePicker
+          block
+          hideKeyboardShortcutsPanel = "false"
+          displayFormat="dddd Do MMMM"
+          numberOfMonths={1}
+          onDateChange={date => this.setState({ date })}
+          onFocusChange={({ focused }) => this.setState({ focused })}
+          focused={this.state.focused}
+          date={this.state.date}
+        />
+      </StyledDatePickerWrapper>
+  )
+}
+
+export default DatePicker */
