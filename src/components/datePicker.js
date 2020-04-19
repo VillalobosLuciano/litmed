@@ -10,7 +10,7 @@ moment.locale("es")
 const hoy = moment()
 console.log(hoy.format("dddd Do MMMM YYYY"))
 
-const StyledDatePickerWrapper = styled.div`
+/* const StyledDatePickerWrapper = styled.div`
   & .SingleDatePicker,
   .SingleDatePickerInput {
     .DateInput {
@@ -46,7 +46,7 @@ const StyledDatePickerWrapper = styled.div`
       }
     }
   }
-`
+` */
 
 export default class DatePicker extends React.Component {
   state = {
