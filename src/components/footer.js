@@ -1,4 +1,5 @@
 import React from "react"
+import ContactForm from "../components/contactForm"
 
 const Footer = () => (
   <footer className="relative px-4 py-12 text-white border-t-2 border-primary-600 bg-secondary-700 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:pt-24">
@@ -95,37 +96,7 @@ const Footer = () => (
       </div>
       <div className="w-full mt-8 lg:w-2/6 lg:mt-0 lg:ml-4">
         <h5 className="font-semibold tracking-wider uppercase">Contáctanos</h5>
-        <form className="mt-4">
-          <div className="flex flex-wrap mb-4">
-            <input
-              className="w-full h-10 p-2 text-white border-l rounded placeholder-secondary-100 border-primary-600 bg-secondary-500"
-              type="text"
-              placeholder="Nombre"
-            />
-          </div>
-          <div className="flex flex-wrap mb-4">
-            <input
-              className="w-full h-10 p-2 text-white border-l rounded placeholder-secondary-100 border-primary-600 bg-secondary-500"
-              type="text"
-              placeholder="Email"
-            />
-          </div>
-          <div className="mb-4">
-            <textarea
-              className="w-full h-24 px-2 pt-2 text-white border-l rounded placeholder-secondary-100 border-primary-600 bg-secondary-500"
-              placeholder="Mensaje"
-              defaultValue={""}
-            />
-          </div>
-          <div className="flex items-center justify-between">
-            <button
-              className="w-full px-4 py-2 font-semibold tracking-wide text-white rounded bg-primary-600 hover:bg-primary-500"
-              type="button"
-            >
-              Enviar
-            </button>
-          </div>
-        </form>
+        <ContactForm />
       </div>
     </div>
     <div className="flex flex-col items-center justify-between mt-16 md:flex-row">
