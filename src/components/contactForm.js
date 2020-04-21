@@ -1,15 +1,14 @@
 import React from "react"
 import { Formik, Form, Field, ErrorMessage } from "formik"
 
-
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
 
 const ContactForm = () => {
   const [form, setForm] = React.useState(1)
-  const encode = data => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&")
-  }
   return (
     <div>
       <div className={form === 1 ? "block" : "hidden"}>
