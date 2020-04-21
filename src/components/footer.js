@@ -1,5 +1,6 @@
 import React from "react"
 import ContactForm from "../components/contactForm"
+import Yup from "../components/yupTest"
 
 const Footer = () => (
   <footer className="relative px-4 py-12 text-white border-t-2 border-primary-600 bg-secondary-700 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 lg:pt-24">
@@ -95,7 +96,7 @@ const Footer = () => (
         </p>
       </div>
       <div className="w-full mt-8 lg:w-2/6 lg:mt-0 lg:ml-4">
-        <ContactForm />
+        <Yup />
       </div>
     </div>
     <div className="flex flex-col items-center justify-between mt-16 md:flex-row">
