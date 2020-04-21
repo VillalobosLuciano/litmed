@@ -3,7 +3,6 @@ import React from "react"
 const Tabs = ({ color }) => {
   const [openTab, setOpenTab] = React.useState(1)
   return (
-    <>
       <div className="flex flex-wrap">
         <div className="w-full">
           <ul
@@ -26,7 +25,7 @@ const Tabs = ({ color }) => {
                 href="#link1"
                 role="tablist"
               >
-                Profile
+                Box Training
               </a>
             </li>
             <li className="flex-auto mr-2 -mb-px text-center last:mr-0">
@@ -45,7 +44,7 @@ const Tabs = ({ color }) => {
                 href="#link2"
                 role="tablist"
               >
-                Settings
+                Functional Training
               </a>
             </li>
             <li className="flex-auto mr-2 -mb-px text-center last:mr-0">
@@ -64,7 +63,7 @@ const Tabs = ({ color }) => {
                 href="#link3"
                 role="tablist"
               >
-                Options
+                Recovery
               </a>
             </li>
           </ul>
@@ -107,14 +106,11 @@ const Tabs = ({ color }) => {
           </div>
         </div>
       </div>
-    </>
   )
 }
 
 export default function TabsRender() {
   return (
-    <>
-      <Tabs color="primary" />;
-    </>
+      <Tabs color="primary" />  
   )
 }

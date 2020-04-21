@@ -95,7 +95,6 @@ const Footer = () => (
         </p>
       </div>
       <div className="w-full mt-8 lg:w-2/6 lg:mt-0 lg:ml-4">
-        <h5 className="font-semibold tracking-wider uppercase">Contáctanos</h5>
         <ContactForm />
       </div>
     </div>
