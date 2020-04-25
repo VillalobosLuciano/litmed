@@ -8,7 +8,7 @@ function Navbar({ siteTitle }) {
 
   return (
     <header className="sticky top-0 z-10 px-4 py-2 border-b-2 shadow-xl border-primary-600 bg-secondary-700 sm:flex sm:justify-between sm:items-center sm:px-8 lg:px-16 xl:px-40 2xl:px-64">
-      <div className="flex items-center justify-between px-4 text-white sm:p-0">
+      <div className="flex items-center justify-between text-white sm:p-0">
         <Link to={`/`} className="flex items-center cursor-pointer">
           <div className="flex-shrink-0">
             <img className="w-8" src={logo} alt="Workflow logo" />
@@ -54,7 +54,7 @@ function Navbar({ siteTitle }) {
       <nav
         className={`${
           isExpanded ? `block` : `hidden`
-        } px-2 pt-2 pb-3 sm:flex sm:p-0`}
+        } pt-2 pb-3 sm:flex sm:p-0`}
       >
         <Link
           to={`/`}
@@ -79,13 +79,13 @@ function Navbar({ siteTitle }) {
         </Link>
       </nav>
 
-      {/* <div className="fixed top-0 left-0 flex items-center justify-center w-6 h-6 p-3 m-8 font-mono text-xs text-white bg-gray-700 rounded-full sm:bg-pink-500 md:bg-orange-500 lg:bg-green-500 xl:bg-blue-500">
+      <div className="fixed top-0 left-0 flex items-center justify-center w-6 h-6 p-3 m-8 font-mono text-xs text-white bg-gray-700 rounded-full sm:bg-pink-500 md:bg-orange-500 lg:bg-green-500 xl:bg-blue-500">
         <div className="block sm:hidden md:hidden lg:hidden xl:hidden">al</div>
         <div className="hidden sm:block md:hidden lg:hidden xl:hidden">sm</div>
         <div className="hidden sm:hidden md:block lg:hidden xl:hidden">md</div>
         <div className="hidden sm:hidden md:hidden lg:block xl:hidden">lg</div>
         <div className="hidden sm:hidden md:hidden lg:hidden xl:block">xl</div>
-      </div> */}
+      </div>
     </header>
   )
 }
