@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const WorkerModal = () => {
+const LitfitModal = () => {
   const [showModal, setShowModal] = React.useState(false)
   return (
     <>
       <button
-        className="w-full px-4 py-2 ml-2 text-sm font-medium leading-6 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md shadow-sm text-primary-700 hover:text-primary-500 focus:outline-none focus:border-blue-300 focus:shadow-outline sm:text-sm sm:leading-5"
+        className="w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out rounded shadow-sm bg-primary-600 hover:bg-primary-500"
         type="button"
         onClick={() => setShowModal(true)}
       >
@@ -231,4 +231,4 @@ const WorkerModal = () => {
   )
 }
 
-export default WorkerModal
+export default LitfitModal

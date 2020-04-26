@@ -2,9 +2,9 @@ import React from "react"
 import ContactForm from "../components/contactForm"
 
 const Footer = () => (
-  <footer className="px-4 py-10 border-t-2 border-primary-600 bg-secondary-700 sm:px-6 md:px-16 sm:py-10 md:pt-16 md:pb-12 lg:px-16 xl:px-40">
-    <div className="grid grid-cols-1 gap-4 row-gap-6 lg:gap-12 sm:grid-cols-3">
-      <div className="flex flex-col">
+  <footer className="px-4 py-10 border-t-4 border-primary-500 bg-secondary-700 sm:px-6 md:px-16 sm:py-10 md:pt-16 md:pb-12 lg:px-16 xl:px-40">
+    <div className="grid grid-cols-1 gap-4 row-gap-10 lg:gap-12 sm:grid-cols-3">
+      <div className="flex flex-col w-11/12">
         <h5 className="mb-2 font-semibold tracking-wider text-white uppercase md:mb-6">
           LITMED
         </h5>
@@ -25,12 +25,12 @@ const Footer = () => (
                   <path d="M12,2C7.589,2,4,5.589,4,9.995C3.971,16.44,11.696,21.784,12,22c0,0,8.029-5.56,8-12C20,5.589,16.411,2,12,2z M12,14 c-2.21,0-4-1.79-4-4s1.79-4,4-4s4,1.79,4,4S14.21,14,12,14z" />
                 </svg>
               </span>
-              <span className="ml-3 text-sm md:text-base">
+              <span className="ml-3 text-base">
                 Eleuterio Ramírez N° 19 - Coquimbo
               </span>
             </p>
           </li>
-          <li className="mt-2 md:mt-4">
+          <li className="mt-2 md:mt-3">
             <p className="flex items-center text-white">
               <span>
                 <svg
@@ -43,10 +43,10 @@ const Footer = () => (
                   <path d="M14.594,13.994l-1.66,1.66c-0.577-0.109-1.734-0.471-2.926-1.66c-1.193-1.193-1.553-2.354-1.661-2.926l1.661-1.66 l0.701-0.701L5.295,3.293L4.594,3.994l-1,1C3.42,5.168,3.316,5.398,3.303,5.643c-0.015,0.25-0.302,6.172,4.291,10.766 C11.6,20.414,16.618,20.707,18,20.707c0.202,0,0.326-0.006,0.358-0.008c0.245-0.014,0.476-0.117,0.649-0.291l1-1l0.697-0.697 l-5.414-5.414L14.594,13.994z" />
                 </svg>
               </span>
-              <span className="ml-3 text-sm md:text-base">+512 64 25 59</span>
+              <span className="ml-3 text-base">+512 64 25 59</span>
             </p>
           </li>
-          <li className="mt-2 overflow-hidden md:mt-4">
+          <li className="mt-2 overflow-hidden md:mt-3">
             <p className="flex items-center text-white">
               <span>
                 <svg
@@ -59,7 +59,7 @@ const Footer = () => (
                   <path d="M20,4H4C2.896,4,2,4.896,2,6v12c0,1.104,0.896,2,2,2h16c1.104,0,2-0.896,2-2V6C22,4.896,21.104,4,20,4z M20,8.7l-8,5.334 L4,8.7V6.297l8,5.333l8-5.333V8.7z" />
                 </svg>
               </span>
-              <span className="ml-3 text-sm md:text-base">
+              <span className="ml-3 text-base">
                 centromedicolitmed@gmail.com
               </span>
             </p>
@@ -67,13 +67,12 @@ const Footer = () => (
         </ul>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col sm:mx-auto">
         <h5 className="mb-2 font-semibold tracking-wider text-white uppercase md:mb-6">
           Horarios de atención
         </h5>
         <label
-          className="block text-sm font-bold tracking-wide uppercase text-secondary-200"
-          htmlFor="grid-last-name"
+          className="text-sm font-bold tracking-wide uppercase text-secondary-200"
         >
           Centro médico
         </label>
@@ -82,8 +81,7 @@ const Footer = () => (
           Sábado: 8:00 am a 10:00 am.
         </p>
         <label
-          className="block mt-4 text-sm font-bold tracking-wide uppercase text-secondary-200"
-          htmlFor="grid-last-name"
+          className="mt-3 text-sm font-bold tracking-wide uppercase text-secondary-200"
         >
           Box training
         </label>
@@ -92,8 +90,7 @@ const Footer = () => (
           Sábado: 8:00 am a 10:00 am.
         </p>
         <label
-          className="block mt-4 text-sm font-bold tracking-wide uppercase text-secondary-200"
-          htmlFor="grid-last-name"
+          className="mt-3 text-sm font-bold tracking-wide uppercase text-secondary-200"
         >
           Functional training
         </label>

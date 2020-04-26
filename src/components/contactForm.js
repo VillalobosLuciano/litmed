@@ -82,7 +82,7 @@ const ContactForm = () => {
               <div className="mb-4">
                 <Field
                   placeholder="Mensaje"
-                  className="block w-full h-24 px-2 pt-2 leading-tight text-white border rounded appearance-none border-primary-600 bg-secondary-500 focus:outline-none focus:bg-secondary-900"
+                  className="block w-full h-24 px-4 pt-3 leading-tight text-white border rounded appearance-none border-primary-600 bg-secondary-500 focus:outline-none focus:bg-secondary-900"
                   name="message"
                   component="textarea"
                 />

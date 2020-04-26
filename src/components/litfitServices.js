@@ -2,6 +2,7 @@ import React from "react"
 import Box from "../images/box.jpg"
 import Functional from "../images/functional.jpg"
 import Recovery from "../images/recovery.jpg"
+import LitfitModal from "../components/litfitModal"
 
 const LitfitServices = () => (
   <div className="flex justify-center pt-4 pb-6 sm:pb-10 lg:pb-12">
@@ -25,12 +26,7 @@ const LitfitServices = () => (
           </p>
         </div>
         <div className="px-6 py-3 bg-gray-100">
-          <button
-            className="w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out rounded shadow-sm bg-primary-600 hover:bg-primary-500"
-            type="button"
-          >
-            Ver más
-          </button>
+        <LitfitModal />
         </div>
       </div>
       <div

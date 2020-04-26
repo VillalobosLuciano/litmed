@@ -1,5 +1,5 @@
 import React from "react"
-import WorkerDetails from "../components/workerModal"
+import WorkerModal from "../components/workerModal"
 
 const ProfileCard = () => (
   <div className="flex flex-col mx-auto rounded shadow-lg" style={{ maxWidth: 350 }}>
@@ -18,14 +18,14 @@ const ProfileCard = () => (
         embarazo y post-parto.
       </p>
     </div>
-    <div className="flex justify-between px-6 py-3 bg-gray-100 space-x-4">
+    <div className="flex justify-between px-6 py-3 bg-gray-100">
       <button
-        className="w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out rounded-md shadow-sm bg-primary-700 hover:bg-primary-500"
+        className="w-full px-4 py-2 mr-2 text-sm font-medium text-white transition duration-150 ease-in-out rounded-md shadow-sm bg-primary-700 hover:bg-primary-500"
         type="button"
       >
         Agendar Hora
       </button>
-      <WorkerDetails />
+      <WorkerModal />
     </div>
   </div>
 )

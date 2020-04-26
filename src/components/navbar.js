@@ -7,7 +7,7 @@ function Navbar({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
 
   return (
-    <header className="sticky top-0 z-10 px-4 py-2 border-b-2 shadow-xl border-primary-600 bg-secondary-700 sm:flex sm:justify-between sm:items-center sm:px-8 lg:px-16 xl:px-40 2xl:px-64">
+    <header className="sticky top-0 z-10 px-4 py-2 border-b-4 shadow-xl border-primary-500 bg-secondary-700 sm:flex sm:justify-between sm:items-center sm:px-8 lg:px-16 xl:px-40 2xl:px-64">
       <div className="flex items-center justify-between text-white sm:p-0">
         <Link to={`/`} className="flex items-center cursor-pointer">
           <div className="flex-shrink-0">
