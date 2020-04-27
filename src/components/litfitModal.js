@@ -19,7 +19,7 @@ const LitfitModal = () => {
             onClick={() => setShowModal(false)}
           >
             <div className="fixed inset-0">
-              <div className="absolute inset-0 bg-gray-600 opacity-75" />
+              <div className="absolute inset-0 bg-gray-700 opacity-75" />
             </div>
 
             <div className="relative w-auto max-w-3xl mx-auto my-2">

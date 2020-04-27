@@ -2,7 +2,7 @@ import React from "react"
 import ContactForm from "../components/contactForm"
 
 const Footer = () => (
-  <footer className="px-4 py-10 border-t-4 border-primary-500 bg-secondary-700 sm:px-6 md:px-16 sm:py-10 md:pt-16 md:pb-12 lg:px-16 xl:px-40">
+  <footer className="px-4 py-10 border-t-2 lg:border-t-4 border-primary-500 bg-secondary-700 sm:px-6 md:px-16 sm:py-10 md:pt-16 md:pb-12 lg:px-16 xl:px-40">
     <div className="grid grid-cols-1 gap-4 row-gap-10 lg:gap-12 sm:grid-cols-3">
       <div className="flex flex-col w-11/12">
         <h5 className="mb-2 font-semibold tracking-wider text-white uppercase md:mb-6">
@@ -104,8 +104,8 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className="flex flex-col items-center justify-between mt-8 md:mt-16 sm:flex-row md:flex-row">
-      <div className="mb-4 sm:mb-0">
+    <div className="flex flex-col flex-col-reverse items-center justify-between mt-8 md:mt-16 sm:flex-row md:flex-row">
+      <div className="mt-4 sm:mt-0">
         <p className="text-sm text-secondary-200">
           © {new Date().getFullYear()}, LITMED - Desarrollado por
           {` `}

@@ -5,7 +5,7 @@ import Recovery from "../images/recovery.jpg"
 import LitfitModal from "../components/litfitModal"
 
 const LitfitServices = () => (
-  <div className="flex justify-center pt-4 pb-6 sm:pb-10 lg:pb-12">
+  <div className="flex justify-center pt-2 pb-6 sm:pb-10 lg:pb-12">
     <div className="grid grid-cols-1 gap-6 row-gap-6 px-4 xl:gap-10 xl:row-gap-10 lg:gap-8 lg:row-gap-8 md:grid-cols-2 lg:grid-cols-3">
       <div
         className="flex flex-col mx-auto rounded shadow-lg"
