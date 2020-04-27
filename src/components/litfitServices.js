@@ -1,35 +1,16 @@
 import React from "react"
-import Box from "../images/box.jpg"
 import Functional from "../images/functional.jpg"
 import Recovery from "../images/recovery.jpg"
 import LitfitModal from "../components/litfitModal"
+import FitserviceCard from "../components/fitServiceCard"
 
 const LitfitServices = () => (
   <div className="flex justify-center pt-2 pb-6 sm:pb-10 lg:pb-12">
     <div className="grid grid-cols-1 gap-6 row-gap-6 px-4 xl:gap-10 xl:row-gap-10 lg:gap-8 lg:row-gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <div
-        className="flex flex-col mx-auto rounded shadow-lg"
-        style={{ maxWidth: 380 }}
-      >
-        <img
-          className="w-full h-56 border-b-4 rounded-t border-primary-500"
-          src={Box}
-          alt="Box Training"
-        />
-        <div className="flex-grow px-6 py-4">
-          <div className="mb-2 text-xl font-semibold text-gray-900">
-            Box Training
-          </div>
-          <p className="text-base font-light text-gray-600">
-            Pon a prueba tu condición fisica entrenando de igual manera que los
-            boxeadores profesionales
-          </p>
-        </div>
-        <div className="px-6 py-3 bg-gray-100">
-        <LitfitModal />
-        </div>
-      </div>
-      <div
+      <FitserviceCard />
+      <FitserviceCard />
+      <FitserviceCard />
+     {/*  <div
         className="flex flex-col mx-auto rounded shadow-lg"
         style={{ maxWidth: 380 }}
       >
@@ -48,12 +29,7 @@ const LitfitServices = () => (
           </p>
         </div>
         <div className="px-6 py-3 bg-gray-100">
-          <button
-            className="w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out rounded shadow-sm bg-primary-600 hover:bg-primary-500"
-            type="button"
-          >
-            Ver más
-          </button>
+          <LitfitModal />
         </div>
       </div>
       <div
@@ -75,14 +51,9 @@ const LitfitServices = () => (
           </p>
         </div>
         <div className="px-6 py-3 bg-gray-100">
-          <button
-            className="w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out rounded shadow-sm bg-primary-600 hover:bg-primary-500"
-            type="button"
-          >
-            Ver más
-          </button>
+          <LitfitModal />
         </div>
-      </div>
+      </div> */}
     </div>
   </div>
 )

@@ -6,7 +6,7 @@ const LitfitModal = () => {
   return (
     <>
       <button
-        className="w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out rounded shadow-sm bg-primary-600 hover:bg-primary-500"
+        className="w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out rounded shadow-sm bg-primary-700 hover:bg-primary-500"
         type="button"
         onClick={() => setShowModal(true)}
       >
