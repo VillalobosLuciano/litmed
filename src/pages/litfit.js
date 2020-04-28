@@ -6,8 +6,9 @@ import LitfitServices from "../components/litfitServices"
 const Litfit = () => (
   <Layout>
     <SEO title="Litfit" />
+    <div className="px-4 py-6 sm:px-8 md:px-16 sm:py-10 lg:px-16 lg:py-12 xl:px-48">
 
-    {/* <div className="grid grid-cols-1 px-4 py-10 lg:grid-cols-2 sm:py-12 md:py-16 lg:py-24 sm:px-8 lg:px-16 xl:px-40 2xl:px-64">
+   {/* <div className="grid grid-cols-1 px-4 py-10 lg:grid-cols-2 sm:py-12 md:py-16 lg:py-24 sm:px-8 lg:px-16 xl:px-40 2xl:px-64">
       <div className="text-white bg-gray-100">
         <div className="sm:text-center lg:text-left">
           <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
@@ -25,7 +26,6 @@ const Litfit = () => (
       <div className="text-white bg-gray-600">col 2</div>
     </div> */}
 
-    <div className="px-4 py-6 sm:px-8 md:px-16 sm:py-10 lg:px-16 lg:py-12 xl:px-48">
       <div className="lg:text-center">
         <p className="text-base font-semibold leading-6 tracking-wide uppercase text-primary-600">
           Servicios

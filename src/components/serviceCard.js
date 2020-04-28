@@ -1,7 +1,7 @@
 import React from "react"
 
-const LitmedServices = () => (
-  <li className="mt-10 md:mt-0">
+const ServiceCard = () => (
+  <li className="mt-10 bg-red-200 md:mt-2">
     <div className="flex">
       <div className="flex-shrink-0">
         <div className="flex items-center justify-center w-12 h-12 text-white rounded-full bg-primary-500">
@@ -33,4 +33,4 @@ const LitmedServices = () => (
     </div>
   </li>
 )
-export default LitmedServices
+export default ServiceCard

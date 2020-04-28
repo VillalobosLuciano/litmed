@@ -64,6 +64,13 @@ function Navbar({ siteTitle }) {
           Litmed
         </Link>
         <Link
+          to={`/services`}
+          className="block px-3 py-2 text-base font-medium text-white rounded-md sm:ml-4 hover:bg-secondary-500 focus:outline-none"
+          activeClassName="bg-secondary-900 hover:bg-secondary-900"
+        >
+          Servicios
+        </Link>
+        <Link
           to={`/staff`}
           className="block px-3 py-2 text-base font-medium text-white rounded-md sm:ml-4 hover:bg-secondary-500 focus:outline-none"
           activeClassName="bg-secondary-900 hover:bg-secondary-900"

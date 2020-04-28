@@ -1,9 +1,12 @@
 import React from "react"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 import ServiceCard from "../components/serviceCard"
 
-const LitmedServices = () => (
-  <div className="py-24 bg-white lg:mt-6">
-    <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
+const Services = () => (
+  <Layout>
+    <SEO title="Services" />
+    <div className="max-w-screen-xl px-4 py-6 mx-auto sm:py-10 lg:py-12 sm:px-6 lg:px-8">
       <div className="lg:text-center">
         <p className="text-base font-semibold leading-6 tracking-wide uppercase text-primary-600">
           Servicios
@@ -16,8 +19,8 @@ const LitmedServices = () => (
           voluptatum cupiditate veritatis in accusamus quisquam.
         </p>
       </div>
-      <div className="mt-8 lg:mt-16">
-        <ul className="md:grid md:grid-cols-3 md:col-gap-8 md:row-gap-10">
+      <div className="my-8 lg:mt-20">
+        <ul className="sm:grid md:grid-cols-2 lg:grid-cols-3 md:col-gap-8 md:row-gap-10">
           <ServiceCard />
           <ServiceCard />
           <ServiceCard />
@@ -30,6 +33,7 @@ const LitmedServices = () => (
         </ul>
       </div>
     </div>
-  </div>
+  </Layout>
 )
-export default LitmedServices
+
+export default Services

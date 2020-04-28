@@ -2,7 +2,7 @@ import React from "react"
 import WorkerModal from "../components/workerModal"
 
 const ProfileCard = () => (
-  <div className="flex flex-col mx-auto rounded shadow-lg" style={{ maxWidth: 350 }}>
+  <li className="flex flex-col mx-auto mt-10 rounded shadow-lg md:mt-2" style={{ maxWidth: 350 }}>
     <img
       className="w-full h-56 rounded-t"
       src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
@@ -27,7 +27,7 @@ const ProfileCard = () => (
       </button>
       <WorkerModal />
     </div>
-  </div>
+  </li>
 )
 
 export default ProfileCard
