@@ -2,14 +2,15 @@ import React from "react"
 import ContactForm from "../components/contactForm"
 
 const Footer = () => (
-  <footer className="px-4 py-10 border-t-2 border-primary-500 bg-secondary-700 sm:px-6 md:px-16 sm:py-10 md:pt-16 md:pb-12 lg:px-16 xl:px-40">
+  <footer className="px-4 py-10 mx-auto border-t-2 border-primary-500 bg-secondary-700 sm:px-6 lg:px-16 xl:px-40 lg:pt-16 lg:pb-10">
     <div className="grid grid-cols-1 gap-4 row-gap-10 lg:gap-12 sm:grid-cols-3">
-      <div className="flex flex-col w-11/12">
+      <div className="flex flex-col sm:w-11/12">
         <h5 className="mb-2 font-semibold tracking-wider text-white uppercase md:mb-6">
           LITMED
         </h5>
         <p className="text-white">
-          Comprometidos con mejorar la calidad de vida de las personas.
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
+          impedit perferendis suscipit eaque, iste.
         </p>
         <ul className="mt-4 md:mt-8">
           <li>
@@ -67,36 +68,40 @@ const Footer = () => (
         </ul>
       </div>
 
-      <div className="flex flex-col sm:mx-auto">
+      <div className="flex flex-col sm:w-11/12 sm:mx-auto">
         <h5 className="mb-2 font-semibold tracking-wider text-white uppercase md:mb-6">
           Horarios de atención
         </h5>
-        <label
-          className="text-sm font-bold tracking-wide uppercase text-secondary-200"
-        >
-          Centro médico
-        </label>
-        <p className="mb-2 text-sm text-white">
-          Lunes a viernes: 10:00 am a 20:00 pm. <br />
-          Sábado: 8:00 am a 10:00 am.
-        </p>
-        <label
-          className="mt-3 text-sm font-bold tracking-wide uppercase text-secondary-200"
-        >
-          Box training
-        </label>
-        <p className="mb-2 text-sm text-white">
-          Martes y jueves: 19:00 am a 20:00 pm. <br />
-          Sábado: 8:00 am a 10:00 am.
-        </p>
-        <label
-          className="mt-3 text-sm font-bold tracking-wide uppercase text-secondary-200"
-        >
-          Functional training
-        </label>
-        <p className="mb-2 text-sm text-white">
-          Lunes, miércoles y viernes: 19:00 am a 20:00 pm.
-        </p>
+        <ul className="w-3/4 sm:w-full lg:w-3/4 space-y-2">
+          <li className="flex justify-between text-white">
+            <label className="font-medium">Lunes</label>
+            <p className="font-light">10:00 a 20:00</p>
+          </li>
+          <li className="flex justify-between text-white">
+            <label className="font-medium">Martes</label>
+            <p className="font-light">10:00 a 20:00</p>
+          </li>
+          <li className="flex justify-between text-white">
+            <label className="font-medium">Miércoles</label>
+            <p className="font-light">10:00 a 20:00</p>
+          </li>
+          <li className="flex justify-between text-white">
+            <label className="font-medium">Jueves</label>
+            <p className="font-light">10:00 a 20:00</p>
+          </li>
+          <li className="flex justify-between text-white">
+            <label className="font-medium">Viernes</label>
+            <p className="font-light">10:00 a 20:00</p>
+          </li>
+          <li className="flex justify-between text-white">
+            <label className="font-medium">Sábado</label>
+            <p className="font-light">10:00 a 20:00</p>
+          </li>
+          <li className="flex justify-between text-white">
+            <label className="font-medium">Domingo</label>
+            <p className="font-light">Cerrado</p>
+          </li>
+        </ul>
       </div>
 
       <div className="flex flex-col">
@@ -164,4 +169,3 @@ const Footer = () => (
 )
 
 export default Footer
-

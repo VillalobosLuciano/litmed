@@ -4,7 +4,7 @@ import DatePicker from "../components/datePicker"
 const AppointmentForm = () => (
   <div
     className="relative hidden max-w-4xl mx-auto shadow-lg bg-secondary-700 z-5 lg:block"
-    style={{ marginTop: "-410px", borderRadius: 20 }}
+    style={{ marginTop: "-120px", borderRadius: 20 }}
   >
     <div className="px-6 pt-4 pb-2">
       <form className="w-full">

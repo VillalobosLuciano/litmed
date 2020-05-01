@@ -1,12 +1,12 @@
 import React from "react"
 
 const ServiceCard = () => (
-  <li className="mt-10 bg-red-200 md:mt-2">
-    <div className="flex">
-      <div className="flex-shrink-0">
-        <div className="flex items-center justify-center w-12 h-12 text-white rounded-full bg-primary-500">
+  <li className="mb-10 md:m-2">
+    <div className="flex px-4 pt-5 pb-4 transition duration-300 ease-in-out transform rounded hover:shadow-lg hover:-translate-y-1 hover:scale-105 sm:p-6 sm:pb-4">
+      <div className="p-1 sm:flex sm:items-start">
+        <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto rounded-full bg-primary-100 sm:mx-0 sm:h-10 sm:w-10">
           <svg
-            className="w-6 h-6"
+            className="w-6 h-6 text-primary-600"
             stroke="currentColor"
             fill="none"
             viewBox="0 0 24 24"
@@ -15,20 +15,24 @@ const ServiceCard = () => (
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth={2}
-              d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+              d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
             />
           </svg>
         </div>
-      </div>
-      <div className="ml-4">
-        <h5 className="text-lg font-medium leading-6 text-gray-900">
-          Mobile notifications
-        </h5>
-        <p className="mt-2 text-base leading-6 text-gray-500">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-          impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis
-          ratione.
-        </p>
+        <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+          <h3 className="text-lg font-medium leading-6 text-gray-900">
+            Servicio Litmed
+          </h3>
+          <div className="mt-2 mb-1 text-sm leading-5">
+            <p className="pb-1 text-gray-500">
+              Are you sure you want to deactivate your account? All of your data
+              will be permanantly removed. This action cannot be undone.
+            </p>
+            <a className="font-light underline cursor-pointer text-primary-600 hover:text-primary-500">
+              Ver más.
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </li>

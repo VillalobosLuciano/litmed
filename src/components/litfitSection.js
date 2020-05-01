@@ -1,12 +1,12 @@
 import React from "react"
 import ServiceCard from "../components/serviceCard"
 
-const LitmedServices = () => (
+const LitfitSection = () => (
   <div className="py-24 bg-white lg:mt-6">
     <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
       <div className="lg:text-center">
         <p className="text-base font-semibold leading-6 tracking-wide uppercase text-primary-600">
-          Servicios
+          Litfit
         </p>
         <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
           Nos preocupamos de tu bienestar
@@ -32,4 +32,4 @@ const LitmedServices = () => (
     </div>
   </div>
 )
-export default LitmedServices
+export default LitfitSection

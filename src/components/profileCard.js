@@ -2,11 +2,11 @@ import React from "react"
 import WorkerModal from "../components/workerModal"
 
 const ProfileCard = () => (
-  <li className="flex flex-col mx-auto mt-10 rounded shadow-lg md:mt-2" style={{ maxWidth: 350 }}>
+  <li className="flex flex-col mb-10 rounded shadow-lg md:mb-0" style={{ maxWidth: 350 }}>
     <img
       className="w-full h-56 rounded-t"
       src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
-      alt="Sunset in the mountains"
+      alt="Especialista"
     />
     <div className="flex-grow px-6 py-4">
       <div className="text-xl font-bold text-gray-900">Olivia Hall</div>

@@ -56,8 +56,8 @@ const ContactForm = () => {
         >
           {({ errors, touched }) => (
             <Form className="mt-4" name="contact-demo" data-netlify={true}>
-              <div className="md:flex md:justify-between md:space-x-4">
-                <div className="mb-4 md:w-2/5">
+              <div className="lg:flex lg:justify-between lg:space-x-4">
+                <div className="mb-4 lg:w-2/5">
                   <Field
                     placeholder="Nombre"
                     className="block w-full px-4 py-3 leading-tight text-white border rounded appearance-none border-primary-600 bg-secondary-500 focus:outline-none focus:bg-secondary-900"
@@ -67,7 +67,7 @@ const ContactForm = () => {
                     <div className="pl-4 text-red-400">{errors.name}</div>
                   ) : null}
                 </div>
-                <div className="mb-4 md:w-3/5">
+                <div className="mb-4 lg:w-3/5">
                   <Field
                     placeholder="Email"
                     className="block w-full px-4 py-3 leading-tight text-white border rounded appearance-none border-primary-600 bg-secondary-500 focus:outline-none focus:bg-secondary-900"
@@ -82,7 +82,7 @@ const ContactForm = () => {
               <div className="mb-4">
                 <Field
                   placeholder="Mensaje"
-                  className="block w-full h-24 px-4 pt-3 leading-tight text-white border rounded appearance-none border-primary-600 bg-secondary-500 focus:outline-none focus:bg-secondary-900"
+                  className="block w-full h-32 px-4 pt-3 leading-tight text-white border rounded appearance-none border-primary-600 bg-secondary-500 focus:outline-none focus:bg-secondary-900"
                   name="message"
                   component="textarea"
                 />

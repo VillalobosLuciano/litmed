@@ -2,8 +2,10 @@ import React from "react"
 import Layout from "../components/layout"
 import BackgroundImage from "../components/bgLitmed"
 import SEO from "../components/seo"
-import LitmedServices from "../components/litmedServices"
 import AppointmentForm from "../components/appointmentForm"
+import ServicesSection from "../components/servicesSection"
+import LitmedSection from "../components/litmedSection"
+import LitfitSection from "../components/litfitSection"
 
 const IndexPage = () => (
   <Layout>
@@ -13,7 +15,7 @@ const IndexPage = () => (
       <section
         className="relative flex items-center md:max-w-3xl md:mx-auto"
         style={{
-          height: 450,
+          height: 550,
         }}
       >
         <div className="mb-24 text-center xl:mb-0 xl:mt-30">
@@ -26,18 +28,10 @@ const IndexPage = () => (
         </div>
       </section>
     </BackgroundImage>
-    <svg
-      className="hidden text-white fill-current bg-secondary-500 md:block"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1440 320"
-    >
-      <path
-        fillOpacity={1}
-        d="M0,64L120,85.3C240,107,480,149,720,149.3C960,149,1200,107,1320,85.3L1440,64L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
-      />
-    </svg>
     <AppointmentForm />
-    <LitmedServices />
+    <ServicesSection />
+    <LitmedSection /> 
+    <LitfitSection />
   </Layout>
 )
 
