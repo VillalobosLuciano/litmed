@@ -19,8 +19,11 @@ const Services = () => (
           voluptatum cupiditate veritatis in accusamus quisquam.
         </p>
       </div>
-      <div className="mt-10 sm:mb-8 lg:mt-12">
-        <ul className="sm:grid md:grid-cols-2 lg:grid-cols-3 md:col-gap-8 md:row-gap-10">
+      <div className="my-6 lg:mt-16">
+        <ul className="sm:grid md:grid-cols-2 lg:grid-cols-3">
+          <ServiceCard />
+          <ServiceCard />
+          <ServiceCard />
           <ServiceCard />
           <ServiceCard />
           <ServiceCard />

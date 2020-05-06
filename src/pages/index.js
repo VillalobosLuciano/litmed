@@ -13,12 +13,12 @@ const IndexPage = () => (
 
     <BackgroundImage>
       <section
-        className="relative flex items-center md:max-w-3xl md:mx-auto"
+        className="flex items-center md:max-w-3xl md:mx-auto"
         style={{
           height: 550,
         }}
       >
-        <div className="mb-24 text-center xl:mb-0 xl:mt-30">
+        <div className="mb-24 lg:text-center xl:mb-0 xl:mt-30">
           <h1 className="text-4xl font-bold leading-tight text-white xl:text-5xl">
             Un mejor estilo de vida empieza con el cuidado de la salud
           </h1>

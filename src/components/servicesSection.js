@@ -1,8 +1,9 @@
 import React from "react"
 import ServiceCard from "../components/serviceCard"
+import { Link } from "gatsby"
 
 const ServicesSection = () => (
-  <div className="py-24 bg-white lg:mt-6">
+  <div className="py-16 bg-white md:py-24 lg:mt-6">
     <div className="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8">
       <div className="lg:text-center">
         <p className="text-base font-semibold leading-6 tracking-wide uppercase text-primary-600">
@@ -16,7 +17,8 @@ const ServicesSection = () => (
           voluptatum cupiditate veritatis in accusamus quisquam.
         </p>
       </div>
-      <div className="mt-8 lg:mt-16">
+
+     {/*  <div className="mt-6 lg:mt-16">
         <ul className="sm:grid md:grid-cols-2 lg:grid-cols-3">
           <ServiceCard />
           <ServiceCard />
@@ -25,15 +27,18 @@ const ServicesSection = () => (
           <ServiceCard />
           <ServiceCard />
         </ul>
-        <div className="max-w-screen-xl py-8 text-center">
-        <button
-          className="px-6 py-3 text-xs font-semibold leading-6 text-white uppercase transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm text-primary-600 hover:text-primary-700 lg:mt-8 bg-primary-100 hover:bg-primary-200 focus:outline-none focus:shadow-outline-red sm:text-sm sm:leading-5"
-          type="button"
-        >
-          Ver todos los servicios
-        </button>
+        <div className="max-w-screen-xl pt-6 text-center">
+          <Link to={`/services`}>
+            <button
+              className="px-6 py-3 text-xs font-semibold leading-6 text-white uppercase transition duration-150 ease-in-out border rounded-full shadow-sm border-primary-200 text-primary-600 hover:text-primary-700 lg:mt-8 bg-primary-100 hover:bg-primary-200 focus:outline-none focus:shadow-outline-red sm:text-sm sm:leading-5"
+              type="button"
+            >
+              Ver todos los servicios
+            </button>
+          </Link>
         </div>
-      </div>
+      </div> */}
+
     </div>
   </div>
 )
