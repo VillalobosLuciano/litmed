@@ -8,4 +8,6 @@ featuredimage: /img/visualizing-management-lines-no-plant-damage-in-outer-zones-
 tags:
   - Ghandi
 ---
+![](/img/visualizing-management-lines-no-plant-damage-in-outer-zones-.png)
+
 **otra frase**
