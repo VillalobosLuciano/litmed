@@ -10,4 +10,4 @@ featuredimage: /img/diegoh.png
 tags:
   - Ghandi
 ---
-**otra frase**
+Kinesiólogo, Licenciado en Kinesiología, Neurorehabilitación, Kinesiología Respiratoria, Especialista en Trastornos del Espectro Autista.
