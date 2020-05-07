@@ -1,60 +1,56 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link, graphql, StaticQuery } from "gatsby";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
+import React from "react"
+import PropTypes from "prop-types"
+import { Link, graphql, StaticQuery } from "gatsby"
+import PreviewCompatibleImage from "./PreviewCompatibleImage"
 
 class BlogRoll extends React.Component {
   render() {
-    const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
+    const { data } = this.props
+    const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <div className="flex">
+      <>
         {posts &&
           posts.map(({ node: post }) => (
-            <div className="w-1/3" key={post.id}>
-             <article
-                className={`bg-orange-200 ${
-                  post.frontmatter.featuredpost ? "text-orange-600" : ""
-                }`}
-              >
-                <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="text-blue-500">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                        }}
-                      />
-                    </div>
-                  ) : null}
-                  <p className="p-5">
-                    <Link
-                      className="text-green-300"
-                      to={post.fields.slug}
-                    >
-                      {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
-                    <span className="text-green-500">
-                      {post.frontmatter.date}
-                    </span>
-                  </p>
-                </header>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link className="px-3 py-2 bg-primary-100 text-primary-600" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
+            <li
+              className="flex flex-col mb-10 transition duration-300 ease-in-out rounded shadow-md md:mb-0 sm:hover:shadow-lg"
+              style={{ maxWidth: 350 }}
+              key={post.id}
+            >
+              <PreviewCompatibleImage
+                imageInfo={{
+                  image: post.frontmatter.featuredimage,
+                  alt: `especialista ${post.frontmatter.title}`,
+                }}
+              />
+
+              <div className="flex-grow px-6 py-4">
+                <div className="text-xl font-bold text-gray-900">
+                  {post.frontmatter.title}
+                </div>
+                <p className="mb-3 text-xs tracking-wide uppercase text-primary-700">
+                  {post.frontmatter.specialty}
                 </p>
-              </article>
-            </div>
+                <p className="text-base font-light text-gray-600">
+                  {post.excerpt}
+                </p>
+              </div>
+
+              <div className="flex justify-between px-6 py-3 space-x-2 bg-gray-100">
+                <button className="w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out rounded-md shadow-sm bg-primary-700 hover:bg-primary-500">
+                  Agendar Hora
+                </button>
+                <Link
+                  className="w-full px-4 py-2 text-sm font-medium text-center transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md shadow-sm text-primary-700 hover:text-primary-500 sm:text-sm"
+                  to={post.fields.slug}
+                >
+                  Ver Más
+                </Link>
+              </div>
+            </li>
           ))}
-      </div>
-    );
+      </>
+    )
   }
 }
 
@@ -64,7 +60,7 @@ BlogRoll.propTypes = {
       edges: PropTypes.array,
     }),
   }),
-};
+}
 
 export default () => (
   <StaticQuery
@@ -76,7 +72,7 @@ export default () => (
         ) {
           edges {
             node {
-              excerpt(pruneLength: 400)
+              excerpt(pruneLength: 115)
               id
               fields {
                 slug
@@ -84,6 +80,7 @@ export default () => (
               frontmatter {
                 title
                 templateKey
+                specialty
                 date(formatString: "MMMM DD, YYYY")
                 featuredpost
                 featuredimage {
@@ -101,4 +98,4 @@ export default () => (
     `}
     render={(data, count) => <BlogRoll data={data} count={count} />}
   />
-);
+)

@@ -2,7 +2,7 @@ import React from "react"
 
 const ServiceCard = () => (
   <li className="mb-6 md:m-2">
-    <div className="flex px-16 pt-5 pb-4 transition duration-300 ease-in-out transform border rounded-lg border-primary-200 sm:border-transparent sm:hover:shadow-lg sm:hover:-translate-y-1 sm:hover:scale-105 sm:p-6 sm:pb-4">
+    <div className="flex px-16 pt-5 pb-4 transition duration-300 ease-in-out transform border border-primary-200 sm:border-transparent sm:hover:shadow-lg sm:hover:-translate-y-1 sm:hover:scale-105 sm:p-6 sm:pb-4">
       <div className="p-1 sm:flex sm:items-start">
         <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto rounded-full bg-primary-100 sm:mx-0 sm:h-10 sm:w-10">
           <svg
