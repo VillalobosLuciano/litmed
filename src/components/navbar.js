@@ -64,28 +64,28 @@ function Navbar({ siteTitle }) {
           Litmed
         </Link>
         <Link
-          to={`/services`}
+          to={`services/`}
           className="block px-3 py-2 text-base font-medium text-white rounded-md sm:ml-4 hover:bg-secondary-500 focus:outline-none"
           activeClassName="bg-secondary-900 hover:bg-secondary-900"
         >
           Servicios
         </Link>
         <Link
-          to={`/staff`}
+          to={`staff/`}
           className="block px-3 py-2 text-base font-medium text-white rounded-md sm:ml-4 hover:bg-secondary-500 focus:outline-none"
           activeClassName="bg-secondary-900 hover:bg-secondary-900"
         >
           Staff
         </Link>
         <Link
-          to={`/litfit`}
+          to={`litfit/`}
           className="block px-3 py-2 text-base font-medium text-white rounded-md sm:ml-4 hover:bg-secondary-500 focus:outline-none"
           activeClassName="bg-secondary-900 hover:bg-secondary-900"
         >
           Litfit
         </Link>
         <Link
-          to={`/blog`}
+          to={`blog/`}
           className="block px-3 py-2 text-base font-medium text-white rounded-md sm:ml-4 hover:bg-secondary-500 focus:outline-none"
           activeClassName="bg-secondary-900 hover:bg-secondary-900"
         >
