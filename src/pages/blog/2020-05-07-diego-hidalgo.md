@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Diego Hidalgo
 specialty: Kinesiología
 description: Especialista en trastornos del espectro autista,
-  neurorehabilitación y kinesiología respiratoriawill see
+  neurorehabilitación y kinesiología respiratoria
 featuredimage: /img/diegoh.png
 tags:
   - Ghandi
