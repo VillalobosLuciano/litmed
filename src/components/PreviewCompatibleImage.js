@@ -3,9 +3,8 @@ import PropTypes from "prop-types"
 import Img from "gatsby-image"
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
-  const imageStyle = {
+  const imageStyle = { 
     height: "224px",
-    width: "100%",
     borderTopLeftRadius: "4px",
     borderTopRightRadius: "4px",
   }

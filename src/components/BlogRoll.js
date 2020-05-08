@@ -36,13 +36,13 @@ class BlogRoll extends React.Component {
                 </p>
               </div>
 
-              <div className="flex justify-between px-6 py-3 space-x-2 bg-gray-100">
+              <div className="flex justify-between px-6 py-3 space-x-4 bg-gray-100">
                 <button className="w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out rounded-md shadow-sm bg-primary-700 hover:bg-primary-500">
                   Agendar Hora
                 </button>
                 <Link
                   className="w-full px-4 py-2 text-sm font-medium text-center transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md shadow-sm text-primary-700 hover:text-primary-500 sm:text-sm"
-                  to={post.fields.slug}
+                  to={ `${post.fields.slug}/`}
                 >
                   Ver Más
                 </Link>
@@ -85,7 +85,7 @@ export default () => (
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(quality: 100) {
+                    fluid(maxWidth: 350, maxHeight: 224, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
