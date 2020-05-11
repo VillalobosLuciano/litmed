@@ -31,7 +31,7 @@ class EspecialistCard extends React.Component {
                 <p className="mb-3 text-xs tracking-wide uppercase text-primary-700">
                   {post.frontmatter.specialty}
                 </p>
-                <p className="text-base font-light text-gray-600 line-clamp-2">
+                <p className="text-base font-light text-gray-600 line-clamp-3">
                   {post.frontmatter.description}
                 </p>
               </div>
