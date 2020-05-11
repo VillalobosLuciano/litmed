@@ -1,4 +1,4 @@
-/* import React from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { kebabCase } from "lodash"
 import _get from 'lodash/get'
@@ -7,7 +7,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Content, { HTMLContent } from "../components/Content"
 
-export const BlogPostTemplate = ({
+export const EspecialistTemplate = ({
   content,
   contentComponent,
   description,
@@ -22,7 +22,7 @@ export const BlogPostTemplate = ({
     <section className="">
       {helmet || ""}
       <div className="p-6">
-        <Link to={`blog/`}>Volver</Link>
+        <Link to={`especialists/`}>Volver</Link>
         <div className="flex">
           <div className="">
             <h1 className="font-semibold">{title}</h1>
@@ -59,7 +59,7 @@ export const BlogPostTemplate = ({
   )
 }
 
-BlogPostTemplate.propTypes = {
+EspecialistTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -67,17 +67,17 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
-const BlogPost = ({ data: { post, allPosts } }) => {
+const Especialist = ({ data: { post, allPosts } }) => {
   const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
 
   return (
     <Layout>
-      <BlogPostTemplate
+      <EspecialistTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Blog">
+          <Helmet titleTemplate="%s | Especialist">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
@@ -94,16 +94,16 @@ const BlogPost = ({ data: { post, allPosts } }) => {
   )
 }
 
-BlogPost.propTypes = {
+Especialist.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default BlogPost
+export default Especialist
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
+  query EspecialistByID($id: String!) {
     post: markdownRemark(id: { eq: $id }) {
       id
       html
@@ -143,4 +143,3 @@ export const pageQuery = graphql`
     }
   }
 `
- */

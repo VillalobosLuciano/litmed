@@ -12,19 +12,44 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
+  - name: "Especialists"
     label: "Specialist"
-    folder: "src/pages/blog"
+    folder: "src/pages/especialists"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "especialist"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: 'Especialidad', name: 'specialty', widget: 'select', options: ['Published', 'Featured', 'Draft'], default: 'Published'}  
       - {label: "Descripción", name: "description", widget: "text"}
       - {label: "Foto", name: "featuredimage", widget: image}
       - {label: "Detalle", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - label: 'Categories'
+        name: 'categories'
+        widget: 'list'
+        required: false
+        fields:
+          - label: 'Category'
+            name: 'category'
+            widget: 'relation'
+            collection: 'services'
+            searchFields: ['title']
+            valueField: 'title'
+            multiple: true
+      - {label: "Fecha de publicación", name: "date", widget: "datetime"}
+
+  - name: "services"
+    label: "Service"
+    folder: "src/pages/tags"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "service"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: 'Especialidad', name: 'specialty', widget: 'select', options: ['Published', 'Featured', 'Draft'], default: 'Published'}  
+      - {label: "Descripción", name: "description", widget: "text"}
+      - {label: "Detalle", name: "body", widget: "markdown"}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
 
   

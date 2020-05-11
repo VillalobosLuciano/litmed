@@ -1,9 +1,9 @@
 ---
-templateKey: blog-post
-featuredimage: /img/orvalr.png
+templateKey: especialist
+featuredimage: /img/christianv.png
 featuredpost: true
-title: "Don Orval "
-specialty: Featured
+title: christian Varela
+specialty: Kinesiología
 description: "Kinesiólogo, Licenciado en Kinesiología, Neurorehabilitación,
   Kinesiología Respiratoria, Especialista en Trastornos del Espectro Autista. "
 tags:

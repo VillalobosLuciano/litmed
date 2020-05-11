@@ -85,11 +85,18 @@ function Navbar({ siteTitle }) {
           Litfit
         </Link>
         <Link
-          to={`blog/`}
+          to={`especialists/`}
           className="block px-3 py-2 text-base font-medium text-white rounded-md sm:ml-4 hover:bg-secondary-500 focus:outline-none"
           activeClassName="bg-secondary-900 hover:bg-secondary-900"
         >
-          Blog
+          Especialistas
+        </Link>
+        <Link
+          to={`tags/`}
+          className="block px-3 py-2 text-base font-medium text-white rounded-md sm:ml-4 hover:bg-secondary-500 focus:outline-none"
+          activeClassName="bg-secondary-900 hover:bg-secondary-900"
+        >
+          tags
         </Link>
       </nav>
 

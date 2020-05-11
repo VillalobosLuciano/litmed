@@ -1,4 +1,4 @@
 import CMS from 'netlify-cms-app'
-import BlogPostPreview from './preview-templates/BlogPostPreview'
+import EspecialistPreview from './preview-templates/EspecialistPreview'
 
-CMS.registerPreviewTemplate('blog', BlogPostPreview)
+CMS.registerPreviewTemplate('especialists', EspecialistPreview)
