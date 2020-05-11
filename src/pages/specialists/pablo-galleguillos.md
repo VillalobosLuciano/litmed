@@ -1,5 +1,5 @@
 ---
-templateKey: especialist
+templateKey: specialist
 title: Pablo Galleguillos
 specialty: Draft
 description: The relation widget allows you to reference items from another

@@ -1,6 +1,6 @@
 import CMS from 'netlify-cms-app'
-import EspecialistPreview from './preview-templates/EspecialistPreview'
+import SpecialistPreview from './preview-templates/SpecialistPreview'
 import ServicePreview from './preview-templates/ServicePreview'
 
-CMS.registerPreviewTemplate('especialists', EspecialistPreview)
+CMS.registerPreviewTemplate('specialists', SpecialistPreview)
 CMS.registerPreviewTemplate('services', ServicePreview)

@@ -14,7 +14,7 @@ public_folder: /img
 collections:
   - name: "specialists"
     label: "Especialistas"
-    folder: "src/pages/especialists"
+    folder: "src/pages/specialists"
     create: true
     slug: "{{slug}}"
     fields:

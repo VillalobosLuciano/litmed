@@ -1,5 +1,5 @@
 ---
-templateKey: especialist
+templateKey: specialist
 title: Diego Hidalgo
 specialty: Kinesiología
 description: Especialista en trastornos del espectro autista,

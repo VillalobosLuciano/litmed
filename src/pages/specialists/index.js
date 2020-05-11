@@ -1,9 +1,9 @@
 import React from "react"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import EspecialistCard from "../../components/EspecialistCard"
+import SpecialistCard from "../../components/specialistCard"
 
-export default class EspecialistsIndexPage extends React.Component {
+export default class SpecialistsIndexPage extends React.Component {
   render() {
     return (
       <Layout>
@@ -23,7 +23,7 @@ export default class EspecialistsIndexPage extends React.Component {
           </div>
           <div className="flex justify-center mt-10 sm:mb-8 lg:mt-12">
             <ul className="sm:grid md:grid-cols-2 lg:grid-cols-3 md:gap-10">
-              <EspecialistCard />
+              <SpecialistCard />
             </ul>
           </div>
         </div>

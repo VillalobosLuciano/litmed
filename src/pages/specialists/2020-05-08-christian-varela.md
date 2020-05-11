@@ -1,5 +1,5 @@
 ---
-templateKey: especialist
+templateKey: specialist
 featuredimage: /img/christianv.png
 featuredpost: true
 title: christian Varela

@@ -7,7 +7,7 @@ import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Content, { HTMLContent } from "../components/Content"
 
-export const EspecialistTemplate = ({
+export const SpecialistTemplate = ({
   content,
   contentComponent,
   description,
@@ -22,7 +22,7 @@ export const EspecialistTemplate = ({
     <section className="">
       {helmet || ""}
       <div className="p-6">
-        <Link to={`especialists/`}>Volver</Link>
+        <Link to={`specialists/`}>Volver</Link>
         <div className="flex">
           <div className="">
             <h1 className="font-semibold">{title}</h1>
@@ -59,7 +59,7 @@ export const EspecialistTemplate = ({
   )
 }
 
-EspecialistTemplate.propTypes = {
+SpecialistTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -67,17 +67,17 @@ EspecialistTemplate.propTypes = {
   helmet: PropTypes.object,
 }
 
-const Especialist = ({ data: { post, allPosts } }) => {
+const Specialist = ({ data: { post, allPosts } }) => {
   const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
 
   return (
     <Layout>
-      <EspecialistTemplate
+      <SpecialistTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | Especialist">
+          <Helmet titleTemplate="%s | Specialist">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
@@ -94,16 +94,16 @@ const Especialist = ({ data: { post, allPosts } }) => {
   )
 }
 
-Especialist.propTypes = {
+Specialist.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default Especialist
+export default Specialist
 
 export const pageQuery = graphql`
-  query EspecialistByID($id: String!) {
+  query SpecialistByID($id: String!) {
     post: markdownRemark(id: { eq: $id }) {
       id
       html
@@ -117,7 +117,7 @@ export const pageQuery = graphql`
 
     allPosts: allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { templateKey: { eq: "especialist" } } }
+      filter: { frontmatter: { templateKey: { eq: "specialist" } } }
     ) {
       edges {
         node {
