@@ -11,6 +11,7 @@ export const ServiceTemplate = ({
   content,
   contentComponent,
   description,
+  specialists,
   tags,
   title,
   nextPostURL,
@@ -40,6 +41,22 @@ export const ServiceTemplate = ({
                 </Link>
               )}
             </div>
+
+            {specialists && specialists.length ? (
+              <div style={{ marginTop: `4rem` }}>
+                <h4>specialists</h4>
+                <ul className="">
+                  {specialists.map(specialist => (
+                    <li key={specialist + `specialist`}>
+                      <Link to={`/specialists/${kebabCase(specialist)}/`}>
+                        {specialist}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -85,6 +102,7 @@ const Service = ({ data: { post, allPosts } }) => {
             />
           </Helmet>
         }
+        specialists={post.frontmatter.specialists}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         nextPostURL={_get(thisEdge, "next.fields.slug")}
@@ -111,6 +129,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        specialists
         tags
       }
     }
