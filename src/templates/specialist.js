@@ -11,6 +11,7 @@ export const SpecialistTemplate = ({
   content,
   contentComponent,
   description,
+  //services,
   tags,
   title,
   nextPostURL,
@@ -40,10 +41,24 @@ export const SpecialistTemplate = ({
                 </Link>
               )}
             </div>
+
+          {/*   {services && services.length ? (
+              <div style={{ marginTop: `4rem` }}>
+                <h4>services</h4>
+                <ul className="">
+                  {services.map(service => (
+                    <li key={service + `service`}>
+                      <Link to={`/services/${kebabCase(service)}/`}>{service}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null} */}
+
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
-                <ul className="space-y-4">
+                <ul className="">
                   {tags.map(tag => (
                     <li key={tag + `tag`}>
                       <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
@@ -64,6 +79,7 @@ SpecialistTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  //services: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -85,6 +101,7 @@ const Specialist = ({ data: { post, allPosts } }) => {
             />
           </Helmet>
         }
+        //services={post.frontmatter.services}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         nextPostURL={_get(thisEdge, "next.fields.slug")}
