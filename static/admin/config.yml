@@ -25,11 +25,7 @@ collections:
       - {label: "Foto", name: "featuredimage", widget: image}
       - {label: "Detalle", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - label: 'Categories'
-        name: 'categories'
-        widget: 'string'
-        required: false
-        fields:
+
           - label: 'Category'
             name: 'category'
             widget: 'relation'
