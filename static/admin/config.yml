@@ -18,7 +18,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "especialist"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "specialist"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: 'Especialidad', name: 'specialty', widget: 'select', options: ['Published', 'Featured', 'Draft'], default: 'Published'}  
       - {label: "Descripción", name: "description", widget: "text"}
