@@ -12,8 +12,8 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "Especialists"
-    label: "Specialist"
+  - name: "specialists"
+    label: "Especialistas"
     folder: "src/pages/especialists"
     create: true
     slug: "{{slug}}"
@@ -25,10 +25,10 @@ collections:
       - {label: "Foto", name: "featuredimage", widget: image}
       - {label: "Detalle", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: 'Categories', name: 'categories', widget: 'relation', collection: 'services', searchFields: ['title'], valueField: 'title', multiple: true}
+      - {label: 'Servicios', name: 'services', widget: 'relation', collection: 'services', searchFields: ['title'], valueField: 'title', multiple: true}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
   - name: "services"
-    label: "Service"
+    label: "Servicios"
     folder: "src/pages/services"
     create: true
     slug: "{{slug}}"
@@ -38,6 +38,7 @@ collections:
       - {label: 'Especialidad', name: 'specialty', widget: 'select', options: ['Published', 'Featured', 'Draft'], default: 'Published'}  
       - {label: "Descripción", name: "description", widget: "text"}
       - {label: "Detalle", name: "body", widget: "markdown"}
+      - {label: 'Especialistas', name: 'specialists', widget: 'relation', collection: 'specialists', searchFields: ['title'], valueField: 'title', multiple: true}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
 
   
