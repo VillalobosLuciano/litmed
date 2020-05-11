@@ -22,7 +22,7 @@ export default class ServicesIndexPage extends React.Component {
             </p>
           </div>
           <div className="flex justify-center mt-10 sm:mb-8 lg:mt-12">
-            <ul className="sm:grid md:grid-cols-2 lg:grid-cols-3 md:gap-10">
+            <ul className="sm:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6">
               <ServiceCard />
             </ul>
           </div>

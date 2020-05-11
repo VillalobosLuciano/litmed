@@ -71,11 +71,11 @@ function Navbar({ siteTitle }) {
           Servicios
         </Link>
         <Link
-          to={`staff/`}
+          to={`especialists/`}
           className="block px-3 py-2 text-base font-medium text-white rounded-md sm:ml-4 hover:bg-secondary-500 focus:outline-none"
           activeClassName="bg-secondary-900 hover:bg-secondary-900"
         >
-          Staff
+          Especialistas
         </Link>
         <Link
           to={`litfit/`}
@@ -83,13 +83,6 @@ function Navbar({ siteTitle }) {
           activeClassName="bg-secondary-900 hover:bg-secondary-900"
         >
           Litfit
-        </Link>
-        <Link
-          to={`especialists/`}
-          className="block px-3 py-2 text-base font-medium text-white rounded-md sm:ml-4 hover:bg-secondary-500 focus:outline-none"
-          activeClassName="bg-secondary-900 hover:bg-secondary-900"
-        >
-          Especialistas
         </Link>
         <Link
           to={`tags/`}
