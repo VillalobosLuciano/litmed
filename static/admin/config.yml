@@ -26,13 +26,13 @@ collections:
       - {label: "Detalle", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
-          - label: 'Categories'
-            name: 'categories'
-            widget: 'relation'
-            collection: 'services'
-            searchFields: ['title']
-            valueField: 'title'
-            multiple: true
+          - {label: 'Categories',
+            name: 'categories',
+            widget: 'relation',
+            collection: 'services',
+            searchFields: ['title'],
+            valueField: 'title',
+            multiple: true}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
 
   - name: "services"
