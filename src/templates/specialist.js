@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { kebabCase } from "lodash"
-import _get from 'lodash/get'
+import _get from "lodash/get"
 import Helmet from "react-helmet"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
@@ -11,7 +11,7 @@ export const SpecialistTemplate = ({
   content,
   contentComponent,
   description,
-  //services,
+  services,
   tags,
   title,
   nextPostURL,
@@ -42,18 +42,20 @@ export const SpecialistTemplate = ({
               )}
             </div>
 
-          {/*   {services && services.length ? (
+            {services && services.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>services</h4>
                 <ul className="">
                   {services.map(service => (
                     <li key={service + `service`}>
-                      <Link to={`/services/${kebabCase(service)}/`}>{service}</Link>
+                      <Link to={`/services/${kebabCase(service)}/`}>
+                        {service}
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </div>
-            ) : null} */}
+            ) : null}
 
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -79,7 +81,6 @@ SpecialistTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  //services: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -101,7 +102,7 @@ const Specialist = ({ data: { post, allPosts } }) => {
             />
           </Helmet>
         }
-        //services={post.frontmatter.services}
+        services={post.frontmatter.services}
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         nextPostURL={_get(thisEdge, "next.fields.slug")}
@@ -128,6 +129,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        services
         tags
       }
     }
