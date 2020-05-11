@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { ServiceTemplate } from "../../templates/Service"
+import { ServiceTemplate } from "../../templates/service"
 
 const ServicePreview = ({ entry, widgetFor }) => {
   const tags = entry.getIn(["data", "tags"])
