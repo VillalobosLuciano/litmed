@@ -26,8 +26,8 @@ collections:
       - {label: "Detalle", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
-          - label: 'Category'
-            name: 'category'
+          - label: 'Categories'
+            name: 'categories'
             widget: 'relation'
             collection: 'services'
             searchFields: ['title']
