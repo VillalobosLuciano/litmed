@@ -41,7 +41,7 @@ collections:
 
   - name: "services"
     label: "Service"
-    folder: "src/pages/tags"
+    folder: "src/pages/services"
     create: true
     slug: "{{slug}}"
     fields:
