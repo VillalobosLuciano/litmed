@@ -9,7 +9,9 @@ description: The relation widget allows you to reference items from another
 featuredimage: /img/pablog.png
 tags:
   - ghandi
-categories: []
+services:
+  - De perro hno
+  - De perro legal
 date: 2020-05-11T02:14:58.881Z
 ---
 bla
