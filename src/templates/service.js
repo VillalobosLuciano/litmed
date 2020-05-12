@@ -21,16 +21,21 @@ export const ServiceTemplate = ({
   return (
     <div className="px-4 py-6 mx-auto sm:py-10 lg:py-12 sm:px-8 lg:px-16 xl:px-40 2xl:px-64">
       {helmet || ""}
-      <Link to={`services/`}>Ver todos los servicios</Link>
-      <div className="mt-2 lg:text-center">
-        <p className="text-base font-semibold leading-6 tracking-wide uppercase text-primary-600">
-          Kinesiología
-        </p>
-        <h3 className="text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:mt-2 sm:text-4xl sm:leading-10">
+      <Link
+        className="underline text-secondary-600 hover:text-primary-600"
+        to={`services/`}
+      >
+        « Ver todos los servicios
+      </Link>
+      <div className="mt-4">
+        <h3 className="mt-2 mb-1 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
           {title}
         </h3>
+        <p className="text-sm font-semibold leading-6 tracking-wide uppercase text-primary-600">
+          Kinesiología
+        </p>
       </div>
-      <div className="mt-4 sm:mb-8 lg:mt-12">
+      <div className="mt-4 sm:mb-8">
         <h5>Descripción</h5>
         <p className="mt-1 mb-4">{description}</p>
         <h5>Beneficios</h5>
@@ -39,11 +44,14 @@ export const ServiceTemplate = ({
         <div>
           {specialists && specialists.length ? (
             <div className="pt-4">
-              <h4>specialists</h4>
+              <h4>Especialistas</h4>
               <ul className="pt-1">
                 {specialists.map(specialist => (
                   <li key={specialist + `specialist`}>
-                    <Link to={`/specialists/${kebabCase(specialist)}/`}>
+                    <Link
+                      className="underline text-secondary-600 hover:text-primary-600"
+                      to={`/specialists/${kebabCase(specialist)}/`}
+                    >
                       {specialist}
                     </Link>
                   </li>
@@ -55,13 +63,19 @@ export const ServiceTemplate = ({
 
         <div className="flex justify-between pt-6">
           {prevPostURL && (
-            <Link className="" to={prevPostURL}>
-              ← Anterior
+            <Link
+              className="underline text-secondary-600 hover:text-primary-600"
+              to={prevPostURL}
+            >
+              « Anterior
             </Link>
           )}
           {nextPostURL && (
-            <Link className="" to={nextPostURL}>
-              Siguiente →
+            <Link
+              className="underline text-secondary-600 hover:text-primary-600"
+              to={nextPostURL}
+            >
+              Siguiente »
             </Link>
           )}
         </div>
