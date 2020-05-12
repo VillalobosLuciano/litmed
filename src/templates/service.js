@@ -19,46 +19,54 @@ export const ServiceTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
   return (
-    <section className="">
+    <div className="px-4 py-6 mx-auto sm:py-10 lg:py-12 sm:px-8 lg:px-16 xl:px-40 2xl:px-64">
       {helmet || ""}
-      <div className="p-6">
-        <Link to={`services/`}>Volver</Link>
-        <div className="flex">
-          <div className="">
-            <h1 className="font-semibold">{title}</h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            <div className="">
-              {prevPostURL && (
-                <Link className="" to={prevPostURL}>
-                  Previous Post
-                </Link>
-              )}
-              {nextPostURL && (
-                <Link className="" to={nextPostURL}>
-                  Next Post
-                </Link>
-              )}
-            </div>
+      <Link to={`services/`}>Ver todos los servicios</Link>
+      <div className="mt-2 lg:text-center">
+        <p className="text-base font-semibold leading-6 tracking-wide uppercase text-primary-600">
+          Kinesiología
+        </p>
+        <h3 className="text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:mt-2 sm:text-4xl sm:leading-10">
+          {title}
+        </h3>
+      </div>
+      <div className="mt-4 sm:mb-8 lg:mt-12">
+        <h5>Descripción</h5>
+        <p className="mt-1 mb-4">{description}</p>
+        <h5>Beneficios</h5>
+        <PostContent className="pt-1" content={content} />
 
-            {specialists && specialists.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>specialists</h4>
-                <ul className="">
-                  {specialists.map(specialist => (
-                    <li key={specialist + `specialist`}>
-                      <Link to={`/specialists/${kebabCase(specialist)}/`}>
-                        {specialist}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-          </div>
+        <div>
+          {specialists && specialists.length ? (
+            <div className="pt-4">
+              <h4>specialists</h4>
+              <ul className="pt-1">
+                {specialists.map(specialist => (
+                  <li key={specialist + `specialist`}>
+                    <Link to={`/specialists/${kebabCase(specialist)}/`}>
+                      {specialist}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+        </div>
+
+        <div className="flex justify-between pt-6">
+          {prevPostURL && (
+            <Link className="" to={prevPostURL}>
+              ← Anterior
+            </Link>
+          )}
+          {nextPostURL && (
+            <Link className="" to={nextPostURL}>
+              Siguiente →
+            </Link>
+          )}
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 
