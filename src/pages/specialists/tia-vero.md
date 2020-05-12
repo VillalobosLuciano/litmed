@@ -7,8 +7,6 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
 featuredimage: /img/veronicaa.jpg
-tags:
-  - no
 services:
   - De perro hno
   - De perro legal

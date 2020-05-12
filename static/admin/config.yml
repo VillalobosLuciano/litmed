@@ -24,7 +24,6 @@ collections:
       - {label: "Descripción", name: "description", widget: "text"}
       - {label: "Foto", name: "featuredimage", widget: image}
       - {label: "Detalle", name: "body", widget: "markdown"}
-      - {label: "Tags", name: "tags", widget: "list"}
       - {label: 'Servicios', name: 'services', widget: 'relation', collection: 'services', searchFields: ['title'], valueField: 'title', multiple: true}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
   - name: "services"

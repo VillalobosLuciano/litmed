@@ -3,12 +3,10 @@ import PropTypes from "prop-types"
 import { SpecialistTemplate } from "../../templates/specialist"
 
 const SpecialistPreview = ({ entry, widgetFor }) => {
-  const tags = entry.getIn(["data", "tags"])
   return (
     <SpecialistTemplate
       content={widgetFor("body")}
       description={entry.getIn(["data", "description"])}
-      tags={tags && tags.toJS()}
       title={entry.getIn(["data", "title"])}
     />
   )

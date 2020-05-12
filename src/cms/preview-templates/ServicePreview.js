@@ -3,12 +3,10 @@ import PropTypes from "prop-types"
 import { ServiceTemplate } from "../../templates/service"
 
 const ServicePreview = ({ entry, widgetFor }) => {
-  const tags = entry.getIn(["data", "tags"])
   return (
     <ServiceTemplate
       content={widgetFor("body")}
       description={entry.getIn(["data", "description"])}
-      tags={tags && tags.toJS()}
       title={entry.getIn(["data", "title"])}
     />
   )

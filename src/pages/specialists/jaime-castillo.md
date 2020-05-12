@@ -6,8 +6,6 @@ description: If we could change ourselves, the tendencies in the world would
   also change. As a man changes his own nature, so does the attitude of the
   world change towards him.** We need not wait to see what others do.
 featuredimage: /img/jaimec.png
-tags:
-  - Ghandi
 services:
   - De perro hno
   - De perro legal

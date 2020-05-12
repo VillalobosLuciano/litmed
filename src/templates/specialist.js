@@ -12,7 +12,6 @@ export const SpecialistTemplate = ({
   contentComponent,
   description,
   services,
-  tags,
   title,
   nextPostURL,
   prevPostURL,
@@ -56,19 +55,6 @@ export const SpecialistTemplate = ({
                 </ul>
               </div>
             ) : null}
-
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
           </div>
         </div>
       </div>
@@ -103,7 +89,6 @@ const Specialist = ({ data: { post, allPosts } }) => {
           </Helmet>
         }
         services={post.frontmatter.services}
-        tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         nextPostURL={_get(thisEdge, "next.fields.slug")}
         prevPostURL={_get(thisEdge, "previous.fields.slug")}
@@ -130,7 +115,6 @@ export const pageQuery = graphql`
         title
         description
         services
-        tags
       }
     }
 

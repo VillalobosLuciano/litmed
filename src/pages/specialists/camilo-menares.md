@@ -6,8 +6,6 @@ title: Camilo Menares
 specialty: Kinesiología
 description: "Kinesiólogo, Licenciado en Kinesiología, Neurorehabilitación,
   Kinesiología Respiratoria, Especialista en Trastornos del Espectro Autista. "
-tags:
-  - Ghandi
 services:
   - De perro hno
   - De perro legal

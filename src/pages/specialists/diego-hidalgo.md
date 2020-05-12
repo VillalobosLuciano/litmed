@@ -2,8 +2,6 @@
 templateKey: specialist
 title: Diego Hidalgo
 featuredimage: /img/diegoh.png
-tags:
-  - Ghandi
 date: 2020-05-07T07:46:45.493Z
 categories:
   - category:

@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { kebabCase } from "lodash"
-import _get from 'lodash/get'
+import _get from "lodash/get"
 import Helmet from "react-helmet"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
@@ -12,7 +12,6 @@ export const ServiceTemplate = ({
   contentComponent,
   description,
   specialists,
-  tags,
   title,
   nextPostURL,
   prevPostURL,
@@ -56,19 +55,6 @@ export const ServiceTemplate = ({
                 </ul>
               </div>
             ) : null}
-
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="space-y-4">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
           </div>
         </div>
       </div>
@@ -103,7 +89,6 @@ const Service = ({ data: { post, allPosts } }) => {
           </Helmet>
         }
         specialists={post.frontmatter.specialists}
-        tags={post.frontmatter.tags}
         title={post.frontmatter.title}
         nextPostURL={_get(thisEdge, "next.fields.slug")}
         prevPostURL={_get(thisEdge, "previous.fields.slug")}
@@ -130,7 +115,6 @@ export const pageQuery = graphql`
         title
         description
         specialists
-        tags
       }
     }
 
