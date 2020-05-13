@@ -27,58 +27,64 @@ export const ServiceTemplate = ({
       >
         « Ver todos los servicios
       </Link>
-      <div className="mt-4">
-        <h3 className="mt-2 mb-1 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+      <div className="mt-4 mb-1 sm:mt-8">
+        <h3 className="mt-4 mb-1 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
           {title}
         </h3>
         <p className="text-sm font-semibold leading-6 tracking-wide uppercase text-primary-600">
           Kinesiología
         </p>
       </div>
-      <div className="mt-4 sm:mb-8">
-        <h5>Descripción</h5>
-        <p className="mt-1 mb-4">{description}</p>
-        <h5>Beneficios</h5>
-        <PostContent className="pt-1" content={content} />
 
-        <div>
-          {specialists && specialists.length ? (
-            <div className="pt-4">
-              <h4>Especialistas</h4>
-              <ul className="pt-1">
-                {specialists.map(specialist => (
-                  <li key={specialist + `specialist`}>
-                    <Link
-                      className="underline text-secondary-600 hover:text-primary-600"
-                      to={`/specialists/${kebabCase(specialist)}/`}
-                    >
-                      {specialist}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ) : null}
+      <div class="sm:flex mb-6">
+        <div class="sm:w-2/3">
+          <div className="mt-4 sm:mt-6 sm:mb-8">
+            <h5 className="font-bold tracking-wide sm:pb-1 text-secondary-700">Descripción</h5>
+            <p className="mt-1 mb-4">{description}</p>
+            <h5 className="font-bold tracking-wide sm:pb-1 text-secondary-700">Beneficios</h5>
+            <PostContent className="pt-1" content={content} />
+          </div>
         </div>
 
-        <div className="flex justify-between pt-6">
-          {prevPostURL && (
-            <Link
-              className="underline text-secondary-600 hover:text-primary-600"
-              to={prevPostURL}
-            >
-              « Anterior
-            </Link>
-          )}
-          {nextPostURL && (
-            <Link
-              className="underline text-secondary-600 hover:text-primary-600"
-              to={nextPostURL}
-            >
-              Siguiente »
-            </Link>
-          )}
+        <div class="sm:flex pb-2 sm:mt-2 sm:w-1/3 justify-center">
+          <div>
+            {specialists && specialists.length ? (
+              <div className="pt-4">
+                <h5 className="font-bold tracking-wide sm:pb-1 text-secondary-700">Especialistas</h5>
+                <ul className="pt-1 space-y-2">
+                  {specialists.map(specialist => (
+                    <li key={specialist + `specialist`}>
+                      <Link
+                        className="underline text-secondary-600 hover:text-primary-600"
+                        to={`/specialists/${kebabCase(specialist)}/`}
+                      >
+                        {specialist}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+          </div>
         </div>
+      </div>
+      <div className="space-x-6">
+        {prevPostURL && (
+          <Link
+            className="underline text-secondary-600 hover:text-primary-600"
+            to={prevPostURL}
+          >
+            « Anterior
+          </Link>
+        )}
+        {nextPostURL && (
+          <Link
+            className="underline text-secondary-600 hover:text-primary-600"
+            to={nextPostURL}
+          >
+            Siguiente »
+          </Link>
+        )}
       </div>
     </div>
   )
