@@ -9,8 +9,9 @@ const Footer = () => (
           LITMED
         </h5>
         <p className="text-white">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
-          impedit perferendis suscipit eaque, iste.
+          Comprometidos con mejorar la calidad de vida de las personas,
+          respaldados por un gran equipo de profesionales, con gran formación
+          valórica y vocación.
         </p>
         <ul className="mt-4 md:mt-8">
           <li>
@@ -72,7 +73,7 @@ const Footer = () => (
         <h5 className="mb-2 font-semibold tracking-wider text-white uppercase md:mb-6">
           Horarios de atención
         </h5>
-        <ul className="w-3/4 sm:w-full lg:w-3/4 space-y-2">
+        <ul className="w-3/4 space-y-2 sm:w-full lg:w-3/4">
           <li className="flex justify-between text-white">
             <label className="font-medium">Lunes</label>
             <p className="font-light">10:00 a 20:00</p>
