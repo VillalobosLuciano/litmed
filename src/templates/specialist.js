@@ -13,42 +13,73 @@ export const SpecialistTemplate = ({
   description,
   services,
   title,
+  specialty,
   nextPostURL,
   prevPostURL,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
   return (
-    <section className="">
+    <div className="px-4 py-6 mx-auto sm:py-10 lg:py-12 sm:px-8 lg:px-16 xl:px-40 2xl:px-64">
       {helmet || ""}
-      <div className="p-6">
-        <Link to={`specialists/`}>Volver</Link>
-        <div className="flex">
-          <div className="">
-            <h1 className="font-semibold">{title}</h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            <div className="">
-              {prevPostURL && (
-                <Link className="" to={prevPostURL}>
-                  Previous Post
-                </Link>
-              )}
-              {nextPostURL && (
-                <Link className="" to={nextPostURL}>
-                  Next Post
-                </Link>
-              )}
-            </div>
+      <Link
+        className="underline text-secondary-600 hover:text-primary-600"
+        to={`specialists/`}
+      >
+        « Ver todos los especialistas
+      </Link>
+      <div className="mt-4 mb-1 sm:mt-8">
+        <h3 className="mt-4 mb-1 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
+          {title}
+        </h3>
+        <p className="text-sm font-semibold leading-6 tracking-wide uppercase text-primary-600">
+          {specialty}
+        </p>
+      </div>
 
+      <div class="sm:flex mb-6">
+        <div class="sm:w-2/3">
+          <div className="mt-4 sm:mt-6 sm:mb-8">
+            <h5 className="tracking-wide font-base text-primary-800">
+              Descripción
+            </h5>
+            <p className="mt-1 mb-4 font-light">{description}</p>
+            <h5 className="tracking-wide font-base text-primary-800">
+              Experiencia
+            </h5>
+            <PostContent className="pt-1 font-light" content={content} />
+          </div>
+        </div>
+
+        <div class="sm:flex pb-2 mt-6 sm:mt-2 sm:w-1/3 justify-center">
+          <div>
             {services && services.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>services</h4>
-                <ul className="">
+              <div className="p-4 border rounded-md bg-primary-100 border-primary-300">
+                <h5 className="flex items-center text-primary-900">
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width={24}
+                      height={24}
+                      viewBox="0 0 24 24"
+                      className="fill-current text-primary-600"
+                    >
+                      <path d="M0 2h8l3 3h10v4h3l-4 13h-20v-20zm22.646 8h-17.907l-3.385 11h17.907l3.385-11zm-2.646-1v-3h-9.414l-3-3h-6.586v15.75l3-9.75h16z" />
+                    </svg>
+                  </span>
+                  <span className="ml-3 text-sm tracking-wide uppercase">
+                    Servicios
+                  </span>
+                </h5>
+
+                <ul className="pt-4 space-y-3">
                   {services.map(service => (
                     <li key={service + `service`}>
-                      <Link to={`/services/${kebabCase(service)}/`}>
-                        {service}
+                      <Link
+                        className="px-4 py-2 font-light leading-6 transition duration-150 ease-in-out rounded-lg hover:bg-primary-200 text-primary-800 hover:text-primary-700"
+                        to={`/services/${kebabCase(service)}/`}
+                      >
+                        ‣ {service}
                       </Link>
                     </li>
                   ))}
@@ -58,7 +89,25 @@ export const SpecialistTemplate = ({
           </div>
         </div>
       </div>
-    </section>
+      <div className="space-x-6">
+        {prevPostURL && (
+          <Link
+            className="underline text-secondary-600 hover:text-primary-600"
+            to={prevPostURL}
+          >
+            « Anterior
+          </Link>
+        )}
+        {nextPostURL && (
+          <Link
+            className="underline text-secondary-600 hover:text-primary-600"
+            to={nextPostURL}
+          >
+            Siguiente »
+          </Link>
+        )}
+      </div>
+    </div>
   )
 }
 
@@ -67,6 +116,7 @@ SpecialistTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  specialty: PropTypes.string,
   helmet: PropTypes.object,
 }
 
@@ -89,6 +139,7 @@ const Specialist = ({ data: { post, allPosts } }) => {
           </Helmet>
         }
         services={post.frontmatter.services}
+        specialty={post.frontmatter.specialty}
         title={post.frontmatter.title}
         nextPostURL={_get(thisEdge, "next.fields.slug")}
         prevPostURL={_get(thisEdge, "previous.fields.slug")}
@@ -113,6 +164,7 @@ export const pageQuery = graphql`
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
+        specialty
         description
         services
       }
