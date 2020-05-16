@@ -9,13 +9,14 @@ specialists:
   - Diego Hidalgo
 date: 2020-05-16T02:23:44.897Z
 ---
+A common reaction to this approach is wondering, "isn't this just inline styles?" and in some ways it is — you're applying styles directly to elements instead of assigning them a class name and then styling that class.
 
+But using utility classes has a few important advantages over inline styles:
 
-In the example above, we've used:
+**Designing with constraints**. Using inline styles, every value is a magic number. With utilities, you're choosing styles from a predefined [design system](https://tailwindcss.com/docs/theme), which makes it much easier to build visually consistent UIs.
 
-* Tailwind's [flexbox](https://tailwindcss.com/docs/display#flex) and [padding](https://tailwindcss.com/docs/padding) utilities (`flex`, `flex-shrink-0`, and `p-6`) to control the overall card layout
-* The [max-width](https://tailwindcss.com/docs/max-width) and [margin](https://tailwindcss.com/docs/margin) utilities (`max-w-sm` and `mx-auto`) to constrain the card width and center it horizontally
-* The [background color](https://tailwindcss.com/docs/background-color), [border radius](https://tailwindcss.com/docs/border-radius), and [box-shadow](https://tailwindcss.com/docs/box-shadow) utilities (`bg-white`, `rounded-lg`, and `shadow-xl`) to style the card's appearance
-* The [width](https://tailwindcss.com/docs/width) and [height](https://tailwindcss.com/docs/height) utilities (`w-12` and `h-12`) to size the logo image
-* The [margin](https://tailwindcss.com/docs/margin) and [padding](https://tailwindcss.com/docs/padding) utilities (`ml-6` and `pt-1`) to position the card text
-* The [font size](https://tailwindcss.com/docs/font-size), [text color](https://tailwindcss.com/docs/text-color), and [line-height](https://tailwindcss.com/docs/line-height) utilities (`text-xl`, `text-gray-900`, `leading-tight`, etc.) to style the card text
+**Responsive design**. You can't use media queries in inline styles, but you can use Tailwind's [responsive utilities](https://tailwindcss.com/docs/responsive-design) to build fully responsive interfaces easily.
+
+**Pseudo-classes**. Inline styles can't target states like hover or focus, but Tailwind's [pseudo-class variants](https://tailwindcss.com/docs/pseudo-class-variants) make it easy to style those states with utility classes.
+
+This component is fully responsive and includes a button with hover styles, and is built entirely with utility classes:
