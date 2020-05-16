@@ -8,6 +8,7 @@ const ServicePreview = ({ entry, widgetFor }) => {
       content={widgetFor("body")}
       description={entry.getIn(["data", "description"])}
       title={entry.getIn(["data", "title"])}
+      specialty={entry.getIn(["data", "specialty"])}
     />
   )
 }
