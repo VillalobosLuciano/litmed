@@ -8,6 +8,7 @@ featuredimage: /img/diegoh.png
 services:
   - Terapia Manual Ortopédica
   - Neurorehabilitación
+  - Punción Seca
 date: 2020-05-07T07:46:45.493Z
 ---
 Every Tailwind utility also comes with responsive variants, making it extremely easy to build responsive interfaces without resorting to custom CSS.
