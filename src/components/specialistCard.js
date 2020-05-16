@@ -42,7 +42,7 @@ class SpecialistCard extends React.Component {
                 </button>
                 <Link
                   className="w-full px-4 py-2 text-sm font-medium text-center transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md shadow-sm text-primary-700 hover:text-primary-500 sm:text-sm"
-                  to={ `${post.fields.slug}/`}
+                  to={ `${(post.fields.slug).normalize("NFD").replace(/[\u0300-\u036f]/g, "")}/`}
                 >
                   Ver Más
                 </Link>

@@ -39,7 +39,7 @@ class ServiceCard extends React.Component {
                       </p>
                       <Link
                         className="font-light underline cursor-pointer text-primary-600 hover:text-primary-500"
-                        to={`${post.fields.slug}/`}
+                        to={`${(post.fields.slug).normalize("NFD").replace(/[\u0300-\u036f]/g, "")}/`}
                       >
                         Ver más.
                       </Link>
