@@ -24,7 +24,7 @@ collections:
       - {label: "Descripción", name: "description", widget: "text"}
       - {label: "Foto", name: "featuredimage", widget: image}
       - {label: "Detalle", name: "body", widget: "markdown"}
-      - {label: 'Servicios', name: 'services', widget: 'relation', collection: 'services', searchFields: ['title'], valueField: 'title', multiple: true}
+      - {label: 'Servicios', name: 'services', widget: 'relation', collection: 'services', searchFields: ['title'], valueField: 'title', multiple: true, default: ''}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
   - name: "services"
     label: "Servicios"
@@ -37,7 +37,7 @@ collections:
       - {label: 'Especialidad', name: 'specialty', widget: 'select', options: ['Medicina', 'Kinesiología', 'Nutrición', 'Fonoaudiología', 'Psicología', 'Terapia Ocupacional'], default: ''}  
       - {label: "Descripción", name: "description", widget: "text"}
       - {label: "Detalle", name: "body", widget: "markdown"}
-      - {label: 'Especialistas', name: 'specialists', widget: 'relation', collection: 'specialists', searchFields: ['title'], valueField: 'title', multiple: true}
+      - {label: 'Especialistas', name: 'specialists', widget: 'relation', collection: 'specialists', searchFields: ['title'], valueField: 'title', multiple: true, default: ''}
       - {label: "Fecha de publicación", name: "date", widget: "datetime"}
 
   
