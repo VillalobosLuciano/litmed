@@ -14,6 +14,6 @@ specialty: Kinesiología
 description: Especialista en trastornos del espectro autista,
   neurorehabilitación y kinesiología respiratoria.
 services:
-  - De perro legal
+  - Daydream
 ---
 bla
