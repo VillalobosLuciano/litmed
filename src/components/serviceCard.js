@@ -11,8 +11,8 @@ class ServiceCard extends React.Component {
       <>
         {posts &&
           posts.map(({ node: post }) => (
-            <li className="mb-6 sm:m-0" key={post.id}>
-              <div className="flex px-10 py-4 transition duration-300 ease-in-out transform border border-primary-200 sm:border-transparent sm:hover:shadow-lg sm:hover:-translate-y-1 sm:hover:scale-105 sm:p-4">
+            <li className="flex flex-col mb-6 sm:m-0" key={post.id}>
+              <div className="px-10 py-4 transition duration-300 ease-in-out transform border border-primary-200 sm:border-transparent sm:hover:shadow-lg sm:hover:-translate-y-1 sm:hover:scale-105 sm:p-4">
                 <div className="p-1 sm:flex sm:items-start">
 
                   <div
@@ -40,7 +40,7 @@ class ServiceCard extends React.Component {
                     {post.frontmatter.specialty.charAt(0)}
                   </div>
 
-                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                  <div className="flex-grow mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                     <h3 className="text-lg font-medium leading-6 text-gray-900">
                       {post.frontmatter.title}
                     </h3>
@@ -49,7 +49,7 @@ class ServiceCard extends React.Component {
                         {post.frontmatter.description}
                       </p>
                       <Link
-                        className="font-light underline cursor-pointer text-primary-600 hover:text-primary-500"
+                        className="font-light underline cursor-pointer text-primary-900 hover:text-primary-600"
                         to={`${post.fields.slug
                           .normalize("NFD")
                           .replace(/[\u0300-\u036f]/g, "")}/`}
