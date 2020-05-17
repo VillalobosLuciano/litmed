@@ -14,21 +14,32 @@ class ServiceCard extends React.Component {
             <li className="mb-6 sm:m-0" key={post.id}>
               <div className="flex px-10 py-4 transition duration-300 ease-in-out transform border border-primary-200 sm:border-transparent sm:hover:shadow-lg sm:hover:-translate-y-1 sm:hover:scale-105 sm:p-4">
                 <div className="p-1 sm:flex sm:items-start">
-                  <div className="flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto rounded-full bg-primary-100 sm:mx-0 sm:h-10 sm:w-10">
-                    <svg
-                      className="w-6 h-6 text-primary-600"
-                      stroke="currentColor"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
-                      />
-                    </svg>
+
+                  <div
+                    className={
+                      "flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto rounded-full sm:mx-0 sm:h-10 sm:w-10 uppercase font-semibold " +
+                      `        
+                        ${
+                          post.frontmatter.specialty === "Medicina"
+                            ? "text-blue-600 bg-blue-100"
+                            : ""
+                        }
+                        ${
+                          post.frontmatter.specialty === "Kinesiología"
+                            ? "text-primary-600 bg-primary-100"
+                            : ""
+                        }
+                        ${
+                          post.frontmatter.specialty === "Nutrición"
+                            ? "text-purple-600 bg-purple-100"
+                            : ""
+                        }
+                      `
+                    }
+                  >
+                    {post.frontmatter.specialty.charAt(0)}
                   </div>
+
                   <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                     <h3 className="text-lg font-medium leading-6 text-gray-900">
                       {post.frontmatter.title}
@@ -39,7 +50,9 @@ class ServiceCard extends React.Component {
                       </p>
                       <Link
                         className="font-light underline cursor-pointer text-primary-600 hover:text-primary-500"
-                        to={`${(post.fields.slug).normalize("NFD").replace(/[\u0300-\u036f]/g, "")}/`}
+                        to={`${post.fields.slug
+                          .normalize("NFD")
+                          .replace(/[\u0300-\u036f]/g, "")}/`}
                       >
                         Ver más.
                       </Link>

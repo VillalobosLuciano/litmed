@@ -37,8 +37,8 @@ export const SpecialistTemplate = ({
         </p>
       </div>
 
-      <div class="sm:flex mb-6">
-        <div class="sm:w-2/3">
+      <div class="lg:flex mb-6">
+        <div class="lg:w-2/3">
           <div className="mt-4 sm:mt-6 sm:mb-8">
             <h5 className="tracking-wide font-base text-primary-800">
               Descripción
@@ -51,7 +51,7 @@ export const SpecialistTemplate = ({
           </div>
         </div>
 
-        <div class="sm:flex pb-2 mt-6 sm:mt-2 sm:w-1/3 justify-center">
+        <div class="lg:flex pb-2 mt-6 sm:mt-2 lg:w-1/3 justify-center">
           <div>
             {services && services.length ? (
               <div className="p-4 border rounded-md bg-primary-100 border-primary-300">
