@@ -93,7 +93,7 @@ export const ServiceTemplate = ({
         {prevPostURL && (
           <Link
             className="underline text-secondary-600 hover:text-primary-600"
-            to={prevPostURL}
+            to={`${(prevPostURL).normalize("NFD").replace(/[\u0300-\u036f]/g, "")}/`}
           >
             « Anterior
           </Link>
@@ -101,7 +101,7 @@ export const ServiceTemplate = ({
         {nextPostURL && (
           <Link
             className="underline text-secondary-600 hover:text-primary-600"
-            to={nextPostURL}
+            to={`${(nextPostURL).normalize("NFD").replace(/[\u0300-\u036f]/g, "")}/`}
           >
             Siguiente »
           </Link>
