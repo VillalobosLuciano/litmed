@@ -11,10 +11,9 @@ class ServiceCard extends React.Component {
       <>
         {posts &&
           posts.map(({ node: post }) => (
-            <li className="flex flex-col mb-6 sm:m-0" key={post.id}>
+            <li className="flex mb-6 sm:m-0" key={post.id}>
               <div className="px-10 py-4 transition duration-300 ease-in-out transform border border-primary-200 sm:border-transparent sm:hover:shadow-lg sm:hover:-translate-y-1 sm:hover:scale-105 sm:p-4">
                 <div className="p-1 sm:flex sm:items-start">
-
                   <div
                     className={
                       "flex items-center justify-center flex-shrink-0 w-12 h-12 mx-auto rounded-full sm:mx-0 sm:h-10 sm:w-10 uppercase font-semibold " +
@@ -34,13 +33,28 @@ class ServiceCard extends React.Component {
                             ? "text-purple-600 bg-purple-100"
                             : ""
                         }
+                        ${
+                          post.frontmatter.specialty === "Fonoaudiología"
+                            ? "text-orange-600 bg-orange-100"
+                            : ""
+                        }
+                        ${
+                          post.frontmatter.specialty === "Psicología"
+                            ? "text-red-600 bg-red-100"
+                            : ""
+                        }
+                        ${
+                          post.frontmatter.specialty === "Terapia Ocupacional"
+                            ? "text-teal-600 bg-teal-100"
+                            : ""
+                        }
                       `
                     }
                   >
                     {post.frontmatter.specialty.charAt(0)}
                   </div>
 
-                  <div className="flex-grow mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                     <h3 className="text-lg font-medium leading-6 text-gray-900">
                       {post.frontmatter.title}
                     </h3>
