@@ -8,7 +8,7 @@ export default class LitfitIndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Staff" />
-        <div className="max-w-screen-xl px-4 py-6 mx-auto sm:py-10 lg:py-12 sm:px-6 lg:px-8">
+        {/*  <div className="max-w-screen-xl px-4 py-6 mx-auto sm:py-10 lg:py-12 sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <p className="text-base font-semibold leading-6 tracking-wide uppercase text-primary-600">
               Litmed Staff
@@ -26,6 +26,10 @@ export default class LitfitIndexPage extends React.Component {
               <LitfitServiceCard />
             </ul>
           </div>
+        </div> */}
+
+        <div className="h-56">
+          <h3 className="">Litfit section</h3>
         </div>
       </Layout>
     )
