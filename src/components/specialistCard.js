@@ -37,12 +37,17 @@ class SpecialistCard extends React.Component {
               </div>
 
               <div className="flex justify-between px-6 py-3 space-x-4 bg-gray-100">
-                <button className="w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out rounded-md shadow-sm bg-primary-700 hover:bg-primary-500">
-                  Agendar Hora
-                </button>
                 <Link
+                  to={`/`}
+                  className="w-full px-4 py-2 text-sm font-medium text-center text-white transition duration-150 ease-in-out rounded-md shadow-sm bg-primary-700 hover:bg-primary-500"
+                >
+                  Agendar Hora
+                </Link>
+                <Link
+                  to={`${post.fields.slug
+                    .normalize("NFD")
+                    .replace(/[\u0300-\u036f]/g, "")}/`}
                   className="w-full px-4 py-2 text-sm font-medium text-center transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md shadow-sm text-primary-700 hover:text-primary-500 sm:text-sm"
-                  to={ `${(post.fields.slug).normalize("NFD").replace(/[\u0300-\u036f]/g, "")}/`}
                 >
                   Ver Más
                 </Link>

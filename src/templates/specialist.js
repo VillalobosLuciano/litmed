@@ -37,7 +37,7 @@ export const SpecialistTemplate = ({
         </p>
       </div>
 
-      <div class="lg:flex mb-6">
+      <div class="lg:flex mb-2">
         <div class="lg:w-2/3">
           <div className="mt-4 sm:mt-6 sm:mb-8">
             <h5 className="tracking-wide font-base text-primary-800">
@@ -89,11 +89,21 @@ export const SpecialistTemplate = ({
           </div>
         </div>
       </div>
-      <div className="space-x-6">
+
+      <Link
+        to={`/`}
+        className="px-4 py-2 text-sm font-medium leading-6 text-white transition duration-150 ease-in-out border border-transparent rounded-md shadow-sm lg:text-base bg-primary-700 hover:bg-primary-500 focus:outline-none focus:border-primary-700 focus:shadow-outline-red sm:text-sm sm:leading-5"
+      >
+        Agendar Hora
+      </Link>
+
+      <div className="mt-10 space-x-6">
         {prevPostURL && (
           <Link
             className="underline text-secondary-600 hover:text-primary-600"
-            to={`${(prevPostURL).normalize("NFD").replace(/[\u0300-\u036f]/g, "")}/`}
+            to={`${prevPostURL
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")}/`}
           >
             « Anterior
           </Link>
@@ -101,7 +111,9 @@ export const SpecialistTemplate = ({
         {nextPostURL && (
           <Link
             className="underline text-secondary-600 hover:text-primary-600"
-            to={`${(nextPostURL).normalize("NFD").replace(/[\u0300-\u036f]/g, "")}/`}
+            to={`${nextPostURL
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")}/`}
           >
             Siguiente »
           </Link>
