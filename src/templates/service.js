@@ -45,7 +45,7 @@ export const ServiceTemplate = ({
             </h5>
             <p className="mt-1 mb-4 font-light">{description}</p>
             <h5 className="tracking-wide font-base text-primary-800">
-              Beneficios
+              Objetivos y beneficios
             </h5>
             <PostContent className="pt-1 font-light" content={content} />
           </div>
