@@ -1,6 +1,6 @@
 ---
 templateKey: service
-title: Nutrición infantil y alimentación del bebé
+title: Nutrición infantil
 specialty: Nutrición
 description: Asesoramiento a padres durante las etapas de crecimiento de sus
   hijos. En la alimentación del bebé te aconsejamos sobre cómo realizar la
