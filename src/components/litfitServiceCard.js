@@ -2,9 +2,9 @@ import React from "react"
 import Box from "../images/box.jpg"
 import LitfitModal from "../components/litfitModal"
 
-const FitServiceCard = () => (
+const LitfitServiceCard = () => (
   <li
-    className="flex flex-col mx-auto mb-10 rounded shadow-lg md:mb-0"
+    className="flex flex-col mx-auto mb-10 transition duration-300 ease-in-out rounded shadow-md md:mb-0 sm:hover:shadow-lg"
     style={{ maxWidth: 350 }}
   >
     <img
@@ -26,4 +26,4 @@ const FitServiceCard = () => (
     </div>
   </li>
 )
-export default FitServiceCard
+export default LitfitServiceCard

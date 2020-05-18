@@ -14,7 +14,7 @@ class SpecialistCard extends React.Component {
           posts.map(({ node: post }) => (
             <li
               className="flex flex-col mb-10 transition duration-300 ease-in-out rounded shadow-md md:mb-0 sm:hover:shadow-lg"
-              style={{ maxWidth: 350 }}
+              style={{ maxWidth: 335 }}
               key={post.id}
             >
               <PreviewCompatibleImage
@@ -89,7 +89,7 @@ export default () => (
                 date(formatString: "MMMM DD, YYYY")
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 350, maxHeight: 224, quality: 100) {
+                    fluid(maxWidth: 335, maxHeight: 224, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

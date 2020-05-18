@@ -21,7 +21,7 @@ export default class SpecialistsIndexPage extends React.Component {
               el cuidado integrar de tu salud
             </p>
           </div>
-          <div className="flex justify-center mt-10 sm:mb-8 lg:mt-12">
+          <div className="flex justify-center mt-8 sm:mb-8 lg:mt-12">
             <ul className="sm:grid md:grid-cols-2 lg:grid-cols-3 md:gap-10">
               <SpecialistCard />
             </ul>

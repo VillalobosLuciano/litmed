@@ -12,7 +12,7 @@ class ServiceCard extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <li className="flex mb-6 sm:m-0" key={post.id}>
-              <div className="px-10 py-4 transition duration-300 ease-in-out transform border rounded-lg sm:rounded-none border-primary-200 sm:border-transparent sm:hover:shadow-lg sm:hover:-translate-y-1 sm:hover:scale-105 sm:p-4">
+              <div className="px-10 py-4 transition duration-300 ease-in-out transform border rounded-lg shadow-sm sm:shadow-none sm:rounded-none border-secondary-100 sm:border-transparent sm:hover:shadow-lg sm:hover:-translate-y-1 sm:hover:scale-105 sm:p-4">
                 <div className="p-1 sm:flex sm:items-start">
                   <div
                     className={
