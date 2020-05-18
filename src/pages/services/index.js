@@ -17,8 +17,7 @@ export default class ServicesIndexPage extends React.Component {
               Nos preocupamos de tu bienestar
             </h3>
             <p className="max-w-2xl mt-4 text-xl leading-7 text-gray-500 lg:mx-auto">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Possimus
-              magnam voluptatum cupiditate.
+            El objetivo de nuestros servicios es garantizar una mejora en tu salud física/mental, hábitos y estilo de vida.
             </p>
           </div>
           <div className="flex justify-center mt-10 sm:mb-8 lg:mt-12">
