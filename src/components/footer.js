@@ -113,7 +113,7 @@ const Footer = () => (
     <div className="flex flex-col flex-col-reverse items-center justify-between mt-8 md:mt-16 sm:flex-row md:flex-row">
       <div className="mt-4 sm:mt-0">
         <p className="text-sm text-secondary-200">
-          © {new Date().getFullYear()}, LITMED - Desarrollado por
+          © {new Date().getFullYear()}, LITMED {/* - Desarrollado por
           {` `}
           <a
             href="http://localhost:8000/"
@@ -123,7 +123,7 @@ const Footer = () => (
             <span className="underline text-secondary-200 hover:text-primary-500">
               Luciano
             </span>
-          </a>
+          </a> */}
         </p>
       </div>
       <ul className="flex">
