@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import BackgroundImage from "../components/bgLitmed"
 import SEO from "../components/seo"
-// import AppointmentForm from "../components/appointmentForm"
+import AppointmentForm from "../components/appointmentForm"
 import ServicesSection from "../components/servicesSection"
 import LitmedSection from "../components/litmedSection"
 import LitfitSection from "../components/litfitSection"
@@ -28,7 +28,7 @@ const IndexPage = () => (
         </div>
       </section>
     </BackgroundImage>
-    {/* <AppointmentForm /> */}
+    <AppointmentForm />
     <ServicesSection />
     <LitmedSection /> 
     <LitfitSection />
