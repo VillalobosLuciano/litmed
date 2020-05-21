@@ -91,7 +91,6 @@ export default () => (
                   childImageSharp {
                     fluid(maxWidth: 335, maxHeight: 224, quality: 100) {
                       ...GatsbyImageSharpFluid
-                      ...GatsbyImageSharpFluidLimitPresentationSize
                     }
                   }
                 }
