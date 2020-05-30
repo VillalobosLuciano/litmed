@@ -5,7 +5,7 @@ specialty: Psicología
 description: Instead of opinionated predesigned components, Tailwind provides
   low-level utility classes that let you build completely custom designs without
   ever leaving your HTML.
-featuredimage: /img/orvalr.png
+featuredimage: /img/horacioj.jpg
 services:
   - Neurorehabilitación
 date: 2020-05-23T04:13:14.266Z
