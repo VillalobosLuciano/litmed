@@ -5,22 +5,22 @@ import Img from "gatsby-image"
 const PreviewCompatibleImage = ({ imageInfo }) => {
   const imageStyle = { 
     borderTopLeftRadius: "4px",
-    borderTopRightRadius: "4px"
+    borderTopRightRadius: "4px",
   }
   const { alt = "", childImageSharp, image } = imageInfo
 
   if (!!image && !!image.childImageSharp) {
     return (
-      <Img style={imageStyle} fluid={image.childImageSharp.fluid} objectFit="fill" alt={alt} />
+      <Img style={imageStyle} fluid={image.childImageSharp.fluid} imgStyle={{ objectFit: 'contain' }} alt={alt} />
     )
   }
 
   if (!!childImageSharp) {
-    return <Img style={imageStyle} fluid={childImageSharp.fluid} objectFit="fill" alt={alt} />
+    return <Img style={imageStyle} fluid={childImageSharp.fluid} imgStyle={{ objectFit: 'contain' }} alt={alt} />
   }
 
   if (!!image && typeof image === "string")
-    return <img style={imageStyle} src={image} objectFit="fill" alt={alt} />
+    return <img style={imageStyle} src={image} imgStyle={{ objectFit: 'contain' }} alt={alt} />
 
   return null
 }
