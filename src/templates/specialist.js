@@ -28,6 +28,7 @@ export const SpecialistTemplate = ({
       >
         « Ver todos los especialistas
       </Link>
+
       <div className="mt-4 mb-1 sm:mt-8">
         <h3 className="mt-4 mb-1 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
           {title}

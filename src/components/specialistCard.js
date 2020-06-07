@@ -13,45 +13,41 @@ class SpecialistCard extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <li
-              className="flex flex-col mb-10 transition duration-300 ease-in-out rounded shadow-md md:mb-0 sm:hover:shadow-lg"
-              style={{ maxWidth: 335 }}
+              className="w-full max-w-sm mb-6 transition duration-300 ease-in-out border rounded shadow-md cursor-pointer lg:max-w-full lg:flex md:mb-0 sm:hover:border-primary-500 sm:hover:shadow-lg"
               key={post.id}
             >
-              <PreviewCompatibleImage
-                imageInfo={{
-                  image: post.frontmatter.featuredimage,
-                  alt: `especialista ${post.frontmatter.title}`,
-                }}
-              />
-
-              <div className="flex-grow px-6 py-4">
-                <div className="text-xl font-bold text-gray-900">
-                  {post.frontmatter.title}
+              <Link
+              className="flex justify-center pt-4 lg:pt-0"
+                to={`${post.fields.slug
+                  .normalize("NFD")
+                  .replace(/[\u0300-\u036f]/g, "")}/`}
+              >
+                <div className="flex-none object-fill w-32 h-32 overflow-hidden text-center rounded-full lg:min-h-full lg:w-32 lg:rounded-none lg:rounded-l">
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: post.frontmatter.featuredimage,
+                      alt: `especialista ${post.frontmatter.title}`,
+                    }}
+                  />
                 </div>
-                <p className="mb-3 text-xs tracking-wide uppercase text-primary-700">
-                  {post.frontmatter.specialty}
-                </p>
-                <p className="text-base font-light text-gray-600 line-clamp-3">
-                  {post.frontmatter.description}
-                </p>
-              </div>
-
-              <div className="flex justify-between px-6 py-3 space-x-4 bg-gray-100">
-                <Link
-                  to={`/`}
-                  className="w-full px-4 py-2 text-sm font-medium text-center text-white transition duration-150 ease-in-out rounded-md shadow-sm bg-primary-700 hover:bg-primary-500"
-                >
-                  Agendar Hora
-                </Link>
-                <Link
-                  to={`${post.fields.slug
-                    .normalize("NFD")
-                    .replace(/[\u0300-\u036f]/g, "")}/`}
-                  className="w-full px-4 py-2 text-sm font-medium text-center transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md shadow-sm text-primary-700 hover:text-primary-500 sm:text-sm"
-                >
-                  Ver Más
-                </Link>
-              </div>
+              </Link>
+              <Link
+                to={`${post.fields.slug
+                  .normalize("NFD")
+                  .replace(/[\u0300-\u036f]/g, "")}/`}
+              >
+                <div className="flex-grow p-4 text-center lg:text-left">
+                  <div className="text-xl font-bold text-gray-900">
+                    {post.frontmatter.title}
+                  </div>
+                  <p className="mb-3 text-xs tracking-wide uppercase text-primary-700">
+                    {post.frontmatter.specialty}
+                  </p>
+                  <p className="mb-2 text-sm font-light text-gray-600 line-clamp-4">
+                    {post.frontmatter.description}
+                  </p>
+                </div>
+              </Link>
             </li>
           ))}
       </>
@@ -89,7 +85,7 @@ export default () => (
                 date(formatString: "MMMM DD, YYYY")
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 335, maxHeight: 224, quality: 100) {
+                    fluid(maxWidth: 335, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
