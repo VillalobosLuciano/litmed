@@ -1,6 +1,6 @@
 ---
 templateKey: specialist
-title: Diego Hidalgo Galleguillos
+title: "Diego Hidalgo "
 specialty: Kinesiología
 description: |
   Kinesiólogo. 
