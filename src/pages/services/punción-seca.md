@@ -10,6 +10,7 @@ specialists:
   - Jaime Castillo
 date: 2020-05-16T02:57:12.745Z
 ---
-The biggest maintainability concern when using a utility-first approach is managing commonly repeated utility combinations.
-
-This is easily solved by [extracting components](https://tailwindcss.com/docs/extracting-components), either as template partials/JavaScript components, or using Tailwind's `@apply` feature to create abstractions around common utility patterns.
+* Muy efectiva para combatir los Puntos de Gatillo Miofasciales y a nivel muscular.
+* Llega a tejidos que manualmente es muy complejo abordar.
+* Ayuda a curar lesiones crónicas.
+* Acelera la recuperación de una lesión reduciendo los tiempos de espera.
