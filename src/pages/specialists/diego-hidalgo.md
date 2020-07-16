@@ -1,18 +1,15 @@
 ---
 templateKey: specialist
-title: Diego Hidalgo
+title: Diego Hidalgo Galleguillos
 specialty: Kinesiología
-description: Especialista en trastornos del espectro autista,
-  neurorehabilitación y kinesiología respiratoria.
+description: >
+  Kinesiólogo. Especialista en Neurorehabilitación y Kinesiología Respiratoria.
+  Formación en manejo de los Trastornos del Espectro Autista.
 featuredimage: /img/diegoh.png
 services:
-  - Terapia Manual Ortopédica
   - Neurorehabilitación
-  - Punción Seca
-  - Kinesiología Adulto Mayor
   - Kinesiología Respiratoria
+  - Kinesiología Adulto Mayor
 date: 2020-05-07T07:46:45.493Z
 ---
-Every Tailwind utility also comes with responsive variants, making it extremely easy to build responsive interfaces without resorting to custom CSS.
-
-Tailwind uses aaaaah an intuitive `{screen}:` prefix that makes it easy to notice responsive classes in your markup while keeping the original class name recognizable and intact.bla
+CEO Centro Médico Integral LITMED. Kinesiólogo egresado el año 2013, especializado en el área de la Neurorehabilitación y Kinesiología Respiratoria.
