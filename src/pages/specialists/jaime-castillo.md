@@ -1,6 +1,6 @@
 ---
 templateKey: specialist
-title: Jaime Castillo Alcayaga
+title: "Jaime Castillo "
 specialty: Kinesiología
 description: |
   Kinesiólogo
