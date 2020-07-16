@@ -1,13 +1,15 @@
 ---
 templateKey: service
-title: Nutrición Infantil
+title: Nutricionista
 specialty: Nutrición
-description: Asesoramiento a padres durante las etapas de crecimiento de sus
-  hijos. En la alimentación del bebé te aconsejamos sobre cómo realizar la
-  alimentación complementaria (purés, Baby Led Weaning, vegetariana, etc) para
-  la adquisición de unos buenos hábitos nutricionales y alimentarios.
+description: Ciencia médica de prevenir y curar las enfermedades mediante la
+  alimentación. Un nutricionista, dietista-nutricionista, nutriólogo, dietista o
+  dietólogo es un profesional sanitario experto en alimentación, nutrición y
+  dietética.
 specialists:
-  - Jaime Castillo
+  - Jaime Castillo Alcayaga
 date: 2020-05-18T01:13:40.254Z
 ---
-En el caso de la nutrición infantil los objetivos pueden ser varios: bajar de peso, subir de peso, reeducación de los hábitos, asesoramiento en casos de alergias e intolerancias alimentarias, planificación en función de las prácticas deportivas que se realicen, etc. Para evaluar el estado nutricional del niño**recomendamos traer las curvas de crecimiento que realiza el pediatra y posibles analíticas y pruebas médicas**. Las visitas de seguimiento se realizaran en función de cada caso y necesidad. Recomendamos hacer el primer seguimiento a los 15 días para resolver dudas, hacer cambios si es necesario y asegurar que las pautas se han entendido correctamente.
+Un nutricionista es el profesional que debe acompañar a la persona en el proceso de re-educación alimentaria mientras está en la fase de ajuste de peso, siempre de forma controlada y posteriormente para realizar su seguimiento personalizado y de mantenimiento.
+
+Nuestra función es ser profesionales responsables en el cuidado de la alimentación y dietas de las personas, individual o colectivamente. Somos quienes planificamos las dietas y la educación e higiene alimentaria con el objetivo de recuperar o mantener la salud de las personas en nuestro entorno
