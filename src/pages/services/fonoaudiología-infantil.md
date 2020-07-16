@@ -1,10 +1,15 @@
 ---
 templateKey: service
-title: Fonoaudiología Infantil
+title: Fonoaudiología
 specialty: Fonoaudiología
-description: Rehabilitación del habla
+description: >+
+  El Fonoaudiólogo es un profesional del área de la salud especializado en
+  promoción, prevención, diagnóstico, rehabilitación y habilitación para todo el
+  ciclo vital en las áreas de comunicación y deglución. Su campo ocupacional es
+  salud, educación y el ámbito artístico.
+
 specialists:
-  - Nicolas Marquinez
+  - Jaime Castillo Alcayaga
 date: 2020-05-19T02:01:25.010Z
 ---
-BLABLA
+Realiza abordaje a personas con alteraciones del lenguaje, voz, audición, sistema vestibular, motricidad orofacial y deglución de manera integral promoviendo su salud y calidad de vida.
