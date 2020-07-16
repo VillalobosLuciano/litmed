@@ -2,14 +2,18 @@
 templateKey: service
 title: Kinesiología Deportiva
 specialty: Kinesiología
-description: El Kinesiólogo deportivo es un profesional capaz de trabajar con
-  atletas de todo tipo, para recuperar y/o prevenir lesiones y mejorar el
-  rendimiento del deportista.
+description: Corresponde a un área de especialidad dentro de la Kinesiología que
+  se encarga de la prevención y tratamiento de las lesiones provocadas por la
+  actividad deportiva, teniendo en cuenta los objetivos del paciente que se
+  desenvuelve en  este ámbito, el cual presenta características diferentes al
+  común de las personas, esto con el fin de lograr un óptimo reintegro deportivo
+  y una disminución en las recibidas de lesión .
 specialists:
-  - Jaime Castillo
-  - Diego Hidalgo
+  - Jaime Castillo Alcayaga
 date: 2020-05-17T01:50:09.283Z
 ---
-The biggest maintainability concern when using a utility-first approach is managing commonly repeated utility combinations.
+¿Cuáles son las principales funciones de la Kinesiología Deportiva?
 
-This is easily solved by [extracting components](https://tailwindcss.com/docs/extracting-components), either as template partials/JavaScript components, or using Tailwind's `@apply` feature to create abstractions around common utility patterns.
+Tratar dolores, Mejorar la postura, Recuperar el esquema corporal, Prevenir lesiones. Recuperar lesiones Mejorar los patrones de movimiento y la coordinación. Mejorar la colaboración entre el sistema muscular y el sistema nervioso. Reducir los tiempos de recuperación tras la práctica deportiva. Re-educación del gesto deportivo.
+
+Cada deporte es distinto y a través de la Kinesiología Deportiva se pueden aprender los movimientos específicos de cada uno de ellos, así como corregir los errores típicos que pueden generarse.
