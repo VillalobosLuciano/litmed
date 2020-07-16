@@ -1,6 +1,6 @@
 ---
 templateKey: specialist
-title: Orval Rivas Maltes
+title: "Orval Rivas "
 specialty: Fonoaudiología
 description: Fonoaudiólogo
 featuredimage: /img/orvalr.png
