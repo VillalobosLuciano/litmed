@@ -2,8 +2,10 @@
 templateKey: specialist
 title: "Diego Hidalgo "
 specialty: Kinesiología
-description: |
-  Kinesiólogo. 
+description: >-
+  CEO Centro Médico Integral LITMED. Kinesiólogo egresado el año 2013.
+
+  Especialista en Neurorehabilitación y Kinesiología Respiratoria. Formación en manejo de los Trastornos del Espectro Autista.
 featuredimage: /img/diegoh.png
 services:
   - Neurorehabilitación
@@ -11,6 +13,6 @@ services:
   - Kinesiología Adulto Mayor
 date: 2020-05-07T07:46:45.493Z
 ---
-CEO Centro Médico Integral LITMED. Kinesiólogo egresado el año 2013.
+CEO Centro Médico Integral LITMED. Kinesiólogo egresado el año 2013. 
 
 Especialista en Neurorehabilitación y Kinesiología Respiratoria. Formación en manejo de los Trastornos del Espectro Autista.
