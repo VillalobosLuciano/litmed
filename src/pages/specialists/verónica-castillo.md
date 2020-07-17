@@ -5,7 +5,7 @@ specialty: Psicología
 description: Los Psicólogos cuentan con capacitación profesional y destrezas
   clínicas que nos ayudan en el aprendizaje a enfrentar con efectividad los
   problemas de la vida y de salud mental.
-featuredimage: /img/veronicaa.jpg
+featuredimage: /img/verónica-2.jpg
 services:
   - Nutricionista
 date: 2020-07-17T18:02:08.253Z
