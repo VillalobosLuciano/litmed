@@ -13,7 +13,7 @@ class SpecialistCard extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <li
-              className="w-full max-w-sm mb-6 transition duration-300 ease-in-out border rounded shadow-md cursor-pointer lg:max-w-full lg:flex md:mb-0 sm:hover:border-primary-500 sm:hover:shadow-lg"
+              className="w-full max-w-sm mb-6 transition duration-300 ease-in-out border rounded cursor-pointer lg:max-w-full lg:flex md:mb-0 sm:hover:border-primary-500 sm:hover:shadow-lg"
               key={post.id}
             >
               <Link

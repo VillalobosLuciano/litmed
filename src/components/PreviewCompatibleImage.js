@@ -7,7 +7,7 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
 
   if (!!image && !!image.childImageSharp) {
     return (
-      <Img className="h-full overflow-hidden "
+      <Img className="h-full overflow-hidden"
         fluid={image.childImageSharp.fluid}
         alt={alt}
       />

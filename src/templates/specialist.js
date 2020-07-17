@@ -29,7 +29,7 @@ export const SpecialistTemplate = ({
         « Ver todos los especialistas
       </Link>
 
-      <div className="mt-4 mb-1 sm:mt-8">
+      <div className="mt-4 sm:mt-8">
         <h3 className="mt-4 mb-1 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
           {title}
         </h3>
@@ -38,21 +38,21 @@ export const SpecialistTemplate = ({
         </p>
       </div>
 
-      <div class="lg:flex mb-2">
-        <div class="lg:w-2/3">
-          <div className="mt-4 sm:mt-6 sm:mb-8">
-            <h5 className="tracking-wide font-base text-primary-800">
+      <div className="mb-2 lg:flex">
+        <div className="lg:w-2/3">
+          <div className="mt-4 sm:mb-8">
+            <h5 className="text-sm leading-6 uppercase text-primary-800">
               Descripción
             </h5>
             <p className="mt-1 mb-4 font-light">{description}</p>
-            <h5 className="tracking-wide font-base text-primary-800">
+            <h5 className="text-sm leading-6 uppercase text-primary-800">
               Experiencia
             </h5>
-            <PostContent className="pt-1 font-light" content={content} />
+            <PostContent className="pt-2 font-light" content={content} />
           </div>
         </div>
 
-        <div class="lg:flex pb-2 mt-6 sm:mt-2 lg:w-1/3 justify-center">
+        <div className="justify-center pb-2 mt-6 lg:flex sm:mt-2 lg:w-1/3">
           <div>
             {services && services.length ? (
               <div className="p-4 border rounded-md bg-primary-100 border-primary-300">

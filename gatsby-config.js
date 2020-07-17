@@ -16,7 +16,6 @@ module.exports = {
       },
     },
     {
-      // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
@@ -30,20 +29,34 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-modal-routing`,
+    //   options: {
+    //     // A selector to set react-modal's app root to, default is `#___gatsby`
+    //     // See http://reactcommunity.org/react-modal/accessibility/#app-element
+    //     appElement: "#___gatsby",
+
+    //     // Object of props that will be passed to the react-modal container
+    //     // See http://reactcommunity.org/react-modal/#usage
+    //     modalProps: {
+    //       closeTimeoutMS: 500,
+    //     },
+    //   },
+    // },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-relative-images',
+            resolve: "gatsby-remark-relative-images",
             options: {
-              name: 'uploads',
+              name: "uploads",
             },
           },
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
@@ -52,9 +65,9 @@ module.exports = {
             },
           },
           {
-            resolve: 'gatsby-remark-copy-linked-files',
+            resolve: "gatsby-remark-copy-linked-files",
             options: {
-              destinationDir: 'static',
+              destinationDir: "static",
             },
           },
         ],
@@ -63,7 +76,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-postcss",
       options: {
-        postCssPlugins: [require("tailwindcss"), require("autoprefixer")]
+        postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
       },
     },
     {
@@ -83,6 +96,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
+    "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 }

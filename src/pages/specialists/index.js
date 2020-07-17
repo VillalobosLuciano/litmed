@@ -18,7 +18,7 @@ export default class SpecialistsIndexPage extends React.Component {
             </h3>
             <p className="max-w-2xl mt-4 text-xl leading-7 text-gray-500 lg:mx-auto">
               Contamos con un completo equipo multidisciplinario para asegurar
-              el cuidado integrar de tu salud
+              el cuidado integral de tu salud
             </p>
           </div>
           <div className="flex justify-center mt-8 sm:mb-8 lg:mt-12">

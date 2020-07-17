@@ -18,7 +18,7 @@ const IndexPage = () => (
           height: 550,
         }}
       >
-        <div className="mb-24 lg:text-center xl:mb-0 xl:mt-30">
+        <div className="p-4 mb-24 lg:text-center xl:mb-0 xl:mt-30">
           <h1 className="text-4xl font-bold leading-tight text-white xl:text-5xl">
             Un mejor estilo de vida empieza con el cuidado de la salud
           </h1>
@@ -30,8 +30,8 @@ const IndexPage = () => (
     </BackgroundImage>
     <AppointmentForm />
     <ServicesSection />
-    <LitmedSection /> 
-    <LitfitSection />
+    {/* <LitmedSection /> 
+    <LitfitSection /> */}
   </Layout>
 )
 
