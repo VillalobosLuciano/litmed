@@ -9,7 +9,7 @@ description: >+
   salud, educación y el ámbito artístico.
 
 specialists:
-  - Jaime Castillo Alcayaga
+  - "Orval Rivas "
 date: 2020-05-19T02:01:25.010Z
 ---
 Realiza abordaje a personas con alteraciones del lenguaje, voz, audición, sistema vestibular, motricidad orofacial y deglución de manera integral promoviendo su salud y calidad de vida.
