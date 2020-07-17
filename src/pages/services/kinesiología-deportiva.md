@@ -9,7 +9,7 @@ description: Corresponde a un área de especialidad dentro de la Kinesiología q
   común de las personas, esto con el fin de lograr un óptimo reintegro deportivo
   y una disminución en las recibidas de lesión .
 specialists:
-  - Jaime Castillo Alcayaga
+  - "Jaime Castillo "
 date: 2020-05-17T01:50:09.283Z
 ---
 ¿Cuáles son las principales funciones de la Kinesiología Deportiva?

@@ -12,7 +12,8 @@ description: >-
 
   persigue mantener y/o mejorar la función pulmonar deteriorada.
 specialists:
-  - Diego Hidalgo Galleguillos
+  - "Diego Hidalgo "
+  - "Jaime Castillo "
 date: 2020-05-17T01:50:09.283Z
 ---
 La eficacia de la Kinesiterapia Respiratoria está determinada por la reducción en la incidencia de las infecciones pulmonares y una mejoría de la función pulmonar.
