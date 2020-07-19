@@ -30,8 +30,8 @@ const IndexPage = () => (
     </BackgroundImage>
     <AppointmentForm />
     <ServicesSection />
-    {/* <LitmedSection /> 
-    <LitfitSection /> */}
+    <LitmedSection /> 
+    {/* <LitfitSection /> */}
   </Layout>
 )
 

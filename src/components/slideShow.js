@@ -44,15 +44,15 @@ function SlideShow() {
   const handlePrevious = () =>
     index === 0 ? setIndex(length) : setIndex(index - 1)
   const { node } = allFile.edges[index]
-  console.log(index)
-  console.log(length)
+  // console.log(index)
+  // console.log(length)
   return (
-    <div className="h-full">
-      <div className="flex justify-between bg-primary-100">
+    <div className="">
+      <div className="relative z-10 flex content-center justify-between pt-40 sm:pt-56">
         <button
-          className="inline-flex items-center justify-center w-10 h-10 -ml-5 rounded-full bg-secondary-700 text-primary-600"
+          className="inline-flex items-center justify-center w-10 h-10 -ml-5 rounded-full hover:bg-secondary-800 bg-secondary-700 text-primary-600"
           onClick={() => handlePrevious()}
-        > 
+        >
           <svg
             fill="none"
             stroke="currentColor"
@@ -64,7 +64,7 @@ function SlideShow() {
           </svg>
         </button>
         <button
-          className="inline-flex items-center justify-center w-10 h-10 -mr-5 rounded-full bg-secondary-700 text-primary-600"
+          className="inline-flex items-center justify-center w-10 h-10 -mr-5 rounded-full hover:bg-secondary-800 bg-secondary-700 text-primary-600"
           onClick={() => handleNext()}
         >
           <svg
@@ -79,7 +79,7 @@ function SlideShow() {
         </button>
       </div>
       <Img
-        className="h-full rounded-md"
+        className="h-full -mt-40 border rounded-md shadow-md sm:-mt-56 border-primary-600"
         fluid={node.childImageSharp.fluid}
         key={node.id}
         alt={node.name.replace(/-/g, " ").substring(2)}

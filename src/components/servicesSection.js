@@ -30,7 +30,7 @@ export default function Services() {
   `)
   return (
     <section className="text-gray-700 body-font">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-6 py-24 mx-auto">
         <div className="pb-12 lg:text-center">
           <p className="text-base font-semibold leading-6 tracking-wide uppercase text-primary-600">
             Servicios
