@@ -16,7 +16,7 @@ const LitfitSection = () => (
           try-hard chambray.
         </p>
         <button className="inline-flex px-6 py-2 text-lg text-white border-0 rounded bg-primary-600 focus:outline-none hover:bg-primary-500">
-          <Link to={`services/`}>Ver entrenamientos</Link>
+          <Link to={`litfit/`}>Ver entrenamientos</Link>
         </button>
       </div>
       <div className="w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
