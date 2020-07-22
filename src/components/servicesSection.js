@@ -56,7 +56,8 @@ export default function Services() {
               Rehabilitación física
             </h2>
             <p className="mt-2 text-base leading-relaxed">
-            La finalidad es que la persona tenga una vida autónoma, dependiendo en el menor grado posible de los demás.
+              La finalidad es que la persona tenga una vida autónoma,
+              dependiendo en el menor grado posible de los demás.
             </p>
           </div>
           <div className="p-4 mb-6 md:w-1/3 sm:mb-0">
@@ -70,7 +71,9 @@ export default function Services() {
               Salud física y mental
             </h2>
             <p className="mt-2 text-base leading-relaxed">
-            Cuerpo y mente saludables ayudan a prevenir ciertas enfermedades como afecciones cardíacas y diabetes. También previenen la depresión y reducen el estrés.
+              Cuerpo y mente saludables ayudan a prevenir ciertas enfermedades
+              como afecciones cardíacas y diabetes. También previenen la
+              depresión y reducen el estrés.
             </p>
           </div>
           <div className="p-4 mb-6 md:w-1/3 sm:mb-0">
@@ -84,15 +87,16 @@ export default function Services() {
               Estilo de vida saludable
             </h2>
             <p className="mt-2 text-base leading-relaxed">
-            Te ayudamos a incorporar aquellos hábitos de nuestra vida diaria que nos ayudan a mantenernos más sanos y con menos limitaciones funcionales. 
+              Te ayudamos a incorporar aquellos hábitos de nuestra vida diaria
+              que nos ayudan a mantenernos más sanos y con menos limitaciones
+              funcionales.
             </p>
           </div>
         </div>
-        <Link to={`services/`}>
-          <button className="flex px-8 py-2 mx-auto mt-16 text-lg text-white border-0 rounded bg-primary-600 focus:outline-none hover:bg-primary-500">
-            Ver todos los servicios
-          </button>
-        </Link>
+
+        <button className="flex px-8 py-2 mx-auto mt-16 text-lg text-white border-0 rounded bg-primary-600 focus:outline-none hover:bg-primary-500">
+          <Link to={`services/`}>Ver todos los servicios</Link>
+        </button>
       </div>
     </section>
   )

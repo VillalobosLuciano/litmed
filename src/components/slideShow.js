@@ -50,7 +50,7 @@ function SlideShow() {
     <div className="">
       <div className="relative z-10 flex content-center justify-between pt-40 sm:pt-56">
         <button
-          className="inline-flex items-center justify-center w-10 h-10 -ml-5 rounded-full hover:bg-secondary-800 bg-secondary-700 text-primary-600"
+          className="inline-flex items-center justify-center w-10 h-10 -ml-5 border rounded-full border-primary-800 hover:bg-secondary-800 bg-secondary-700 text-primary-600"
           onClick={() => handlePrevious()}
         >
           <svg
@@ -64,7 +64,7 @@ function SlideShow() {
           </svg>
         </button>
         <button
-          className="inline-flex items-center justify-center w-10 h-10 -mr-5 rounded-full hover:bg-secondary-800 bg-secondary-700 text-primary-600"
+          className="inline-flex items-center justify-center w-10 h-10 -mr-5 border rounded-full border-primary-800 hover:bg-secondary-800 bg-secondary-700 text-primary-600"
           onClick={() => handleNext()}
         >
           <svg
@@ -79,7 +79,7 @@ function SlideShow() {
         </button>
       </div>
       <Img
-        className="h-full -mt-40 border rounded-md shadow-md sm:-mt-56 border-primary-600"
+        className="h-full -mt-40 border rounded-md shadow-md sm:-mt-56 border-primary-800"
         fluid={node.childImageSharp.fluid}
         key={node.id}
         alt={node.name.replace(/-/g, " ").substring(2)}

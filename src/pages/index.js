@@ -31,7 +31,7 @@ const IndexPage = () => (
     <AppointmentForm />
     <ServicesSection />
     <LitmedSection /> 
-    {/* <LitfitSection /> */}
+    <LitfitSection />
   </Layout>
 )
 
