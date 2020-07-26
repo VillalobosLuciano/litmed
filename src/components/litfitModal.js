@@ -6,16 +6,27 @@ const LitfitModal = () => {
   return (
     <>
       <button
-        className="w-full px-4 py-2 text-sm font-medium leading-6 transition duration-150 ease-in-out border border-gray-300 rounded-md shadow-sm bg-primary-300 text-primary-700 hover:bg-primary-200 hover:text-primary-500 focus:outline-none focus:border-blue-300 focus:shadow-outline sm:text-sm sm:leading-5"
+        className="inline-flex items-center mt-3 cursor-pointer text-primary-600 hover:text-primary-400"
         type="button"
         onClick={() => setShowModal(true)}
       >
         Ver Más
+        <svg
+          fill="none"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          className="w-4 h-4 ml-2"
+          viewBox="0 0 24 24"
+        >
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
       </button>
       {showModal ? (
         <>
           <div
-            className="fixed inset-x-0 bottom-0 px-2 sm:inset-0 sm:flex sm:items-center sm:justify-center"
+            className="fixed inset-x-0 bottom-0 z-50 px-2 sm:inset-0 sm:flex sm:items-center sm:justify-center"
             onClick={() => setShowModal(false)}
           >
             <div className="fixed inset-0">
