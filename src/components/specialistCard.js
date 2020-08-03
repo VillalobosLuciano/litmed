@@ -17,7 +17,10 @@ class SpecialistCard extends React.Component {
               key={post.id}
             >
               <Link
-              className="flex justify-center pt-4 lg:pt-0"
+                state={{
+                  modal: true,
+                }}
+                className="flex justify-center pt-4 lg:pt-0"
                 to={`${post.fields.slug
                   .normalize("NFD")
                   .replace(/[\u0300-\u036f]/g, "")}/`}
@@ -32,6 +35,9 @@ class SpecialistCard extends React.Component {
                 </div>
               </Link>
               <Link
+                state={{
+                  modal: true,
+                }}
                 to={`${post.fields.slug
                   .normalize("NFD")
                   .replace(/[\u0300-\u036f]/g, "")}/`}

@@ -1,6 +1,25 @@
 @tailwind base;
+
+body {
+  @apply .bg-gray-100 .font-sans .antialiased;
+}
+
+body.ReactModal__Body--open > div[aria-hidden="true"] {
+  filter: blur(2px);
+}
+
 @tailwind components;
+
 @tailwind utilities;
+
+.grayscale-1 {
+  filter: grayscale(1);
+}
+
+.blend-multiply {
+  mix-blend-mode: multiply;
+}
+
 .line-clamp-3 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
