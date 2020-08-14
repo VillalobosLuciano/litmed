@@ -78,6 +78,9 @@ export const ServiceTemplate = ({
                       <Link
                         className="px-4 py-2 font-light leading-6 transition duration-150 ease-in-out rounded-lg hover:bg-primary-200 text-primary-800 hover:text-primary-700"
                         to={`/specialists/${kebabCase(specialist)}/`}
+                        state={{
+                          modal: true,
+                        }}
                       >
                         ‣ {specialist}
                       </Link>

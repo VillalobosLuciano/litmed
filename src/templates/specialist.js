@@ -5,8 +5,9 @@ import _get from "lodash/get"
 import Helmet from "react-helmet"
 import { graphql, Link } from "gatsby"
 import Content, { HTMLContent } from "../components/Content"
-import { FaAngleLeft, FaAngleRight, FaTimes } from "react-icons/fa"
+import { FaAngleLeft, FaAngleRight} from "react-icons/fa"
 import { navigate } from "gatsby"
+import ConditionalLayout from "../components/conditionalLayout"
 
 export const SpecialistTemplate = ({
   content,
@@ -18,7 +19,6 @@ export const SpecialistTemplate = ({
   nextPostURL,
   prevPostURL,
   helmet,
-  closeTo,
 }) => {
   const goPrevious = () => {
     if (!prevPostURL) {
@@ -68,6 +68,7 @@ export const SpecialistTemplate = ({
 
   const PostContent = contentComponent || Content
   return (
+    <ConditionalLayout>
     <div className="relative flex h-screen">
       <div className="flex flex-wrap items-end justify-center w-full max-w-screen-xl mx-auto md:items-center">
         <div className="order-3 w-8 pb-2 mx-2 md:order-first md:mx-4">
@@ -150,13 +151,8 @@ export const SpecialistTemplate = ({
           )}
         </div>
       </div>
-      <button
-        className="absolute top-0 right-0 m-3 lg:m-6 focus:outline-none"
-        onClick={closeModal}
-      >
-        <FaTimes className="w-8 h-8 text-white transition-colors duration-200 fill-current hover:text-primary-500" />
-      </button>
     </div>
+    </ConditionalLayout>
   )
 }
 
