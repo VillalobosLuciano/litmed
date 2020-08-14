@@ -8,7 +8,6 @@ const ConditionalLayout = ({ children, ...rest }) => (
     {({ modal, closeTo }) =>
       modal ? (
         <React.Fragment>
-          <Link to={closeTo}>Close</Link>
           {children}
           <button className="absolute top-0 right-0 m-3 lg:m-6 focus:outline-none">
             <Link to={closeTo}>
