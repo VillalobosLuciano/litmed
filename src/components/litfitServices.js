@@ -31,7 +31,7 @@ export default function LitfitServices() {
   `)
   return (
     <div>
-      <section className="flex flex-wrap py-8">
+      <section className="flex flex-wrap mt-8 sm:mb-8 lg:mt-16">
         <div className="p-0 mb-6 md:p-4 md:w-1/3">
           <div className="transition duration-300 ease-in-out border rounded-md sm:hover:shadow-lg hover:border-primary-500">
             <div className="h-56 overflow-hidden">

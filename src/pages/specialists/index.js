@@ -8,7 +8,7 @@ export default class SpecialistsIndexPage extends React.Component {
     return (
       <Layout>
         <SEO title="Staff" />
-        <div className="max-w-screen-xl px-4 py-6 mx-auto sm:py-10 lg:py-12 sm:px-6 lg:px-8">
+        <div className="max-w-screen-xl px-4 py-6 mx-auto sm:py-10 lg:py-16 sm:px-6 lg:px-8">
           <div className="lg:text-center">
             <p className="text-base font-semibold leading-6 tracking-wide uppercase text-primary-600">
               Litmed Staff
@@ -21,7 +21,7 @@ export default class SpecialistsIndexPage extends React.Component {
               el cuidado integral de tu salud
             </p>
           </div>
-          <div className="flex justify-center mt-8 sm:mb-8 lg:mt-12">
+          <div className="flex justify-center mt-8 sm:mb-8 lg:mt-16">
             <ul className="sm:grid md:grid-cols-2 lg:grid-cols-3 md:gap-10">
               <SpecialistCard />
             </ul>
