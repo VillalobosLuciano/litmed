@@ -8,12 +8,15 @@ const ConditionalLayout = ({ children, ...rest }) => (
     {({ modal, closeTo }) =>
       modal ? (
         <React.Fragment>
-          {children}
-          <button className="absolute top-0 right-0 m-3 lg:m-6 focus:outline-none">
+          <button className="absolute bottom-0 right-0 m-3 lg:m-6 focus:outline-none">
             <Link to={closeTo}>
               <FaTimes className="w-8 h-8 text-white transition-colors duration-200 fill-current hover:text-primary-500" />
             </Link>
           </button>
+          <div className="bg-red-600">
+              
+            <div className="mx-auto bg-orange-400">{children}</div>
+          </div>
         </React.Fragment>
       ) : (
         <Layout {...rest}>{children}</Layout>
