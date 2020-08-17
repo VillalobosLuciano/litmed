@@ -3,7 +3,7 @@ import SlideShow from "../components/slideShow"
 import styled from "styled-components"
 
 const Wrapper = styled.section`
-  clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+  clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
 `
 
 const LitmedSection = () => (
