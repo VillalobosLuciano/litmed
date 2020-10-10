@@ -1,6 +1,6 @@
 ---
 templateKey: service
-title: Nutricionista
+title: Nutrición y Dietética
 specialty: Nutrición
 description: Ciencia médica de prevenir y curar las enfermedades mediante la
   alimentación. Un nutricionista, dietista-nutricionista, nutriólogo, dietista o
