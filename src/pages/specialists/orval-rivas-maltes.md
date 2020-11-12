@@ -1,6 +1,6 @@
 ---
 templateKey: specialist
-title: "Orval Rivas "
+title: Jeruska Ugarte
 specialty: Fonoaudiología
 description: >-
   El Fonoaudiólogo es un profesional del área de la salud especializado en
