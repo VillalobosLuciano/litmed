@@ -10,7 +10,7 @@ description: >-
 
 
   En ellos realiza abordaje a personas con alteraciones del lenguaje, voz, audición, sistema vestibular, motricidad orofacial y deglución de manera integral promoviendo su salud y calidad de vida.
-featuredimage: /img/orvalr.png
+featuredimage: /img/veronicaa.jpg
 services:
   - Fonoaudiología
 date: 2020-07-16T00:15:48.120Z
