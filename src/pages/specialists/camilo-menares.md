@@ -2,7 +2,7 @@
 templateKey: specialist
 title: Camilo Menares
 specialty: Kinesiología
-description: Kinesiólogo egresado el año 2015, especializado en el área Músculo
+description: Kinesiólogo egresado el año 2017, especializado en el área Músculo
   Esquelética. Cursando Magister en Terapia Manual Ortopédica.
 featuredimage: /img/camilom.png
 services:
