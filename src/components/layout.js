@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
   return (
     <div className="font-sans">
       <Navbar siteTitle={data.site.siteMetadata.title} />
-      <div className="">
+      <div className="mt-12">
         <main>{children}</main>
       </div>
       <Footer />

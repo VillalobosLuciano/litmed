@@ -1,6 +1,6 @@
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const path = require("path")
+const { createFilePath } = require("gatsby-source-filesystem")
+const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -32,7 +32,9 @@ exports.createPages = ({ actions, graphql }) => {
     posts.forEach(edge => {
       const id = edge.node.id
       createPage({
-        path: (edge.node.fields.slug).normalize("NFD").replace(/[\u0300-\u036f]/g, ""),
+        path: edge.node.fields.slug
+          .normalize("NFD")
+          .replace(/[\u0300-\u036f]/g, ""),
         component: path.resolve(
           `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
         ),

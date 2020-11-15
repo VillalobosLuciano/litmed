@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+import { Link } from "gatsby"
 
 export default function Services() {
   const data = useStaticQuery(graphql`
@@ -94,11 +94,19 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <button className="flex px-8 py-2 mx-auto mt-16 text-lg text-white border-0 rounded bg-primary-600 focus:outline-none hover:bg-primary-500">
-          <AniLink cover direction="up" bg="#669933" to="services" duration={0.65}>
+        <div className="flex justify-center mt-16">
+          <Link to={`services/`} className="px-8 py-2 m-3 text-lg text-center text-white border-0 rounded bg-primary-600 focus:outline-none hover:bg-primary-500">
             Ver todos los servicios
-          </AniLink>
-        </button>
+          </Link>
+          {/* <AniLink
+          className="px-8 py-2 m-3 text-lg text-center text-white border-0 rounded bg-primary-600 focus:outline-none hover:bg-primary-500"
+          fade
+          to="services"
+          duration={0.5}
+        >
+          Ver todos los servicios
+        </AniLink> */}
+        </div>
       </div>
     </section>
   )
