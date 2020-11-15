@@ -23,7 +23,7 @@ class SpecialistCard extends React.Component {
                 className="flex justify-center pt-4 lg:pt-0"
                 to={`${post.fields.slug
                   .normalize("NFD")
-                  .replace(/[\u0300-\u036f]/g, "")}/`}
+                  .replace(/[\u0300-\u036f]/g, "")}`}
               >
                 <div className="flex-none object-fill w-32 h-32 overflow-hidden text-center border rounded-full border-primary-500 lg:border-0 lg:min-h-full lg:w-32 lg:rounded-none lg:rounded-l">
                   <PreviewCompatibleImage
@@ -40,7 +40,7 @@ class SpecialistCard extends React.Component {
                 }}
                 to={`${post.fields.slug
                   .normalize("NFD")
-                  .replace(/[\u0300-\u036f]/g, "")}/`}
+                  .replace(/[\u0300-\u036f]/g, "")}`}
               >
                 <div className="flex-grow p-4 text-center lg:text-left">
                   <div className="text-xl font-bold text-gray-900">

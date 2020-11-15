@@ -77,7 +77,7 @@ export const ServiceTemplate = ({
                     <li key={specialist + `specialist`}>
                       <Link
                         className="px-4 py-2 font-light leading-6 transition duration-150 ease-in-out rounded-lg hover:bg-primary-200 text-primary-800 hover:text-primary-700"
-                        to={`/specialists/${kebabCase(specialist)}/`}
+                        to={`/specialists/${kebabCase(specialist)}`}
                         state={{
                           modal: true,
                         }}
@@ -96,7 +96,7 @@ export const ServiceTemplate = ({
         {prevPostURL && (
           <Link
             className="underline text-secondary-600 hover:text-primary-600"
-            to={`${(prevPostURL).normalize("NFD").replace(/[\u0300-\u036f]/g, "")}/`}
+            to={`${(prevPostURL).normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}
           >
             « Anterior
           </Link>
@@ -104,7 +104,7 @@ export const ServiceTemplate = ({
         {nextPostURL && (
           <Link
             className="underline text-secondary-600 hover:text-primary-600"
-            to={`${(nextPostURL).normalize("NFD").replace(/[\u0300-\u036f]/g, "")}/`}
+            to={`${(nextPostURL).normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`}
           >
             Siguiente »
           </Link>

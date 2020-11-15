@@ -26,7 +26,7 @@ export const SpecialistTemplate = ({
       return
     }
     navigate(
-      `${prevPostURL.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}/`,
+      `${prevPostURL.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`,
       { state: { modal: true } }
     )
   }
@@ -36,7 +36,7 @@ export const SpecialistTemplate = ({
       return
     }
     navigate(
-      `${nextPostURL.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}/`,
+      `${nextPostURL.normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`,
       { state: { modal: true } }
     )
   }
@@ -84,7 +84,7 @@ export const SpecialistTemplate = ({
                       className="inline-block w-10 h-10 px-2 text-white hover:text-primary-500"
                       to={`${prevPostURL
                         .normalize("NFD")
-                        .replace(/[\u0300-\u036f]/g, "")}/`}
+                        .replace(/[\u0300-\u036f]/g, "")}`}
                     >
                       <FaAngleLeft className="w-full h-full transition-colors duration-200 fill-current" />
                     </Link>
@@ -160,7 +160,7 @@ export const SpecialistTemplate = ({
                       className="inline-block w-10 h-10 px-2 text-white hover:text-primary-500"
                       to={`${nextPostURL
                         .normalize("NFD")
-                        .replace(/[\u0300-\u036f]/g, "")}/`}
+                        .replace(/[\u0300-\u036f]/g, "")}`}
                     >
                       <FaAngleRight className="w-full h-full transition-colors duration-200 fill-current" />
                     </Link>
@@ -232,7 +232,7 @@ export const SpecialistTemplate = ({
                             <li key={service + `service`}>
                               <Link
                                 className="px-4 py-2 font-light leading-6 transition duration-150 ease-in-out rounded-lg hover:bg-primary-200 text-primary-800 hover:text-primary-700"
-                                to={`/services/${kebabCase(service)}/`}
+                                to={`/services/${kebabCase(service)}`}
                                 state={{
                                   modal: true,
                                 }}
