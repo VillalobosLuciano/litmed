@@ -1,6 +1,6 @@
 ---
 templateKey: specialist
-title: Jeruska Ugarte
+title: Jerouska Ugarte
 specialty: Fonoaudiología
 description: El Fonoaudiólogo es un profesional del área de la salud
   especializado en promoción, prevención, diagnóstico, rehabilitación y
