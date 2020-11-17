@@ -2,8 +2,7 @@
 templateKey: specialist
 title: Christian Valera
 specialty: Kinesiología
-description: "Kinesiólogo egresado el año 2017. Especialista en
-  Neurorehabilitación y Kinesiología Respiratoria. "
+description: "Kinesiólogo especialista en Neurorehabilitación y Kinesiología Respiratoria. "
 featuredimage: /img/christianv.png
 services:
   - Neurorehabilitación
