@@ -6,7 +6,7 @@ description: Un nutricionista es el profesional que debe acompañar a la persona
   en el proceso de re-educación alimentaria mientras está en la fase de ajuste
   de peso, siempre de forma controlada y posteriormente para realizar su
   seguimiento personalizado y de mantenimiento.
-featuredimage: /img/veronicaa.jpg
+featuredimage: /img/paulina-soto.jpg
 services:
   - Nutrición y Dietética
 date: 2020-11-13T00:07:43.275Z
