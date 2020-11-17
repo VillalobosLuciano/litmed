@@ -24,7 +24,7 @@ export const ServiceTemplate = ({
       {helmet || ""}
       <Link
         className="underline text-secondary-600 hover:text-primary-600"
-        to={`services/`}
+        to={`/services`}
       >
         « Ver todos los servicios
       </Link>

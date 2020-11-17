@@ -33,7 +33,7 @@ export default function Services() {
     <section className="text-gray-700 body-font">
       <div className="container px-6 py-24 mx-auto">
         <div className="pb-12 lg:text-center">
-          <p className="text-base font-semibold leading-6 tracking-wide uppercase text-primary-600">
+          <p className="text-base font-semibold leading-6 tracking-wide text-teal-600 uppercase">
             Servicios
           </p>
           <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
@@ -53,7 +53,7 @@ export default function Services() {
                 fluid={data.imgOne.childImageSharp.fluid}
               />
             </div>
-            <h2 className="mt-5 text-base font-medium uppercase text-primary-800 title-font">
+            <h2 className="mt-5 text-base font-medium text-teal-800 uppercase title-font">
               Rehabilitación física
             </h2>
             <p className="mt-2 text-base leading-relaxed">
@@ -68,7 +68,7 @@ export default function Services() {
                 fluid={data.imgTwo.childImageSharp.fluid}
               />
             </div>
-            <h2 className="mt-5 text-base font-medium uppercase text-primary-800 title-font">
+            <h2 className="mt-5 text-base font-medium text-teal-800 uppercase title-font">
               Salud física y mental
             </h2>
             <p className="mt-2 text-base leading-relaxed">
@@ -84,7 +84,7 @@ export default function Services() {
                 fluid={data.imgThree.childImageSharp.fluid}
               />
             </div>
-            <h2 className="mt-5 text-base font-medium uppercase text-primary-800 title-font">
+            <h2 className="mt-5 text-base font-medium text-teal-800 uppercase title-font">
               Estilo de vida saludable
             </h2>
             <p className="mt-2 text-base leading-relaxed">
@@ -95,11 +95,11 @@ export default function Services() {
           </div>
         </div>
         <div className="flex justify-center mt-16">
-          <Link to={`services/`} className="px-8 py-2 m-3 text-lg text-center text-white border-0 rounded bg-primary-600 focus:outline-none hover:bg-primary-500">
+          <Link to={`services/`} className="px-8 py-2 m-3 text-lg text-center text-white bg-teal-500 border-0 rounded focus:outline-none hover:bg-teal-400">
             Ver todos los servicios
           </Link>
           {/* <AniLink
-          className="px-8 py-2 m-3 text-lg text-center text-white border-0 rounded bg-primary-600 focus:outline-none hover:bg-primary-500"
+          className="px-8 py-2 m-3 text-lg text-center text-white bg-teal-600 border-0 rounded focus:outline-none hover:bg-teal-500"
           fade
           to="services"
           duration={0.5}

@@ -13,7 +13,7 @@ class ServiceCard extends React.Component {
           posts.map(({ node: post }) => (
             <li className="flex mb-6 sm:m-0" key={post.id}>
               <Link
-                className="w-full px-10 py-4 transition duration-300 ease-in-out transform border rounded-lg shadow-sm sm:shadow-none sm:rounded-none border-secondary-100 sm:border-transparent sm:hover:shadow-lg sm:hover:-translate-y-1 sm:hover:scale-105 sm:p-4"
+                className="w-full px-10 py-4 transition duration-300 ease-in-out transform border rounded-lg shadow-sm sm:shadow-none sm:rounded-none border-teal-50 sm:border-transparent sm:hover:shadow-lg sm:hover:-translate-y-1 sm:hover:scale-105 sm:p-4"
                 to={`${post.fields.slug
                   .normalize("NFD")
                   .replace(/[\u0300-\u036f]/g, "")}`}
@@ -30,7 +30,7 @@ class ServiceCard extends React.Component {
                         }
                         ${
                           post.frontmatter.specialty === "Kinesiología"
-                            ? "text-primary-600 bg-primary-100"
+                            ? "text-green-600 bg-green-100"
                             : ""
                         }
                         ${

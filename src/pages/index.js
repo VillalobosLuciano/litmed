@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import BackgroundImage from "../components/bgLitmed"
 import SEO from "../components/seo"
-import AppointmentForm from "../components/appointmentForm"
 import ServicesSection from "../components/servicesSection"
 import LitmedSection from "../components/litmedSection"
 import LitfitSection from "../components/litfitSection"
@@ -11,7 +10,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Litmed" />
 
-    <BackgroundImage>
+    {/* <BackgroundImage>
       <section
         className="flex items-center md:max-w-3xl md:mx-auto"
         style={{
@@ -27,11 +26,10 @@ const IndexPage = () => (
           </p>
         </div>
       </section>
-    </BackgroundImage>
-    <AppointmentForm />
+    </BackgroundImage> */}
     <ServicesSection />
-    <LitmedSection /> 
-    <LitfitSection />
+    {/* <LitmedSection /> 
+    <LitfitSection /> */}
   </Layout>
 )
 

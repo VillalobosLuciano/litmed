@@ -6,7 +6,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-styled-components`,
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: `gatsby-source-filesystem`,
@@ -86,17 +85,6 @@ module.exports = {
     },
     {
       resolve: "gatsby-plugin-postcss",
-      options: {
-        postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: false, // Print do not removed selectors and processed file names
-        develop: false, // Disable while using `gatsby develop`
-        tailwind: true, // Enable tailwindcss support
-      },
     },
     {
       resolve: "gatsby-plugin-netlify-cms",
@@ -107,7 +95,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-    `gatsby-plugin-transition-link`,
     "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 }

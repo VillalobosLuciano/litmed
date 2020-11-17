@@ -27,9 +27,6 @@ const ContactForm = () => {
   return (
     <>
       <div className={form === 1 ? "block" : "hidden"}>
-        <h5 className="mb-2 font-semibold tracking-wider text-white uppercase md:mb-6">
-          Contáctanos
-        </h5>
         <Formik
           initialValues={{
             name: "",
@@ -60,7 +57,7 @@ const ContactForm = () => {
                 <div className="mb-4 lg:w-2/5">
                   <Field
                     placeholder="Nombre"
-                    className="block w-full px-4 py-3 leading-tight text-white border rounded appearance-none border-primary-600 bg-secondary-500 focus:outline-none focus:bg-secondary-900"
+                    className="block w-full px-4 py-3 leading-tight text-white border border-teal-400 rounded appearance-none bg-teal-50 focus:outline-none focus:bg-teal-100"
                     name="name"
                   />
                   {errors.name && touched.name ? (
@@ -70,7 +67,7 @@ const ContactForm = () => {
                 <div className="mb-4 lg:w-3/5">
                   <Field
                     placeholder="Email"
-                    className="block w-full px-4 py-3 leading-tight text-white border rounded appearance-none border-primary-600 bg-secondary-500 focus:outline-none focus:bg-secondary-900"
+                    className="block w-full px-4 py-3 leading-tight text-white border border-teal-400 rounded appearance-none bg-teal-50 focus:outline-none focus:bg-teal-100"
                     name="email"
                     type="email"
                   />
@@ -82,7 +79,7 @@ const ContactForm = () => {
               <div className="mb-4">
                 <Field
                   placeholder="Mensaje"
-                  className="block w-full h-32 px-4 pt-3 leading-tight text-white border rounded appearance-none border-primary-600 bg-secondary-500 focus:outline-none focus:bg-secondary-900"
+                  className="block w-full h-24 px-4 pt-3 leading-tight text-white border border-teal-400 rounded appearance-none bg-teal-50 focus:outline-none focus:bg-teal-90"
                   name="message"
                   component="textarea"
                 />
@@ -91,7 +88,7 @@ const ContactForm = () => {
                 ) : null}
               </div>
               <button
-                className="w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out rounded shadow-sm bg-primary-600 hover:bg-primary-500"
+                className="w-full px-4 py-2 text-sm font-medium text-white transition duration-150 ease-in-out bg-teal-500 rounded shadow-sm hover:bg-teal-400"
                 type="submit"
               >
                 Enviar
@@ -103,7 +100,7 @@ const ContactForm = () => {
       <div
         className={
           form === 2
-            ? "text-center block w-full px-4 py-20 font-light leading-tight text-white border rounded border-primary-600 bg-secondary-500"
+            ? "text-center block w-full px-4 py-20 font-light leading-tight text-white border rounded border-teal-400 bg-teal-50"
             : "hidden"
         }
       >
@@ -115,7 +112,7 @@ const ContactForm = () => {
               e.preventDefault()
               setForm(1)
             }}
-            className="underline cursor-pointer text-primary-200 hover:text-primary-500"
+            className="text-teal-200 underline cursor-pointer hover:text-teal-500"
             type="submit"
           >
             enviar otro mensaje

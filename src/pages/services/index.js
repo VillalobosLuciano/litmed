@@ -10,7 +10,7 @@ export default class ServicesIndexPage extends React.Component {
         <SEO title="Staff" />
         <div className="max-w-screen-xl px-4 py-6 mx-auto sm:py-10 lg:py-16 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <p className="text-base font-semibold leading-6 tracking-wide uppercase text-primary-600">
+            <p className="text-base font-semibold leading-6 tracking-wide text-teal-600 uppercase">
               Servicios
             </p>
             <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">

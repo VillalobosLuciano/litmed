@@ -13,19 +13,19 @@ class SpecialistCard extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <li
-              className="w-full max-w-sm mb-6 transition duration-300 ease-in-out border rounded cursor-pointer lg:max-w-full lg:flex md:mb-0 sm:hover:border-primary-500 sm:hover:shadow-lg"
+              className="block w-full max-w-sm mb-6 transition duration-300 ease-in-out border rounded cursor-pointer border-teal-50 lg:max-w-full lg:flex md:mb-0 sm:hover:border-teal-100 sm:hover:shadow-lg"
               key={post.id}
             >
               <Link
                 state={{
                   modal: true,
                 }}
-                className="flex justify-center pt-4 lg:pt-0"
+                className="flex justify-center pt-4 border border-teal-50 lg:pt-0"
                 to={`${post.fields.slug
                   .normalize("NFD")
                   .replace(/[\u0300-\u036f]/g, "")}`}
               >
-                <div className="flex-none object-fill w-32 h-32 overflow-hidden text-center border rounded-full border-primary-500 lg:border-0 lg:min-h-full lg:w-32 lg:rounded-none lg:rounded-l">
+                <div className="flex-none object-fill w-32 h-32 overflow-hidden text-center border border-teal-500 rounded-full lg:border-0 lg:min-h-full lg:w-32 lg:rounded-none lg:rounded-l">
                   <PreviewCompatibleImage
                     imageInfo={{
                       image: post.frontmatter.featuredimage,
@@ -46,7 +46,7 @@ class SpecialistCard extends React.Component {
                   <div className="text-xl font-bold text-gray-900">
                     {post.frontmatter.title}
                   </div>
-                  <p className="mb-3 text-xs tracking-wide uppercase text-primary-700">
+                  <p className="mb-3 text-xs tracking-wide text-teal-700 uppercase">
                     {post.frontmatter.specialty}
                   </p>
                   <p className="mb-2 text-sm font-light text-gray-600 line-clamp-4">

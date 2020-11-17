@@ -23,11 +23,9 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="font-sans">
+    <div className="flex flex-col min-h-screen font-sans bg-gradient-to-b from-white via-white to-teal-50">
       <Navbar siteTitle={data.site.siteMetadata.title} />
-      <div className="mt-12">
-        <main>{children}</main>
-      </div>
+      <main className="flex-grow">{children}</main>
       <Footer />
     </div>
   )

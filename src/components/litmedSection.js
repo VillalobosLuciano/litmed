@@ -1,13 +1,8 @@
 import React from "react"
 import SlideShow from "../components/slideShow"
-import styled from "styled-components"
 
-const Wrapper = styled.section`
-  clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
-`
 
 const LitmedSection = () => (
-  <Wrapper>
     <section className="py-16 text-gray-500 bg-secondary-700 body-font border-primary-800">
       <div className="container px-6 mx-auto">
         <div className="pt-20 lg:text-center">
@@ -46,6 +41,5 @@ const LitmedSection = () => (
         </div>
       </div>
     </section>
-  </Wrapper>
 )
 export default LitmedSection
