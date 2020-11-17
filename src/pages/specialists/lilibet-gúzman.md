@@ -10,6 +10,6 @@ description: "Ocupación basada en el desempeño de tareas encaminadas a promove
 featuredimage: /img/photo-2020-11-16-15-07-06.jpg
 services:
   - Medicina General
-date: 2020-07-17T18:33:47.463Z
+date: 2020-11-17T13:57:00.000Z
 ---
 Prestar la mejor asistencia posible, la aplicación del conocimiento de forma ética y competente, y que la práctica profesional se oriente hacia las necesidades de salud y de bienestar de las personas y de la comunidad.
