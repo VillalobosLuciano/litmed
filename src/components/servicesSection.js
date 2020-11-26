@@ -31,7 +31,7 @@ export default function Services() {
   `)
   return (
     <section className="text-gray-700 body-font">
-      <div className="container px-6 py-24 mx-auto">
+      <div className="max-w-screen-xl px-4 py-6 mx-auto sm:mb-12 sm:py-10 lg:py-16 sm:px-6 lg:px-8">
         <div className="pb-12 lg:text-center">
           <p className="text-base font-semibold leading-6 tracking-wide text-teal-600 uppercase">
             Servicios
@@ -73,8 +73,7 @@ export default function Services() {
             </h2>
             <p className="mt-2 text-base leading-relaxed">
               Cuerpo y mente saludables ayudan a prevenir ciertas enfermedades
-              como afecciones cardíacas y diabetes. También previenen la
-              depresión y reducen el estrés.
+              como afecciones cardíacas y diabetes.
             </p>
           </div>
           <div className="p-4 mb-6 md:w-1/3 sm:mb-0">
@@ -98,14 +97,6 @@ export default function Services() {
           <Link to={`services/`} className="px-8 py-2 m-3 text-lg text-center text-white bg-teal-500 border-0 rounded focus:outline-none hover:bg-teal-400">
             Ver todos los servicios
           </Link>
-          {/* <AniLink
-          className="px-8 py-2 m-3 text-lg text-center text-white bg-teal-600 border-0 rounded focus:outline-none hover:bg-teal-500"
-          fade
-          to="services"
-          duration={0.5}
-        >
-          Ver todos los servicios
-        </AniLink> */}
         </div>
       </div>
     </section>

@@ -30,7 +30,7 @@ export default ({ children, className }) => (
     `}
     render={data => {
       const imageData = [
-        `linear-gradient(to bottom, rgba(100, 171, 61, 0.65), rgba(47, 76, 74, 1))`,
+        `linear-gradient(to bottom, rgba(6, 148, 102, 0.65), rgba(6, 148, 162, 1))`,
         data.desktop.childImageSharp.fluid       
       ]
       return (

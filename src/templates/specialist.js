@@ -127,15 +127,15 @@ export const SpecialistTemplate = ({
                       <div className="justify-center pb-2 mt-6 lg:flex sm:mt-2 lg:w-1/3">
                         <div>
                           {services && services.length ? (
-                            <div className="p-4 bg-teal-100 border border-teal-300 rounded-sm">
-                              <span className="text-lg font-semibold leading-8 tracking-wide text-gray-900">
+                            <div className="p-4 border border-teal-300 rounded-sm bg-teal-50">
+                              <span className="text-lg leading-8 tracking-wide text-gray-800">
                                 Servicios
                               </span>
                               <ul className="pt-3 space-y-3">
                                 {services.map(service => (
                                   <li key={service + `service`}>
                                     <Link
-                                      className="p-2 font-light leading-6 text-teal-800 transition duration-150 ease-in-out rounded-sm hover:bg-teal-200 hover:text-teal-900"
+                                      className="p-2 font-light leading-6 text-teal-800 transition duration-150 ease-in-out rounded-sm hover:bg-teal-100 hover:text-teal-900"
                                       to={`/services/${kebabCase(service)}/`}
                                     >
                                       ‣ {service}
@@ -172,10 +172,10 @@ export const SpecialistTemplate = ({
         ) : (
           <Layout>
             
-            <div className="px-4 py-6 mx-auto sm:py-10 lg:py-12 sm:px-8 lg:px-16 xl:px-40 2xl:px-64">
+            <div className="max-w-screen-xl px-4 py-6 mx-auto sm:mb-12 sm:py-10 lg:py-16 sm:px-6 lg:px-8">
               {helmet || ""}
               <Link
-                className="text-teal-600 underline hover:text-teal-600"
+                className="text-teal-600 hover:text-teal-600"
                 to={`/specialists`}
               >
                 « Ver todos los especialistas
@@ -209,7 +209,7 @@ export const SpecialistTemplate = ({
                 <div className="justify-center pb-2 mt-6 lg:flex sm:mt-2 lg:w-1/3">
                   <div>
                     {services && services.length ? (
-                      <div className="p-4 bg-teal-100 border border-teal-300 rounded-md">
+                      <div className="p-4 border border-teal-300 rounded-md bg-teal-50">
                         <h5 className="flex items-center text-teal-900">
                           <span>
                             <svg
@@ -231,7 +231,7 @@ export const SpecialistTemplate = ({
                           {services.map(service => (
                             <li key={service + `service`}>
                               <Link
-                                className="px-4 py-2 font-light leading-6 text-teal-800 transition duration-150 ease-in-out rounded-lg hover:bg-teal-200 hover:text-teal-700"
+                                className="px-4 py-2 font-light leading-6 text-teal-800 transition duration-150 ease-in-out rounded-lg hover:bg-teal-100 hover:text-teal-700"
                                 to={`/services/${kebabCase(service)}`}
                                 state={{
                                   modal: true,
@@ -250,7 +250,7 @@ export const SpecialistTemplate = ({
               <div className="space-x-6">
                 {prevPostURL && (
                   <Link
-                    className="text-teal-600 underline hover:text-teal-600"
+                    className="text-teal-600 hover:text-teal-600"
                     to={`${prevPostURL
                       .normalize("NFD")
                       .replace(/[\u0300-\u036f]/g, "")}/`}
@@ -260,7 +260,7 @@ export const SpecialistTemplate = ({
                 )}
                 {nextPostURL && (
                   <Link
-                    className="text-teal-600 underline hover:text-teal-600"
+                    className="text-teal-600 hover:text-teal-600"
                     to={`${nextPostURL
                       .normalize("NFD")
                       .replace(/[\u0300-\u036f]/g, "")}/`}
