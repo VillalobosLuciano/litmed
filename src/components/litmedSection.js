@@ -1,15 +1,41 @@
 import React from "react"
-import SlideShow from "../components/slideShow"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
-
-const LitmedSection = () => (
-    <section className="py-16 text-gray-500 bg-secondary-700 body-font border-primary-800">
-      <div className="container px-6 mx-auto">
-        <div className="pt-20 lg:text-center">
-          <p className="text-base font-semibold leading-6 tracking-wide uppercase text-primary-600">
-            Litmed
+export default function Services() {
+  const data = useStaticQuery(graphql`
+    query {
+      imgOne: file(relativePath: { eq: "s_one.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      imgTwo: file(relativePath: { eq: "s_two.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      imgThree: file(relativePath: { eq: "s_three.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 500, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  return (
+    <section className="text-gray-700 body-font">
+      <div className="max-w-screen-xl px-4 py-6 mx-auto sm:mb-12 sm:py-10 lg:pt-16 lg:pb-24 sm:px-6 lg:px-8">
+        <div className="pb-12 lg:text-center">
+          <p className="text-base font-semibold leading-6 tracking-wide text-teal-600 uppercase">
+            litmed
           </p>
-          <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-white sm:text-4xl sm:leading-10">
+          <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
             Centro Médico Integral
           </h3>
           <p className="max-w-2xl mt-4 text-xl leading-7 text-gray-500 lg:mx-auto">
@@ -17,29 +43,57 @@ const LitmedSection = () => (
             salud física/mental, hábitos y estilo de vida.
           </p>
         </div>
-        <div className="container flex flex-col items-center pt-4 pb-12 mx-auto lg:pb-24 lg:pt-6 md:flex-row">
-          <div className="w-full mb-10 lg:max-w-xl lg:w-full md:mb-0">
-            <SlideShow />
-          </div>
-          <div className="flex flex-col items-center text-center lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 md:items-start md:text-left">
-            <h3 className="mb-4 text-3xl font-medium text-white title-font sm:text-4xl">
-              Nuestro compromiso
-            </h3>
-            <p className="mb-2 leading-relaxed">
-              Copper mug try-hard pitchfork pour-over freegan heirloom neutra
-              air plant cold-pressed tacos poke beard tote bag. Heirloom echo
-              park mlkshk tote bag selvage hot chicken authentic tumeric
-              truffaut hexagon try-hard chambray.
+
+        <div className="flex flex-wrap -mx-4 -mt-4 -mb-10 sm:-m-4">
+          <div className="p-4 mb-6 md:w-1/3 sm:mb-0">
+            <div className="h-64 overflow-hidden rounded-lg">
+              <Img
+                className="w-full h-full"
+                fluid={data.imgOne.childImageSharp.fluid}
+              />
+            </div>
+            <h2 className="mt-5 text-base font-medium text-teal-800 uppercase title-font">
+              Rehabilitación física
+            </h2>
+            <p className="mt-2 text-base leading-relaxed">
+              La finalidad es que la persona tenga una vida autónoma,
+              dependiendo en el menor grado posible de los demás.
             </p>
-            <p className="mb-8 leading-relaxed">
-              Copper mug try-hard pitchfork pour-over freegan heirloom neutra
-              air plant cold-pressed tacos poke beard tote bag. Heirloom echo
-              park mlkshk tote bag selvage hot chicken authentic tumeric
-              truffaut hexagon try-hard chambray.
+          </div>
+          <div className="p-4 mb-6 md:w-1/3 sm:mb-0">
+            <div className="h-64 overflow-hidden rounded-lg">
+              <Img
+                className="w-full h-full"
+                fluid={data.imgTwo.childImageSharp.fluid}
+              />
+            </div>
+            <h2 className="mt-5 text-base font-medium text-teal-800 uppercase title-font">
+              Salud física y mental
+            </h2>
+            <p className="mt-2 text-base leading-relaxed">
+              Cuerpo y mente saludables ayudan a prevenir ciertas enfermedades
+              como afecciones cardíacas y diabetes.
+            </p>
+          </div>
+          <div className="p-4 mb-6 md:w-1/3 sm:mb-0">
+            <div className="h-64 overflow-hidden rounded-lg">
+              <Img
+                className="w-full h-full"
+                fluid={data.imgThree.childImageSharp.fluid}
+              />
+            </div>
+            <h2 className="mt-5 text-base font-medium text-teal-800 uppercase title-font">
+              Estilo de vida saludable
+            </h2>
+            <p className="mt-2 text-base leading-relaxed">
+              Te ayudamos a incorporar aquellos hábitos de nuestra vida diaria
+              que nos ayudan a mantenernos más sanos y con menos limitaciones
+              funcionales.
             </p>
           </div>
         </div>
       </div>
     </section>
-)
-export default LitmedSection
+  )
+}
+

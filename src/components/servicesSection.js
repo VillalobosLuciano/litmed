@@ -93,7 +93,7 @@ export default function Services() {
             </p>
           </div>
         </div>
-        <div className="flex justify-center mt-16">
+        <div className="flex justify-center mt-12 sm:mt-16">
           <Link to={`services/`} className="px-8 py-2 m-3 text-lg text-center text-white bg-teal-500 border-0 rounded focus:outline-none hover:bg-teal-400">
             Ver todos los servicios
           </Link>

@@ -100,7 +100,7 @@ export default function LitfitServices() {
                     </div>
                     <div className="ml-4">
                       <h5 className="text-lg font-medium leading-6 text-gray-900">
-                        Horario
+                        Horarios
                       </h5>
                       <p className="mt-2 text-base leading-6 text-gray-500">
                         Lunes, miércoles y viernes desde las 18:00 PM hasta las
@@ -187,7 +187,7 @@ export default function LitfitServices() {
                       </div>
                       <div className="ml-4">
                         <h5 className="text-lg font-medium leading-6 text-gray-900">
-                          Horario
+                          Horarios
                         </h5>
                         <p className="mt-2 text-base leading-6 text-gray-500">
                           Lunes, miércoles y viernes desde las 19:00 PM hasta
@@ -273,7 +273,7 @@ export default function LitfitServices() {
                     </div>
                     <div className="ml-4">
                       <h5 className="text-lg font-medium leading-6 text-gray-900">
-                        Horario
+                        Horarios
                       </h5>
                       <p className="mt-2 text-base leading-6 text-gray-500">
                         Lunes, miércoles y viernes desde las 18:00 PM hasta las
