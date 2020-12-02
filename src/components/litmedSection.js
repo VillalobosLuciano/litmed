@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export default function Services() {
+export default function Litmed() {
   const data = useStaticQuery(graphql`
     query {
       imgOne: file(relativePath: { eq: "s_one.jpg" }) {
@@ -39,8 +39,7 @@ export default function Services() {
             Centro Médico Integral
           </h3>
           <p className="max-w-2xl mt-4 text-xl leading-7 text-gray-500 lg:mx-auto">
-            El objetivo de nuestros servicios es garantizar una mejora en tu
-            salud física/mental, hábitos y estilo de vida.
+            Ofrecemos un excelente servicio de salud, accesible para todos los ciudadanos de la región de Coquimbo 
           </p>
         </div>
 

@@ -3,8 +3,6 @@ import ContactForm from "../components/contactForm"
 
 const Footer = () => (
   <footer>
-    
-
     <div className="py-12">
       <div className="max-w-xl px-4 mx-auto sm:px-6 lg:max-w-screen-xl lg:px-8">
         <div className="lg:grid lg:grid-cols-3 lg:gap-8">
@@ -13,9 +11,9 @@ const Footer = () => (
               LITMED
             </h5>
             <p className="mt-4 text-base leading-6 text-gray-500">
-              Nuestro compromiso está en mejorar tu calidad de vida,
-              respaldados por un gran equipo de profesionales con gran
-              formación valórica y vocación.
+              Nuestro compromiso está en mejorar tu calidad de vida, respaldados
+              por un gran equipo de profesionales con gran formación valórica y
+              vocación.
             </p>
             <ul className="mt-4">
               <li>
@@ -81,41 +79,28 @@ const Footer = () => (
             </ul>
           </div>
 
-          <div className="mt-10 lg:mt-0">
+          <div className="mt-10 lg:ml-20 lg:mt-0">
             <div className="mt-5">
               <h5 className="text-lg font-medium leading-6 text-gray-900">
                 Horarios de atención
               </h5>
-              <ul className="w-3/4 mt-4 space-y-2 sm:w-full lg:w-3/4">
-                <li className="flex justify-between text-gray-500">
-                  <label className="font-medium">Lunes</label>
-                  <p className="font-light">10:00 a 20:00</p>
-                </li>
-                <li className="flex justify-between text-gray-500">
-                  <label className="font-medium">Martes</label>
-                  <p className="font-light">10:00 a 20:00</p>
-                </li>
-                <li className="flex justify-between text-gray-500">
-                  <label className="font-medium">Miércoles</label>
-                  <p className="font-light">10:00 a 20:00</p>
-                </li>
-                <li className="flex justify-between text-gray-500">
-                  <label className="font-medium">Jueves</label>
-                  <p className="font-light">10:00 a 20:00</p>
-                </li>
-                <li className="flex justify-between text-gray-500">
-                  <label className="font-medium">Viernes</label>
-                  <p className="font-light">10:00 a 20:00</p>
-                </li>
-                <li className="flex justify-between text-gray-500">
-                  <label className="font-medium">Sábado</label>
-                  <p className="font-light">10:00 a 20:00</p>
-                </li>
-                <li className="flex justify-between text-gray-500">
-                  <label className="font-medium">Domingo</label>
-                  <p className="font-light">Cerrado</p>
-                </li>
-              </ul>
+              <div className="mt-4">
+                <dt className="text-lg font-medium leading-6 text-gray-600">
+                  Lunes a Viernes
+                </dt>
+                <dd className="mt-2 text-base text-gray-500">
+                  10:00 - 13:00 Hrs
+                </dd>
+                <dd className="mt-2 text-base text-gray-500 ">15:00 - 20:00 Hrs</dd>
+              </div>
+              <div className="mt-4">
+                <dt className="text-lg font-medium leading-6 text-gray-600">
+                  Sábados
+                </dt>
+                <dd className="mt-2 text-base text-gray-500">
+                  9:00 - 13:00 Hrs
+                </dd>
+              </div>
             </div>
           </div>
           <div className="mt-10 lg:mt-0">
