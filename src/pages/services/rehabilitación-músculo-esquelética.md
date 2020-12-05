@@ -10,7 +10,6 @@ description: Un programa de rehabilitación musculoesquelética es un programa
   aumentar el bienestar del paciente.
 specialists:
   - "Jaime Castillo "
-  - Camilo Menares
 date: 2020-05-20T19:53:31.912Z
 ---
 El programa de rehabilitación musculoesquelética se diseña para atender a las necesidades de cada paciente en particular, dependiendo de su problema o enfermedad específicos. La participación activa del paciente y su familia es esencial para el éxito del programa.
