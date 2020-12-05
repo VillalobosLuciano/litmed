@@ -38,7 +38,7 @@ export default function LitfitServices() {
                 Box Training
               </h4>
               <p className="mt-3 text-lg leading-7 text-gray-500">
-                conjunto de ejercicios de entrenamiento de boxeo diseñados para
+                Conjunto de ejercicios de entrenamiento de boxeo diseñados para
                 desarrollar habilidades, aumentar fuerza muscular, resistencia y
                 agilidad.
               </p>
