@@ -7,7 +7,7 @@ description: Los Psicólogos cuentan con capacitación profesional y destrezas
   problemas de la vida y de salud mental.
 featuredimage: /img/verónica-2.jpg
 services:
-  - Nutricionista
+  - Nutrición y Dietética
 date: 2020-07-17T18:02:08.253Z
 ---
 El Psicólogo tiene por objetivo evaluar y tratar los desórdenes de orden psicológico que pueden aparecer de manera espontánea (como la depresión, la ansiedad), o bien a consecuencia de un choque emocional o de un estrés (como el duelo, víctima, rupturas, conflictos familiares, etc).
