@@ -46,7 +46,7 @@ export default function LitfitServices() {
                 <li>
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center w-12 h-12 text-white bg-teal-500 rounded-md">
+                      <div className="flex items-center justify-center w-12 h-12 text-white rounded-md bg-gradient-to-r from-teal-500 to-green-400">
                         {/* Heroicon name: globe-alt */}
                         <svg
                           className="w-6 h-6"
@@ -80,7 +80,7 @@ export default function LitfitServices() {
                 <li className="mt-10">
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center w-12 h-12 text-white bg-teal-500 rounded-md">
+                      <div className="flex items-center justify-center w-12 h-12 text-white rounded-md bg-gradient-to-r from-teal-500 to-green-400">
                         {/* Heroicon name: scale */}
                         <svg
                           className="w-6 h-6"
@@ -133,7 +133,7 @@ export default function LitfitServices() {
                   <li>
                     <div className="flex">
                       <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center w-12 h-12 text-white bg-teal-500 rounded-md">
+                        <div className="flex items-center justify-center w-12 h-12 text-white rounded-md bg-gradient-to-r from-teal-500 to-green-400">
                           {/* Heroicon name: annotation */}
                           <svg
                             className="w-6 h-6"
@@ -167,7 +167,7 @@ export default function LitfitServices() {
                   <li className="mt-10">
                     <div className="flex">
                       <div className="flex-shrink-0">
-                        <div className="flex items-center justify-center w-12 h-12 text-white bg-teal-500 rounded-md">
+                        <div className="flex items-center justify-center w-12 h-12 text-white rounded-md bg-gradient-to-r from-teal-500 to-green-400">
                           {/* Heroicon name: mail */}
                           <svg
                             className="w-6 h-6"
@@ -220,7 +220,7 @@ export default function LitfitServices() {
                 <li>
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center w-12 h-12 text-white bg-teal-500 rounded-md">
+                      <div className="flex items-center justify-center w-12 h-12 text-white rounded-md bg-gradient-to-r from-teal-500 to-green-400">
                         {/* Heroicon name: globe-alt */}
                         <svg
                           className="w-6 h-6"
@@ -253,7 +253,7 @@ export default function LitfitServices() {
                 <li className="mt-10">
                   <div className="flex">
                     <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center w-12 h-12 text-white bg-teal-500 rounded-md">
+                      <div className="flex items-center justify-center w-12 h-12 text-white rounded-md bg-gradient-to-r from-teal-500 to-green-400">
                         {/* Heroicon name: scale */}
                         <svg
                           className="w-6 h-6"
