@@ -8,21 +8,21 @@ export default function LitfitServices() {
       imgOne: file(relativePath: { eq: "box.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 490, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       imgTwo: file(relativePath: { eq: "functional.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 490, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       imgThree: file(relativePath: { eq: "recovery.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 490, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }

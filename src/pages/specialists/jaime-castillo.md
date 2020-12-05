@@ -12,7 +12,6 @@ featuredimage: /img/jaimec.png
 services:
   - Terapia Manual Ortopédica
   - Rehabilitación Músculo-esquelética
-  - Kinesiología Adulto Mayor
   - Kinesiología Deportiva
 date: 2020-11-14T14:00:42.946Z
 ---

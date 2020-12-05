@@ -191,7 +191,7 @@ export default function Services() {
                 </li>
                 <li>
                   <Link
-                    to={`services/nutricion-y-dietética/`}
+                    to={`services/nutricion-y-dietetica/`}
                     className="flex items-center px-4 py-4 text-base text-white border-t border-teal-300 border-opacity-25 hover:bg-teal-700 sm:border-t-0 sm:border-l"
                   >
                     <svg

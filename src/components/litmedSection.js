@@ -8,21 +8,21 @@ export default function Litmed() {
       imgOne: file(relativePath: { eq: "s_one.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       imgTwo: file(relativePath: { eq: "s_two.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       imgThree: file(relativePath: { eq: "s_three.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500, quality: 100) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
