@@ -1,6 +1,6 @@
 ---
 templateKey: specialist
-title: Pablo Galleguillos
+title: Mariana Saavedra
 specialty: Medicina
 description: >+
   Ocupación basada en el desempeño de tareas encaminadas a promover y
@@ -12,7 +12,7 @@ description: >+
 
 
 
-featuredimage: /img/pablog.png
+featuredimage: /img/sin-cara.jpg
 services:
   - Medicina General
 date: 2021-01-17T16:48:16.172Z
