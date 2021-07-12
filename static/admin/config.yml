@@ -20,7 +20,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "specialist"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: 'Especialidad', name: 'specialty', widget: 'select', options: ['Medicina', 'Kinesiología', 'Nutrición', 'Fonoaudiología', 'Psicología', 'Terapia Ocupacional'], default: ''}  
+      - {label: 'Especialidad', name: 'specialty', widget: 'select', options: ['Medicina', 'Kinesiología', 'Nutrición', 'Fonoaudiología', 'Psicología', 'Terapia Ocupacional', 'Profesor Educación Física'], default: ''}  
       - {label: "Descripción", name: "description", widget: "text"}
       - {label: "Foto", name: "featuredimage", widget: image}
       - {label: "Detalle", name: "body", widget: "markdown"}

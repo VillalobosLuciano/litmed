@@ -35,12 +35,10 @@ export default function LitfitServices() {
           <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="relative">
               <h4 className="text-2xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-3xl sm:leading-9">
-                Box Training
+                Entrenamiento Personalizado
               </h4>
               <p className="mt-3 text-lg leading-7 text-gray-500">
-                Conjunto de ejercicios de entrenamiento de boxeo diseñados para
-                desarrollar habilidades, aumentar fuerza muscular, resistencia y
-                agilidad.
+                Entrenamiento enfocado al objetivo y capacidades de los clientes, nuestra ley es que “el movimiento es algo personal” y tenemos un firme compromiso con esto, orientación y corrección constante para sacar el mayor provecho a tus capacidades y a tus sesiones, juntos vamos por tus cambios
               </p>
               <ul className="mt-10">
                 <li>
@@ -69,10 +67,8 @@ export default function LitfitServices() {
                         Actividades
                       </h5>
                       <p className="mt-2 text-base leading-6 text-gray-500">
-                        El desarrollo de esta actividad se fundamenta en la
-                        ejecución de circuitos dinámicos y desafiantes basados
-                        en una gran variedad de trabajos de bolsa, “sombra” y
-                        movimientos de pies.
+                        Entrenamientos personalizados 1 a 1 y grupos pequeños.
+                        Asesorias online y planificaciones
                       </p>
                     </div>
                   </div>
@@ -98,15 +94,6 @@ export default function LitfitServices() {
                         </svg>
                       </div>
                     </div>
-                    <div className="ml-4">
-                      <h5 className="text-lg font-medium leading-6 text-gray-900">
-                        Horarios
-                      </h5>
-                      <p className="mt-2 text-base leading-6 text-gray-500">
-                        Lunes, miércoles y viernes desde las 18:00 PM hasta las
-                        19:00 PM.
-                      </p>
-                    </div>
                   </div>
                 </li>
               </ul>
@@ -114,11 +101,11 @@ export default function LitfitServices() {
             <div className="relative mt-10 -mx-4 lg:mt-0">
               <Img
                 className="relative m-6 rounded-md shadow-lg"
-                fluid={data.imgOne.childImageSharp.fluid}
+                fluid={data.imgTwo.childImageSharp.fluid}
               />
             </div>
           </div>
-          <div className="relative mt-12 sm:mt-16 lg:mt-24">
+          {/* <div className="relative mt-12 sm:mt-16 lg:mt-24">
             <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center">
               <div className="lg:col-start-2">
                 <h4 className="text-2xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-3xl sm:leading-9">
@@ -134,7 +121,6 @@ export default function LitfitServices() {
                     <div className="flex">
                       <div className="flex-shrink-0">
                         <div className="flex items-center justify-center w-12 h-12 text-white rounded-md bg-gradient-to-r from-teal-500 to-green-400">
-                          {/* Heroicon name: annotation */}
                           <svg
                             className="w-6 h-6"
                             xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +154,6 @@ export default function LitfitServices() {
                     <div className="flex">
                       <div className="flex-shrink-0">
                         <div className="flex items-center justify-center w-12 h-12 text-white rounded-md bg-gradient-to-r from-teal-500 to-green-400">
-                          {/* Heroicon name: mail */}
                           <svg
                             className="w-6 h-6"
                             xmlns="http://www.w3.org/2000/svg"
@@ -185,15 +170,6 @@ export default function LitfitServices() {
                           </svg>
                         </div>
                       </div>
-                      <div className="ml-4">
-                        <h5 className="text-lg font-medium leading-6 text-gray-900">
-                          Horarios
-                        </h5>
-                        <p className="mt-2 text-base leading-6 text-gray-500">
-                          Lunes, miércoles y viernes desde las 19:00 PM hasta
-                          las 20:00 PM.
-                        </p>
-                      </div>
                     </div>
                   </li>
                 </ul>
@@ -205,7 +181,7 @@ export default function LitfitServices() {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="relative">
               <h4 className="text-2xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-3xl sm:leading-9">
@@ -270,15 +246,6 @@ export default function LitfitServices() {
                           />
                         </svg>
                       </div>
-                    </div>
-                    <div className="ml-4">
-                      <h5 className="text-lg font-medium leading-6 text-gray-900">
-                        Horarios
-                      </h5>
-                      <p className="mt-2 text-base leading-6 text-gray-500">
-                        Lunes, miércoles y viernes desde las 18:00 PM hasta las
-                        20:00 PM. Después de cada entrenamiento
-                      </p>
                     </div>
                   </div>
                 </li>
