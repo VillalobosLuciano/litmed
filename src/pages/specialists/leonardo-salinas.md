@@ -1,7 +1,7 @@
 ---
 templateKey: specialist
 title: Leonardo Salinas
-specialty: Kinesiología
+specialty: Profesor Educación Física
 description: |-
   Entrenamientos personalizados (1 a 1) y grupos pequeños
   Asesorías Online (planificación)
