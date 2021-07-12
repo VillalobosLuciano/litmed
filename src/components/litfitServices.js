@@ -38,7 +38,11 @@ export default function LitfitServices() {
                 Entrenamiento Personalizado
               </h4>
               <p className="mt-3 text-lg leading-7 text-gray-500">
-                Entrenamiento enfocado al objetivo y capacidades de los clientes, nuestra ley es que “el movimiento es algo personal” y tenemos un firme compromiso con esto, orientación y corrección constante para sacar el mayor provecho a tus capacidades y a tus sesiones, juntos vamos por tus cambios
+                Entrenamiento enfocado al objetivo y capacidades de los
+                clientes, nuestra ley es que “el movimiento es algo personal” y
+                tenemos un firme compromiso con esto, orientación y corrección
+                constante para sacar el mayor provecho a tus capacidades y a tus
+                sesiones, juntos vamos por tus cambios
               </p>
               <ul className="mt-10">
                 <li>
@@ -70,29 +74,6 @@ export default function LitfitServices() {
                         Entrenamientos personalizados 1 a 1 y grupos pequeños.
                         Asesorias online y planificaciones
                       </p>
-                    </div>
-                  </div>
-                </li>
-                <li className="mt-10">
-                  <div className="flex">
-                    <div className="flex-shrink-0">
-                      <div className="flex items-center justify-center w-12 h-12 text-white rounded-md bg-gradient-to-r from-teal-500 to-green-400">
-                        {/* Heroicon name: scale */}
-                        <svg
-                          className="w-6 h-6"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                          />
-                        </svg>
-                      </div>
                     </div>
                   </div>
                 </li>
@@ -182,7 +163,7 @@ export default function LitfitServices() {
               </div>
             </div>
           </div> */}
-          <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
+          {/* <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
             <div className="relative">
               <h4 className="text-2xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-3xl sm:leading-9">
                 Recovery
@@ -197,7 +178,7 @@ export default function LitfitServices() {
                   <div className="flex">
                     <div className="flex-shrink-0">
                       <div className="flex items-center justify-center w-12 h-12 text-white rounded-md bg-gradient-to-r from-teal-500 to-green-400">
-                        {/* Heroicon name: globe-alt */}
+                     
                         <svg
                           className="w-6 h-6"
                           xmlns="http://www.w3.org/2000/svg"
@@ -230,7 +211,7 @@ export default function LitfitServices() {
                   <div className="flex">
                     <div className="flex-shrink-0">
                       <div className="flex items-center justify-center w-12 h-12 text-white rounded-md bg-gradient-to-r from-teal-500 to-green-400">
-                        {/* Heroicon name: scale */}
+                  
                         <svg
                           className="w-6 h-6"
                           xmlns="http://www.w3.org/2000/svg"
@@ -257,7 +238,7 @@ export default function LitfitServices() {
                 fluid={data.imgThree.childImageSharp.fluid}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
