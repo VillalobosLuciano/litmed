@@ -47,7 +47,7 @@ export default function Navbar({ siteTitle }) {
                 className="inline-flex items-center px-1 pt-1 ml-8 text-sm font-medium leading-5 text-gray-500 transition duration-150 ease-in-out border-b-2 border-transparent hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300"
                 activeClassName="text-gray-900 border-teal-500 focus:border-teal-700 hover:text-gray-900 hover:border-teal-500"
               >
-                Litfit
+                LitMove
               </Link>
             </div>
             <div className="flex items-center -mr-2 sm:hidden">
@@ -111,7 +111,7 @@ export default function Navbar({ siteTitle }) {
               Especialistas
             </Link>
             <Link
-              to={`/litfit`}
+              to={`/litMove`}
               className="block py-2 pl-3 pr-4 mt-1 text-base font-medium text-gray-600 transition duration-150 ease-in-out border-l-4 border-transparent hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300"
               activeClassName="text-teal-700 border-teal-500 bg-teal-50 focus:text-teal-800 focus:bg-teal-100 focus:border-teal-700 hover:text-teal-700 hover:bg-teal-50 hover:border-teal-500"
             >
