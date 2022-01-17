@@ -8,7 +8,7 @@ description: La Psicología es una disciplina cuyo objetivo es el estudio,
   valorar los problemas que tienen las personas y poner en práctica el
   tratamiento oportuno.
 specialists:
-  - "Diego Hidalgo "
+  - Helario Solís
 date: 2022-01-17T18:53:22.042Z
 ---
 <!--StartFragment-->
