@@ -9,6 +9,6 @@ description: "Un profesional de Psicología deberá estar comprometido con el
 featuredimage: /img/img-2343.jpg
 services:
   - Psicología
-date: 2022-01-17T19:02:28.388Z
+date: 2022-01-17T18:00:00.000Z
 ---
 Es capaz de llevar a cabo acciones que, teniendo una base en el conocimiento de la psicología, se orientan a favorecer el desarrollo y bienestar psicosocial en distintos contextos sociales y culturales, incorporando una reflexión ética en su actuar profesional. De este modo, puede diseñar, implementar y evaluar intervenciones y/o programas en alguno de los siguientes ámbitos: clínicos, educacionales, laborales, social-comunitarios, organizacionales y de la salud.
