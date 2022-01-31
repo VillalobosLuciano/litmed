@@ -10,7 +10,7 @@ description: |-
 featuredimage: /img/sin-cara.jpg
 services:
   - Neurorehabilitación
-date: 2021-01-12T19:02:00.000Z
+date: 2022-01-16T19:02:00.000Z
 ---
 12 años de experiencia en trabajo de primera infancia, actualmente desempeñando labores de Kinesiólogo en Instituto Teletón Coquimbo. 
 
