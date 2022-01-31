@@ -13,6 +13,6 @@ services:
   - Terapia Manual Ortopédica
   - Rehabilitación Músculo-esquelética
   - Kinesiología Deportiva
-date: 2022-01-17T19:08:21.077Z
+date: 2022-01-20T19:08:00.000Z
 ---
 Su formación profesional tiene una fuerte base disciplinar, la que le permite analizar, interpretar e investigar científicamente el movimiento humano, desde un punto de vista biológico, psicológico y social. Su sello distintivo es su óptima preparación en áreas prioritarias de salud del país, en concordancia con los objetivos sanitarios, su vocación de servicio social y su accionar reflexivo.
