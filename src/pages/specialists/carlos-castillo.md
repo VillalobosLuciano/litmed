@@ -7,7 +7,7 @@ description: |-
   Kinesiólogo en Rehabilitación Neuroinfantil 
   Diplomado en Psicomotricidad Educativa en CICEP
   Diplomado internacional en Psicomotricidad en CICEP Barcelona
-featuredimage: /img/sin-cara.jpg
+featuredimage: /img/photo-2022-02-23-22-38-44.jpg
 services:
   - Neurorehabilitación
 date: 2022-01-18T19:02:00.000Z
