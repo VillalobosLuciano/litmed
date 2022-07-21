@@ -1,6 +1,6 @@
 ---
 templateKey: specialist
-title: "Dr. Henry Paz "
+title: Fisiatría
 specialty: Medicina
 description: Se especializa en el tratamiento de patologías del sistema músculo
   esquelético. Su trabajo consiste en coordinar al equipo de rehabilitación
