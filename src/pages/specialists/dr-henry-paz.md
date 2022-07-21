@@ -10,7 +10,7 @@ description: Se especializa en el tratamiento de patologías del sistema múscul
   tratamientos.
 featuredimage: /img/sin-cara.jpg
 services:
-  - Medicina General
+  - Fisiatría
 date: 2022-07-21T16:26:41.022Z
 ---
 <!--StartFragment-->
