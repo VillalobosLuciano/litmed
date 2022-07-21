@@ -9,7 +9,7 @@ description: >-
 
   La implementación de servicios de Medicina Física y Rehabilitación permite abordar en forma precoz y racional el problema de la discapacidad, ya sea temporal o permanente.
 specialists:
-  - "Dr. Henry Paz "
+  - Fisiatra Dr. Henry Paz
 date: 2022-07-21T16:34:34.673Z
 ---
 <!--StartFragment-->
