@@ -1,6 +1,6 @@
 ---
 templateKey: specialist
-title: Medicina General
+title: Dr. Pablo Galleguillos
 specialty: Medicina
 description: "La Medicina General es el primer nivel de atención médica. La
   consulta está orientada al abordaje integral del paciente en su aspecto
