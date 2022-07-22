@@ -29,6 +29,11 @@ class ServiceCard extends React.Component {
                             : ""
                         }
                         ${
+                          post.frontmatter.specialty === "Fisiatría"
+                            ? "text-pink-600 bg-pink-100"
+                            : ""
+                        }
+                        ${
                           post.frontmatter.specialty === "Kinesiología"
                             ? "text-green-600 bg-green-100"
                             : ""

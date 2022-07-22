@@ -1,7 +1,7 @@
 ---
 templateKey: specialist
-title: Fisiatra Dr. Henry Paz
-specialty: Medicina
+title: Dr. Henry Paz
+specialty: Fisiatría
 description: Se especializa en el tratamiento de patologías del sistema músculo
   esquelético. Su trabajo consiste en coordinar al equipo de rehabilitación
   integrado por diversos profesionales, como kinesiólogos, terapeutas
@@ -13,6 +13,7 @@ services:
   - Fisiatría
 date: 2022-07-21T16:26:41.022Z
 ---
+
 <!--StartFragment-->
 
 La Fisiatría es la especialidad médica que se ocupa fundamentalmente de la rehabilitación de personas con patologías neuro-musculo-esqueléticas.

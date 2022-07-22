@@ -2,11 +2,11 @@ backend:
   name: git-gateway
   branch: master
   commit_messages:
-    create: 'Create {{collection}} “{{slug}}”'
-    update: 'Update {{collection}} “{{slug}}”'
-    delete: 'Delete {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Upload “{{path}}”'
-    deleteMedia: '[skip ci] Delete “{{path}}”'
+    create: "Create {{collection}} “{{slug}}”"
+    update: "Update {{collection}} “{{slug}}”"
+    delete: "Delete {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Upload “{{path}}”"
+    deleteMedia: "[skip ci] Delete “{{path}}”"
 
 media_folder: static/img
 public_folder: /img
@@ -18,26 +18,83 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "specialist"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: 'Especialidad', name: 'specialty', widget: 'select', options: ['Medicina', 'Kinesiología', 'Nutrición', 'Fonoaudiología', 'Psicología', 'Terapia Ocupacional', 'Profesor Educación Física'], default: ''}  
-      - {label: "Descripción", name: "description", widget: "text"}
-      - {label: "Foto", name: "featuredimage", widget: image}
-      - {label: "Detalle", name: "body", widget: "markdown"}
-      - {label: 'Servicios', name: 'services', widget: 'relation', collection: 'services', searchFields: ['title'], valueField: 'title', multiple: true, default: ''}
-      - {label: "Fecha de publicación", name: "date", widget: "datetime"}
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "specialist",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Especialidad",
+          name: "specialty",
+          widget: "select",
+          options:
+            [
+              "Medicina",
+              "Fisiatría",
+              "Kinesiología",
+              "Nutrición",
+              "Fonoaudiología",
+              "Psicología",
+              "Terapia Ocupacional",
+              "Profesor Educación Física",
+            ],
+          default: "",
+        }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - { label: "Foto", name: "featuredimage", widget: image }
+      - { label: "Detalle", name: "body", widget: "markdown" }
+      - {
+          label: "Servicios",
+          name: "services",
+          widget: "relation",
+          collection: "services",
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: true,
+          default: "",
+        }
+      - { label: "Fecha de publicación", name: "date", widget: "datetime" }
   - name: "services"
     label: "Servicios"
     folder: "src/pages/services"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "service"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: 'Especialidad', name: 'specialty', widget: 'select', options: ['Medicina', 'Kinesiología', 'Nutrición', 'Fonoaudiología', 'Psicología', 'Terapia Ocupacional'], default: ''}  
-      - {label: "Descripción", name: "description", widget: "text"}
-      - {label: "Detalle", name: "body", widget: "markdown"}
-      - {label: 'Especialistas', name: 'specialists', widget: 'relation', collection: 'specialists', searchFields: ['title'], valueField: 'title', multiple: true, default: ''}
-      - {label: "Fecha de publicación", name: "date", widget: "datetime"}
-
-  
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "service",
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Especialidad",
+          name: "specialty",
+          widget: "select",
+          options:
+            [
+              "Medicina",
+              "Fisiatría",
+              "Kinesiología",
+              "Nutrición",
+              "Fonoaudiología",
+              "Psicología",
+              "Terapia Ocupacional",
+            ],
+          default: "",
+        }
+      - { label: "Descripción", name: "description", widget: "text" }
+      - { label: "Detalle", name: "body", widget: "markdown" }
+      - {
+          label: "Especialistas",
+          name: "specialists",
+          widget: "relation",
+          collection: "specialists",
+          searchFields: ["title"],
+          valueField: "title",
+          multiple: true,
+          default: "",
+        }
+      - { label: "Fecha de publicación", name: "date", widget: "datetime" }
