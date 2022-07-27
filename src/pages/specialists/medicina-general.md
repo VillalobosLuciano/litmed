@@ -8,7 +8,7 @@ description: La Medicina General es el primer nivel de atención médica. La
 featuredimage: /img/pablog.png
 services:
   - Medicina General
-date: 2022-05-19T12:24:44.534Z
+date: 2022-07-27T17:57:39.360Z
 ---
 Dependiendo del caso se procede a la identificación de factores de riesgo para enfermedades latentes o potenciales en corto, mediano y largo plazo; orientando al paciente sobre la manera más adecuada de prevenirlas e incentivando estilos de vida saludables.
 
