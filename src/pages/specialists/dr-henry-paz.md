@@ -11,7 +11,7 @@ description: Se especializa en el tratamiento de patologías del sistema múscul
 featuredimage: /img/sin-cara.jpg
 services:
   - Fisiatría
-date: 2022-07-21T16:26:41.022Z
+date: 2022-07-27T18:00:04.451Z
 ---
 
 <!--StartFragment-->
