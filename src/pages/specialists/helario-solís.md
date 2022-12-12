@@ -1,12 +1,12 @@
 ---
 templateKey: specialist
-title: Helario Solís
+title: Luis Poblete
 specialty: Psicología
 description: "Un profesional de Psicología deberá estar comprometido con el
   bienestar de las personas. En base a ese lineamiento, es capaz de construir y
   aplicar pruebas para identificar las necesidades de las personas. Ser un líder
   humanista ligado al trabajo interdisciplinario. "
-featuredimage: /img/img-2343.jpg
+featuredimage: /img/sin-cara.jpg
 services:
   - Psicología
 date: 2022-01-17T18:00:00.000Z
