@@ -11,7 +11,7 @@ description: Se especializa en proporcionar atención compasiva y personalizada 
   compromete a fomentar la independencia y el bienestar emocional de cada niño,
   colaborando estrechamente con las familias para lograr un impacto positivo a
   largo plazo en el desarrollo de sus hijos.
-featuredimage: /img/sin-cara.jpg
+featuredimage: /img/to-natalia-castillo.jpg
 services:
   - Terapia Ocupacional
 date: 2023-12-18T01:34:06.136Z
