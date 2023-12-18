@@ -12,7 +12,7 @@ description: Contamos con una psicóloga comprometida y empática dedicada a
   centrado en el paciente, nuestra psicóloga trabaja colaborativamente para
   ayudar a cada individuo a alcanzar su máximo potencial emocional y vivir una
   vida más plena y equilibrada.
-featuredimage: /img/sin-cara.jpg
+featuredimage: /img/68872.jpg
 services:
   - Psicología
 date: 2023-12-18T01:36:41.249Z
