@@ -14,7 +14,7 @@ description: Contamos con una psicóloga comprometida y empática dedicada a
   vida más plena y equilibrada.
 featuredimage: /img/sin-cara.jpg
 services:
-  - Medicina General
+  - Psicología
 date: 2023-12-18T01:36:41.249Z
 ---
 <!--StartFragment-->
