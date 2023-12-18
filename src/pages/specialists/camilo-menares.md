@@ -18,6 +18,6 @@ date: 2023-12-18T01:29:40.396Z
 ---
 <!--StartFragment-->
 
-Su enfoque holístico y atención individualizada garantizan resultados efectivos para una variedad de afecciones musculoesqueléticas. Ya sea que busque recuperarse de lesiones, mejorar su rendimiento deportivo o simplemente mejorar su calidad de vida, nuestro kinesiólogo está aquí para brindarle un cuidado experto y alentador.
+Su enfoque integral y atención individualizada garantizan resultados efectivos para una variedad de afecciones musculoesqueléticas. Ya sea que busque recuperarse de lesiones, mejorar su rendimiento deportivo o simplemente mejorar su calidad de vida, nuestro kinesiólogo está aquí para brindarle un cuidado experto y alentador.
 
 <!--EndFragment-->
