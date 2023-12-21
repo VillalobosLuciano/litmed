@@ -6,7 +6,7 @@ description: La Terapeuta Ocupacional es un(a) profesional de la salud que
   promueve a través de la ocupación el desarrollo de la autonomía, los derechos
   y la calidad de vida de las personas, grupos y comunidades, favoreciendo la
   valoración de la diversidad, la inclusión y participación social.
-featuredimage: /img/sin-cara.jpg
+featuredimage: /img/to-tamara.jpg
 services:
   - Terapia Ocupacional
 date: 2020-11-12T23:56:45.814Z
