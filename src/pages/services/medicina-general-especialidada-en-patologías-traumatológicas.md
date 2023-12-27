@@ -8,7 +8,7 @@ description: Especialista en patologías traumáticas. Con una dedicación
   traumáticos. Su enfoque compasivo y su compromiso con la recuperación de los
   pacientes son la base de su práctica médica.
 specialists:
-  - Camilo Menares
+  - Dr. Daniel Rojas
 date: 2023-12-27T20:09:12.585Z
 ---
 <!--StartFragment-->
